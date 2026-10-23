@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="ภาพวาดดินสอ: ประตูห้อง มีร่างผู้หญิงผมยาวชุดขาวยืนอยู่ ไม่มีเท้า มีเลข 03:07 เขียนไว้มุมขวา">
+  <defs>
+    <filter id="pencil" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.6"/>
+    </filter>
+  </defs>
+  <g fill="none" stroke="#22346e" stroke-linecap="round" stroke-linejoin="round" filter="url(#pencil)">
+    <!-- door frame -->
+    <path d="M118 286 L120 30 L262 28 L266 288" stroke-width="2.2"/>
+    <path d="M128 286 L130 40 L252 38 L256 288" stroke-width="1.2" opacity=".7"/>
+    <path d="M240 160 q6 2 4 8" stroke-width="2"/>
+    <!-- light leaking under the door -->
+    <path d="M60 290 L330 290" stroke-width="1.4" opacity=".6"/>
+    <path d="M70 296 L320 295" stroke-width="1" stroke-dasharray="6 5" opacity=".5"/>
+    <!-- figure -->
+    <ellipse cx="192" cy="78" rx="15" ry="19" stroke-width="2"/>
+    <path d="M176 70 q-10 40 -8 92 M208 70 q10 40 8 92" stroke-width="1.8"/>
+    <path d="M180 66 q-6 50 -2 96 M204 66 q6 50 2 96 M186 64 q-2 46 0 100 M198 64 q2 46 0 100" stroke-width="1" opacity=".75"/>
+    <path d="M172 104 q-12 70 -20 150 M212 104 q12 70 20 150" stroke-width="2"/>
+    <path d="M150 230 q12 8 22 0 q10 8 20 0 q10 8 20 0 q10 8 22 0" stroke-width="1.4" opacity=".7"/>
+    <path d="M168 112 q-14 40 -10 80 M216 112 q14 40 10 80" stroke-width="1.6"/>
+    <!-- hatching for the dark room -->
+    <path d="M20 40 l60 -30 M20 70 l80 -40 M20 100 l90 -45 M20 130 l90 -45 M20 160 l90 -45 M20 190 l90 -45 M20 220 l90 -45 M300 60 l80 -40 M290 100 l90 -45 M290 140 l90 -45 M290 180 l90 -45 M290 220 l90 -45" stroke-width=".9" opacity=".45"/>
+  </g>
+  <g fill="#22346e" font-family="Itim, cursive" filter="url(#pencil)">
+    <text x="300" y="268" font-size="26">03:07</text>
+    <text x="22" y="276" font-size="18" opacity=".85">ไม่มีเท้า ??</text>
+  </g>
+  <path d="M296 274 q30 6 62 -2" fill="none" stroke="#c8595a" stroke-width="2" filter="url(#pencil)"/>
+</svg>

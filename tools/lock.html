@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ล็อกหน้าไดอารี่ (เครื่องมือเจ้าของเว็บ)</title>
+<link rel="stylesheet" href="../css/site.css">
+<style>
+  body::before, body::after { display: none; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; display: grid; gap: 14px; }
+  textarea, input { width: 100%; border-radius: 6px; border: 1px solid var(--line-strong); background: #0b0506; padding: 10px 12px; }
+  textarea { min-height: 280px; font-family: var(--f-mono); font-size: .9rem; }
+  label { display: grid; gap: 6px; color: var(--text-dim); }
+  .ok { color: var(--phos); } .err { color: var(--ember); }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">เครื่องมือเจ้าของเว็บ · ไม่ได้ลิงก์จากหน้าเว็บหลัก</p>
+  <h1>ล็อกหน้าไดอารี่ด้วยรหัส</h1>
+  <p class="dim">วาง Markdown ของบันทึก (รวมส่วน --- ด้านบน) ใส่รหัส แล้วกดสร้างไฟล์ จะได้ไฟล์ <code>xxx.lock.json</code> ไปวางใน <code>content/entries/</code> แล้วแก้ <code>index.json</code> ให้ unlock เป็น "password" · ทุกอย่างทำในเครื่องนี้ ไม่มีอะไรถูกส่งออกไป</p>
+  <label>หมายเลขบันทึก (เช่น 015)<input id="id" value="015" maxlength="3"></label>
+  <label>เนื้อหา Markdown<textarea id="md">---
+title: ชื่อบันทึก
+story_time: 1 ธ.ค. 23:00
+mood: 3
+phenomenon: mystery
+tools: bayes
+---
+เขียนเนื้อหาตรงนี้</textarea></label>
+  <label>รหัสปลดล็อก (ช่องว่างและตัวพิมพ์ใหญ่/เล็กไม่มีผล เลขไทยกับเลขอารบิกถือว่าเหมือนกัน)<input id="pw" autocomplete="off"></label>
+  <div class="row"><button class="btn primary" id="go" type="button">สร้างไฟล์ .lock.json</button><button class="btn" id="test" type="button">ทดสอบถอดรหัสไฟล์</button></div>
+  <p id="msg" role="status"></p>
+  <input id="file" type="file" accept="application/json" hidden>
+</main>
+<script type="module">
+  import { encrypt, decrypt, normalizeKey } from '../js/core/crypto.js';
+  const $ = (i) => document.getElementById(i);
+  const msg = (t, ok) => { $('msg').textContent = t; $('msg').className = ok ? 'ok' : 'err'; };
+  $('go').addEventListener('click', async () => {
+    const pw = normalizeKey($('pw').value);
+    if (!pw) return msg('ใส่รหัสก่อน');
+    const id = $('id').value.replace(/\D/g, '').padStart(3, '0');
+    const obj = await encrypt($('md').value, pw);
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([JSON.stringify(obj)], { type: 'application/json' }));
+    a.download = `${id}.lock.json`; a.click();
+    msg(`สร้าง ${id}.lock.json แล้ว (รหัสหลังปรับรูปแบบคือ "${pw}") อย่าลืมจดรหัสไว้ที่อื่นด้วย`, true);
+  });
+  $('test').addEventListener('click', () => $('file').click());
+  $('file').addEventListener('change', async () => {
+    try { const md = await decrypt(JSON.parse(await $('file').files[0].text()), $('pw').value); $('md').value = md; msg('ถอดรหัสได้ รหัสถูกต้อง', true); }
+    catch { msg('ถอดไม่ได้: รหัสผิด หรือไฟล์ไม่ใช่ .lock.json'); }
+  });
+</script>
+</body>
+</html>

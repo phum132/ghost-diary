@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>เกี่ยวกับ — ไดอารี่คนเห็นผี</title>
+<meta name="description" content="SLUR คือใคร วิธีเล่น และเครดิตรูปกับเสียง">
+<meta property="og:image" content="assets/img/og.png">
+<meta name="theme-color" content="#060304">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;800&family=Chakra+Petch:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<style>
+  .about { padding-top: 32px; padding-bottom: 60px; }
+  .about section { padding: 28px 0; }
+  .steps { display: grid; gap: 12px; counter-reset: s; padding: 0; list-style: none; }
+  .steps li { counter-increment: s; display: grid; grid-template-columns: 40px 1fr; gap: 10px; }
+  .steps li::before { content: counter(s, decimal-leading-zero); font-family: var(--f-mono); color: var(--red); }
+  .credits { display: grid; gap: 10px; }
+  .credit-row { display: grid; grid-template-columns: 72px 1fr; gap: 12px; align-items: start; padding: 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); }
+  .credit-row img { width: 72px; height: 54px; object-fit: cover; border-radius: 3px; }
+  .credit-row p { margin: 0; font-size: .92rem; overflow-wrap: anywhere; }
+</style>
+<script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js" } }</script>
+</head>
+<body>
+<main id="main" class="page container narrow about">
+  <p class="eyebrow">เกี่ยวกับ</p>
+  <h1>SLUR กับสมุดห้อง 407</h1>
+  <p class="lead">ไดอารี่คนเห็นผี เป็นเรื่องแต่งแบบโต้ตอบได้ ทำโดย SLUR อยากให้เรื่องผีสนุกขึ้นอีกชั้น ด้วยการให้คนอ่านลงมือพิสูจน์เองด้วยคณิตศาสตร์และฟิสิกส์ ไม่ได้บอกว่าผีมีหรือไม่มี แต่ชวนให้คิดเป็นระบบก่อนเชื่อ</p>
+
+  <section aria-labelledby="how">
+    <h2 id="how">วิธีเล่น</h2>
+    <ol class="steps">
+      <li><span>อ่านบันทึกทีละวัน หน้าใหม่เปิดทุกวันตอน 2 ทุ่ม (สามวันแรกอ่านได้เลย)</span></li>
+      <li><span>กดปุ่ม "วิเคราะห์" บนหน้าบันทึก จะเห็นโน้ตนักสืบและปุ่ม 📌 สำหรับปักหลักฐาน</span></li>
+      <li><span>เปิดรูปแล้วลอง "ดึงเงา" หรือ "ขอบภาพ" เปิดเสียงแล้วลอง "เล่นย้อน" กับ "สเปกโตรแกรม" และกดไฟ UV หาหมึกล่องหน</span></li>
+      <li><span>บางหน้าถูกล็อก รหัสซ่อนอยู่ในหลักฐานของวันก่อนๆ ถ้าผิดสามครั้งจะมีคำใบ้</span></li>
+      <li><span>ทดลองใน SLUR Lab แล้วปักผลลงกระดาน แชร์ลิงก์กระดานไปถกกันในห้องสืบสวน</span></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="safe">
+    <h2 id="safe">ความปลอดภัย</h2>
+    <p class="dim">เว็บนี้ไม่มีภาพกระโดดหลอก ไม่มีเสียงกรีดร้อง ไม่มีไฟกะพริบถี่ เสียงทุกเสียงต้องกดเปิดเอง ถ้าต้องการลดการเคลื่อนไหว เปิดได้ที่เมนู ☰</p>
+    <p class="dim">เรื่องก๊าซคาร์บอนมอนอกไซด์ในไดอารี่เป็นอันตรายจริง: ถ้าคนในบ้านปวดหัวพร้อมกันและอาการดีขึ้นเมื่อออกไปข้างนอก ให้ออกไปที่โล่งแล้วโทร 1669</p>
+  </section>
+
+  <section aria-labelledby="credits">
+    <h2 id="credits">เครดิตรูปและเสียง</h2>
+    <p class="dim">รูปถ่ายมาจาก Wikimedia Commons ใช้ตามสัญญาอนุญาตของแต่ละภาพ (นำมาปรับแสง สี และเพิ่มสัญญาณรบกวนให้ดูเหมือนถ่ายจากมือถือ ไม่ได้หมายความว่าเจ้าของภาพรับรองเว็บนี้) เสียงทั้งหมดสังเคราะห์ด้วยโค้ด เสียงพูดสร้างจากเสียงสังเคราะห์ภาษาไทยของ Windows</p>
+    <div class="credits" id="credit-list"><p class="faint">กำลังโหลดรายชื่อ…</p></div>
+  </section>
+
+  <section aria-labelledby="tech">
+    <h2 id="tech">ทำด้วยอะไร</h2>
+    <p class="dim">HTML, CSS และ JavaScript ล้วน ไม่มีเซิร์ฟเวอร์ ภาพ 3D ใช้ three.js · หน้าที่ล็อกเข้ารหัสด้วย AES-GCM ผ่าน Web Crypto · สเปกโตรแกรมคำนวณ FFT เองใน Web Worker · คอมเมนต์ใช้ giscus (GitHub Discussions)</p>
+  </section>
+</main>
+<script type="module">
+  import { boot } from './js/core/boot.js';
+  import { evidence, url } from './js/core/content.js';
+  import { el } from './js/core/ui.js';
+  boot('about');
+  const box = document.getElementById('credit-list');
+  evidence().then((ev) => {
+    const rows = Object.entries(ev).filter(([, e]) => e.type === 'photo').map(([id, e]) => el('div', { class: 'credit-row' },
+      el('img', { src: url(e.thumb), alt: '' }),
+      el('p', {}, el('strong', {}, e.caption), el('br'), 'ภาพต้นฉบับ: ', e.sourceTitle || id, ' โดย ', e.credit, el('br'),
+        'สัญญาอนุญาต: ', e.licenseUrl ? el('a', { href: e.licenseUrl, target: '_blank', rel: 'noopener' }, e.license) : e.license,
+        ' · ', el('a', { href: e.source, target: '_blank', rel: 'noopener' }, 'ที่มา'))));
+    box.replaceChildren(...rows);
+  }).catch(() => { box.replaceChildren(el('p', {}, 'โหลดรายชื่อเครดิตไม่ได้')); });
+</script>
+</body>
+</html>

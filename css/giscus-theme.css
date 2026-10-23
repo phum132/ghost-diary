@@ -1,0 +1,45 @@
+/* giscus theme matching ไดอารี่คนเห็นผี (loaded by giscus.app from the published site URL) */
+main {
+  --color-prettylights-syntax-comment: #8a7671;
+  --color-prettylights-syntax-constant: #ffb199;
+  --color-prettylights-syntax-entity: #ff6a3d;
+  --color-prettylights-syntax-keyword: #ff3b2f;
+  --color-prettylights-syntax-string: #9dffc7;
+  --color-prettylights-syntax-variable: #ffd866;
+  --color-btn-text: #f3e9e2;
+  --color-btn-bg: #1d0b0b;
+  --color-btn-border: rgba(255, 64, 48, .35);
+  --color-btn-hover-bg: #2a0f0f;
+  --color-btn-hover-border: rgba(255, 64, 48, .6);
+  --color-btn-active-bg: #340f0f;
+  --color-btn-primary-text: #1a0303;
+  --color-btn-primary-bg: #ff3b2f;
+  --color-btn-primary-border: #ff3b2f;
+  --color-btn-primary-hover-bg: #ff6a3d;
+  --color-btn-primary-disabled-text: rgba(26, 3, 3, .6);
+  --color-btn-primary-disabled-bg: rgba(255, 59, 47, .5);
+  --color-fg-default: #f3e9e2;
+  --color-fg-muted: #bfaba4;
+  --color-fg-subtle: #8a7671;
+  --color-canvas-default: #0e0607;
+  --color-canvas-overlay: #140809;
+  --color-canvas-inset: #080304;
+  --color-canvas-subtle: #140809;
+  --color-border-default: rgba(255, 64, 48, .28);
+  --color-border-muted: rgba(255, 64, 48, .16);
+  --color-neutral-muted: rgba(255, 64, 48, .12);
+  --color-accent-fg: #ffb199;
+  --color-accent-emphasis: #ff3b2f;
+  --color-accent-muted: rgba(255, 59, 47, .4);
+  --color-accent-subtle: rgba(255, 59, 47, .12);
+  --color-success-fg: #9dffc7;
+  --color-attention-fg: #ffd866;
+  --color-danger-fg: #ff6a3d;
+  --color-primer-shadow-inset: inset 0 1px 0 rgba(0, 0, 0, .3);
+  --color-scale-gray-7: #211613;
+  --color-scale-blue-8: #3b1f6b;
+  --color-social-reaction-bg-hover: rgba(255, 59, 47, .15);
+  --color-social-reaction-bg-reacted-hover: rgba(255, 59, 47, .25);
+}
+main .pagination-loader-container { background-image: none; }
+main .gsc-loading-image { background-image: none; }

@@ -1,0 +1,44 @@
+.board-page { padding-top: 28px; padding-bottom: 60px; }
+.board-tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 16px 0; }
+.shared-bar { border: 1px solid var(--uv); color: var(--uv); border-radius: 8px; padding: 10px 14px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.needle { margin: 16px 0 24px; }
+.needle .bar { position: relative; height: 16px; border-radius: 8px; background: linear-gradient(90deg, #9dffc7, #ffd866 50%, #ff3b2f); margin: 10px 0 4px; }
+.needle .pin { position: absolute; top: -6px; width: 4px; height: 28px; background: #fff; border-radius: 2px; box-shadow: 0 0 10px #fff; transform: translateX(-2px); transition: left .4s; }
+.needle .scale { display: flex; justify-content: space-between; font-family: var(--f-mono); font-size: .8rem; color: var(--text-faint); }
+.needle .val { font-family: var(--f-display); font-size: 1.6rem; }
+
+.empty { text-align: center; padding: 48px 16px; }
+
+/* desktop canvas board */
+.canvas-wrap { display: none; position: relative; border: 1px solid var(--line); border-radius: 8px; overflow: auto; height: 70vh; min-height: 480px;
+  background: #0b0405 linear-gradient(rgba(255, 59, 47, .07) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(255, 59, 47, .07) 1px, transparent 1px) 0 0 / 32px 32px; }
+.canvas-wrap .surface { position: relative; width: 2400px; height: 1600px; transform-origin: 0 0; }
+.canvas-wrap svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.card {
+  position: absolute; width: 210px; background: var(--panel-solid); border: 1px solid var(--line); border-radius: 4px; padding: 10px; cursor: grab;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .5); user-select: none; touch-action: none;
+}
+.card:focus-visible { outline: 3px solid var(--focus); }
+.card.linking { border-color: var(--hi); box-shadow: 0 0 0 2px var(--hi); }
+.card .k { font: 500 11px var(--f-mono); color: var(--red-hot); display: flex; justify-content: space-between; gap: 6px; }
+.card .t { font-size: .92rem; margin: 6px 0; line-height: 1.4; }
+.card img { width: 100%; height: 120px; object-fit: cover; border-radius: 2px; background: #000; }
+.card .note { font-family: var(--f-hand); background: var(--paper); color: var(--ink); padding: 6px 8px; font-size: .95rem; line-height: 1.5; max-height: 7.5em; overflow: hidden; }
+.card .lab { font-family: var(--f-mono); font-size: .8rem; color: var(--ember); background: rgba(255, 59, 47, .07); padding: 6px; border-radius: 4px; }
+.card select { width: 100%; min-height: 36px; margin-top: 6px; border-radius: 4px; background: #0b0506; border: 1px solid var(--line); }
+.card .row { margin-top: 6px; gap: 4px; }
+.card .row button { min-height: 32px; padding: 0 8px; border-radius: 4px; border: 1px solid var(--line); background: none; color: var(--text-dim); cursor: pointer; font-size: .8rem; }
+.card.blur > :not(.spoil) { filter: blur(6px); }
+.card .spoil { display: none; }
+.card.blur .spoil { display: block; position: absolute; inset: 0; background: rgba(6, 3, 4, .7); padding: 14px; font-size: .9rem; }
+
+/* mobile list */
+.list-view { display: grid; gap: 22px; }
+.list-view h2 { font-size: 1.1rem; display: flex; gap: 8px; align-items: center; }
+.list-view .cards { display: grid; gap: 10px; }
+.list-view .card { position: relative; width: auto; cursor: default; left: auto !important; top: auto !important; }
+@media (min-width: 1024px) and (pointer: fine) {
+  .canvas-wrap { display: block; }
+  .list-view { display: none; }
+}
+.theories { margin-top: 32px; }

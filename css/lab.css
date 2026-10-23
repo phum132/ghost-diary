@@ -1,0 +1,49 @@
+/* SLUR Lab tools: shared layout */
+.toy { position: relative; background: rgba(14, 6, 7, .92); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; color: var(--text); font-family: var(--f-ui); }
+.toy-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 12px; padding: 14px 16px 10px; border-bottom: 1px solid var(--line); }
+.toy-head h3 { margin: 0; font-size: 1.2rem; }
+.toy-head .topic { font-family: var(--f-hud); font-size: .8rem; color: var(--red-hot); letter-spacing: .06em; }
+.toy-body { display: grid; gap: 0; }
+@media (min-width: 900px) { .toy:not(.compact) .toy-body { grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr); } }
+.toy-stage { position: relative; background: #070304; border-bottom: 1px solid var(--line); }
+.toy-stage canvas { width: 100%; height: auto; aspect-ratio: 4 / 3; touch-action: none; }
+.toy-stage canvas.wide { aspect-ratio: 16 / 9; }
+.toy-stage .overlay { position: absolute; left: 10px; top: 10px; right: 10px; display: flex; flex-wrap: wrap; gap: 6px; pointer-events: none; }
+.toy-stage .badge { font: 500 12px/1.3 var(--f-mono); background: rgba(6, 3, 4, .75); border: 1px solid var(--line); border-radius: 4px; padding: 3px 7px; color: var(--text); }
+.toy-panel { padding: 14px 16px 16px; display: grid; gap: 12px; align-content: start; }
+@media (min-width: 900px) { .toy:not(.compact) .toy-panel { border-left: 1px solid var(--line); } .toy:not(.compact) .toy-stage { border-bottom: 0; } }
+.ctl { display: grid; gap: 2px; }
+.ctl .lbl { display: flex; justify-content: space-between; gap: 8px; font-size: .9rem; color: var(--text-dim); }
+.ctl output { font-family: var(--f-mono); color: var(--text); font-size: .9rem; }
+.ctl input[type="range"] { min-height: 44px; }
+.seg { display: flex; flex-wrap: wrap; gap: 6px; }
+.seg button { min-height: 44px; padding: 0 12px; border-radius: 6px; border: 1px solid var(--line); background: rgba(255, 59, 47, .06); color: var(--text-dim); cursor: pointer; font-family: var(--f-hud); font-size: .9rem; }
+.seg button[aria-pressed="true"] { background: rgba(255, 59, 47, .28); color: var(--text); border-color: var(--line-strong); }
+.result { font-size: 1rem; line-height: 1.6; border-left: 2px solid var(--red); padding: 2px 0 2px 12px; }
+.result b { color: var(--hi); font-family: var(--f-mono); font-weight: 500; }
+.formula-box { font-family: var(--f-mono); font-size: .95rem; color: var(--ember); background: rgba(255, 59, 47, .06); border: 1px dashed var(--line); border-radius: 6px; padding: 10px 12px; overflow-x: auto; }
+.formula-box math { font-size: 1.1rem; }
+.explain { font-size: .95rem; color: var(--text-dim); }
+.explain summary { cursor: pointer; color: var(--text); min-height: 36px; font-family: var(--f-hud); }
+.explain .caveat { color: var(--phos); }
+.toy-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.more summary { cursor: pointer; min-height: 40px; color: var(--text-dim); font-family: var(--f-hud); }
+.more > div { display: grid; gap: 12px; margin-top: 8px; }
+.toy.compact .toy-panel .explain, .toy.compact .toy-panel .formula-box { display: none; }
+.toy.compact .open-full { display: inline-flex; }
+.open-full { display: none; }
+.safety { border: 1px solid var(--phos); color: var(--phos); border-radius: 6px; padding: 10px 12px; font-size: .92rem; }
+table.mini { border-collapse: collapse; font-size: .85rem; width: 100%; }
+table.mini th, table.mini td { border: 1px solid var(--line); padding: 4px 6px; text-align: left; }
+
+/* lab page */
+.lab-hero { padding: 40px 0 24px; }
+.lab-grid { display: grid; gap: 16px; }
+@media (min-width: 700px) { .lab-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .lab-grid { grid-template-columns: repeat(3, 1fr); } }
+.tool-card { display: grid; gap: 8px; text-decoration: none; color: var(--text); transition: transform .2s, border-color .2s; }
+.tool-card:hover { transform: translateY(-2px); border-color: var(--line-strong); color: var(--text); }
+.tool-card h3 { margin: 6px 0 0; }
+.tool-card p { margin: 0; color: var(--text-dim); font-size: .95rem; }
+.tool-card .num { font-family: var(--f-mono); color: var(--red); font-size: .85rem; }
+.back-row { margin: 18px 0; }

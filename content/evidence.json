@@ -1,0 +1,243 @@
+{
+  "p-001": {
+    "type": "photo",
+    "entry": "001",
+    "file": "assets/photos/p-001.jpg",
+    "thumb": "assets/photos/p-001.thumb.jpg",
+    "w": 1600,
+    "h": 1200,
+    "caption": "ทางเดินชั้น 4 ตอนสี่ทุ่ม (ถ่ายจากหน้าห้อง)",
+    "meta": {
+      "file": "IMG_0412.jpg",
+      "time": "2 พ.ย. 22:31",
+      "device": "ZENO A1",
+      "gps": "—"
+    },
+    "credit": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Window_at_the_of_the_dark_hallway_at_the_old_abandoned_building.jpg",
+    "sourceTitle": "Window at the of the dark hallway at the old abandoned building.jpg"
+  },
+  "p-002": {
+    "type": "photo",
+    "entry": "002",
+    "file": "assets/photos/p-002.jpg",
+    "thumb": "assets/photos/p-002.thumb.jpg",
+    "w": 1600,
+    "h": 1200,
+    "caption": "คราบบนผนังห้องน้ำ เหนือเครื่องทำน้ำอุ่น",
+    "meta": {
+      "file": "IMG_0419.jpg",
+      "time": "3 พ.ย. 07:12",
+      "device": "ZENO A1",
+      "gps": "—"
+    },
+    "credit": "Garry K Smith",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Calthemite_flowstone_on_concrete_-_Iron_Stained.jpg",
+    "sourceTitle": "Calthemite flowstone on concrete - Iron Stained.jpg"
+  },
+  "p-004": {
+    "type": "photo",
+    "entry": "004",
+    "file": "assets/photos/p-004.jpg",
+    "thumb": "assets/photos/p-004.thumb.jpg",
+    "w": 1600,
+    "h": 1200,
+    "caption": "พัดลมระบายอากาศท้ายทางเดิน",
+    "meta": {
+      "file": "IMG_0457.jpg",
+      "time": "6 พ.ย. 23:46",
+      "device": "ZENO A1",
+      "gps": "—"
+    },
+    "credit": "Rina120",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Exhausted_Fan.jpg",
+    "sourceTitle": "Exhausted Fan.jpg"
+  },
+  "p-006": {
+    "type": "photo",
+    "entry": "006",
+    "file": "assets/photos/p-006.jpg",
+    "thumb": "assets/photos/p-006.thumb.jpg",
+    "w": 1600,
+    "h": 1200,
+    "caption": "เครื่องทำน้ำอุ่นแก๊สในห้องน้ำ 407",
+    "meta": {
+      "file": "IMG_0488.jpg",
+      "time": "8 พ.ย. 22:20",
+      "device": "ZENO A1",
+      "gps": "—",
+      "note": "ไฟในเครื่องเป็นสีเหลืองส้ม"
+    },
+    "credit": "Tiesse at Italian Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Caldaia_Murale.jpg",
+    "sourceTitle": "Caldaia Murale.jpg"
+  },
+  "p-007": {
+    "type": "photo",
+    "entry": "007",
+    "file": "assets/photos/p-007.jpg",
+    "thumb": "assets/photos/p-007.thumb.jpg",
+    "w": 1400,
+    "h": 1090,
+    "caption": "รูปจากหนังสือเก่าในห้องสมุดที่ต้นเอามาให้ดู",
+    "meta": {
+      "file": "scan_planchette.jpg",
+      "time": "9 พ.ย. 21:02",
+      "device": "สแกนจากหนังสือ",
+      "gps": "—"
+    },
+    "credit": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:La_Planchette.jpg",
+    "sourceTitle": "La Planchette.jpg"
+  },
+  "p-008": {
+    "type": "photo",
+    "entry": "008",
+    "file": "assets/photos/p-008.jpg",
+    "thumb": "assets/photos/p-008.thumb.jpg",
+    "w": 1600,
+    "h": 1200,
+    "caption": "หนองน้ำหลังหอ ถ่ายจากหน้าต่าง",
+    "meta": {
+      "file": "IMG_0503.jpg",
+      "time": "10 พ.ย. 21:38",
+      "device": "ZENO A1",
+      "gps": "—"
+    },
+    "credit": "MBH",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lyublino_Park_and_Pond_at_night_06.jpg",
+    "sourceTitle": "Lyublino Park and Pond at night 06.jpg"
+  },
+  "p-008b": {
+    "type": "photo",
+    "entry": "008",
+    "file": "assets/photos/p-008b.jpg",
+    "thumb": "assets/photos/p-008b.thumb.jpg",
+    "w": 1345,
+    "h": 1348,
+    "caption": "ภาพ \"ไฟหลอก\" ที่ต้นส่งมาในแชต",
+    "meta": {
+      "file": "ignis_fatuus.jpg",
+      "time": "10 พ.ย. 22:15",
+      "device": "รูปที่ส่งต่อกันมา",
+      "gps": "—"
+    },
+    "credit": "Thomas Nast",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Nast_Ignis_Fatuus.jpg",
+    "sourceTitle": "Nast Ignis Fatuus.jpg"
+  },
+  "p-011": {
+    "type": "photo",
+    "entry": "011",
+    "file": "assets/photos/p-011.jpg",
+    "thumb": "assets/photos/p-011.thumb.jpg",
+    "w": 1600,
+    "h": 1200,
+    "caption": "สันเขาตอนพระอาทิตย์ขึ้น ร่างในหมอก",
+    "meta": {
+      "file": "IMG_0566.jpg",
+      "time": "14 พ.ย. 06:14",
+      "device": "ZENO A1",
+      "gps": "ดอยแห่งหนึ่ง"
+    },
+    "credit": "Alpsdake",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Brocken_spectres_in_Mount_Ontake.jpg",
+    "sourceTitle": "Brocken spectres in Mount Ontake.jpg"
+  },
+  "p-012": {
+    "type": "photo",
+    "entry": "012",
+    "file": "assets/photos/p-012.jpg",
+    "thumb": "assets/photos/p-012.thumb.jpg",
+    "w": 1600,
+    "h": 1200,
+    "caption": "ทางเดินชั้น 3 หน้าห้อง 312 (มืดมาก)",
+    "meta": {
+      "file": "IMG_0581.jpg",
+      "time": "15 พ.ย. 23:02",
+      "device": "ZENO A1",
+      "gps": "—"
+    },
+    "credit": "PattayaPatrol",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:DSC_7573_A_long_dim_corridor_in_an_unfinished_or_abandoned_building_with_cracked_plaster_walls_and_puddles_reflecting_the_ceiling.jpg",
+    "sourceTitle": "DSC 7573 A long dim corridor in an unfinished or abandoned building with cracked plaster walls and puddles reflecting the ceiling.jpg"
+  },
+  "a-003": {
+    "type": "audio",
+    "entry": "003",
+    "file": "assets/audio/a-003.wav",
+    "duration": 10,
+    "title": "บันทึกเสียง 03:10",
+    "transcript": "(เสียงหัวใจเต้นเร็ว เสียงนาฬิกา เสียงหึ่งของพัดลมไกลๆ)",
+    "credit": "SLUR (สังเคราะห์ด้วยโค้ด)",
+    "license": "CC0"
+  },
+  "a-004": {
+    "type": "audio",
+    "entry": "004",
+    "file": "assets/audio/a-004.wav",
+    "duration": 12,
+    "title": "บันทึกเสียงทางเดิน 23:48",
+    "transcript": "(เสียงพัดลมดังต่อเนื่อง ไม่มีเสียงอื่นที่หูได้ยิน)",
+    "credit": "SLUR (สังเคราะห์ด้วยโค้ด)",
+    "license": "CC0"
+  },
+  "a-007": {
+    "type": "audio",
+    "entry": "007",
+    "file": "assets/audio/a-007.wav",
+    "duration": 14,
+    "title": "บันทึกเสียงตอนเล่นผีถ้วยแก้ว",
+    "transcript": "(เสียงแก้วลากบนกระดาษ เสียงหายใจ ช่วงท้ายมีเสียงกระซิบที่ฟังไม่ออก)",
+    "credit": "SLUR (สังเคราะห์ด้วยโค้ด)",
+    "license": "CC0"
+  },
+  "a-008": {
+    "type": "audio",
+    "entry": "008",
+    "file": "assets/audio/a-008.wav",
+    "duration": 12,
+    "title": "เสียงหนองน้ำหลังหอ 21:40",
+    "transcript": "(เสียงกบ เสียงจิ้งหรีด ลมเบาๆ)",
+    "credit": "SLUR (สังเคราะห์ด้วยโค้ด)",
+    "license": "CC0"
+  },
+  "a-013": {
+    "type": "audio",
+    "entry": "013",
+    "file": "assets/audio/a-013.wav",
+    "duration": 9,
+    "title": "เครื่องวัด CO หน้าห้อง 312",
+    "transcript": "(เสียงเครื่องเตือนดังเป็นชุด 4 ครั้ง)",
+    "credit": "SLUR (สังเคราะห์ด้วยโค้ด)",
+    "license": "CC0"
+  },
+  "d-003": {
+    "type": "draw",
+    "entry": "003",
+    "file": "assets/img/d-003.svg",
+    "w": 400,
+    "h": 300,
+    "caption": "วาดไว้ตอนตีสาม",
+    "credit": "SLUR",
+    "license": "CC0"
+  }
+}

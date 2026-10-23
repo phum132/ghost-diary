@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ตรวจไฟล์เนื้อหา (เครื่องมือเจ้าของเว็บ)</title>
+<link rel="stylesheet" href="../css/site.css">
+<style>
+  body::before, body::after { display: none; }
+  main { max-width: 960px; margin: 0 auto; padding: 32px 16px 64px; }
+  table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+  th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
+  .ok { color: var(--phos); } .bad { color: var(--ember); }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">เครื่องมือเจ้าของเว็บ</p>
+  <h1>ตรวจไฟล์เนื้อหา</h1>
+  <p class="dim">ตรวจว่าไฟล์ทุกไฟล์ใน index.json มีอยู่จริง หลักฐานทุกชิ้นที่บันทึกอ้างถึงมีใน evidence.json และไฟล์รูป/เสียงโหลดได้ พร้อมตารางวันปลดล็อก</p>
+  <div id="out">กำลังตรวจ…</div>
+</main>
+<script type="module">
+  import { config, entries, evidence, url, unlockAt, getText } from '../js/core/content.js';
+  import { el } from '../js/core/ui.js';
+  const out = document.getElementById('out');
+  const problems = [];
+  const head = async (p) => { try { const r = await fetch(url(p), { method: 'HEAD', cache: 'no-cache' }); return r.ok; } catch { return false; } };
+  const [cfg, list, ev] = await Promise.all([config(), entries(), evidence()]);
+  const rows = [];
+  for (const e of list) {
+    const file = `content/entries/${e.file}`;
+    const exists = await head(file);
+    if (!exists) problems.push(`${e.file} อยู่ใน index.json แต่หาไฟล์ไม่เจอ`);
+    let refs = [];
+    if (exists && e.unlock !== 'password') {
+      const md = await getText(file);
+      refs = [...md.matchAll(/\[\[(photo|audio|draw):([\w-]+)\]\]/g)].map((m) => m[2]);
+      for (const r of refs) if (!ev[r]) problems.push(`${e.file} อ้างถึง ${r} แต่ไม่มีใน evidence.json`);
+    }
+    rows.push(el('tr', {}, el('td', {}, e.day), el('td', {}, e.id), el('td', {}, e.title || e.teaser || ''), el('td', {}, e.unlock),
+      el('td', {}, unlockAt(e.day, cfg).toLocaleString('th-TH')), el('td', { class: exists ? 'ok' : 'bad' }, exists ? 'มี' : 'ไม่มี'), el('td', {}, refs.join(', '))));
+  }
+  for (const [id, e] of Object.entries(ev)) {
+    if (!(await head(e.file))) problems.push(`${id}: ไฟล์ ${e.file} โหลดไม่ได้`);
+    if (e.thumb && !(await head(e.thumb))) problems.push(`${id}: ไฟล์ ${e.thumb} โหลดไม่ได้`);
+  }
+  const g = cfg.giscus || {};
+  if (!(g.repo && g.repoId && g.categoryId)) problems.push('ยังไม่ได้ตั้งค่า giscus (ห้องสืบสวนจะถูกซ่อน) — ดู README');
+  out.replaceChildren(
+    el('h2', {}, problems.length ? `เจอ ${problems.length} เรื่องที่ต้องดู` : 'ทุกอย่างเรียบร้อย ✓'),
+    el('ul', {}, ...problems.map((p) => el('li', { class: 'bad' }, p))),
+    el('p', { class: 'dim' }, `วันเริ่ม ${cfg.startDate} · เปิดฟรี ${cfg.freeDays} วันแรก · ปลดล็อกทุกวัน ${cfg.unlockHour}:00`),
+    el('table', {}, el('tr', {}, ...['วัน', 'id', 'ชื่อ', 'ล็อกแบบ', 'เปิดเมื่อ', 'ไฟล์', 'หลักฐาน'].map((h) => el('th', {}, h))), ...rows));
+</script>
+</body>
+</html>

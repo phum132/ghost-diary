@@ -148,7 +148,7 @@ export function start(host, { mode = 'ambient', still = false } = {}) {
     const w = innerWidth, h = innerHeight;
     renderer.setSize(w, h, false);
     camera.aspect = w / h;
-    camera.position.z = w < 700 ? 11.5 : 9;
+    baseZ = camera.position.z = w < 700 ? 11.5 : 9;
     camera.updateProjectionMatrix();
     if (still) frame(performance.now());
   }
@@ -156,6 +156,7 @@ export function start(host, { mode = 'ambient', still = false } = {}) {
 
   const ease = (u) => (u < 0.5 ? 4 * u * u * u : 1 - Math.pow(-2 * u + 2, 3) / 2);
   let lastSwitch = performance.now();
+  let scrollP = 0, sp = 0, lastStage = 0, baseZ = 9;
 
   function frame(now) {
     const t = now / 1000;
@@ -165,9 +166,16 @@ export function start(host, { mode = 'ambient', still = false } = {}) {
     dust.rotation.y = t * 0.012; dust.position.y = Math.sin(t * 0.1) * 0.3;
 
     if (hero) {
-      if (!still && now - lastSwitch > 7000) { lastSwitch = now; morphTo(hero.idx + 1); }
-      const prog = still ? 1 : Math.min(1, (now - hero.t0) / 2200);
-      const explode = Math.min(1, scrollY / (innerHeight * 0.9));
+      // the page scroll drives the story: figure -> glory ring -> 407 -> burst into dust
+      sp += (scrollP - sp) * (still ? 1 : 0.08);
+      const stage = sp < 0.34 ? 0 : sp < 0.68 ? 1 : 2;
+      if (stage !== lastStage) { lastStage = stage; morphTo(stage); }
+      else if (!still && sp < 0.02 && now - lastSwitch > 9000 && now - hero.t0 > 9000) { lastSwitch = now; morphTo(hero.idx === 0 ? 1 : 0); }
+      const prog = still ? 1 : Math.min(1, (now - hero.t0) / 1800);
+      const explode = Math.max(0, Math.min(1, (sp - 0.86) / 0.14));
+      camera.position.z = baseZ - sp * 2.4;
+      camera.position.x += Math.sin(sp * Math.PI) * 1.2;
+      camera.lookAt(0, hero.group.position.y * 0.5, 0);
       const m = hero.mesh.instanceMatrix.array, gp = hero.glow.geometry.attributes.position.array;
       const { N, from, to, delay, dir, cur } = hero;
       for (let i = 0; i < N; i++) {
@@ -186,8 +194,10 @@ export function start(host, { mode = 'ambient', still = false } = {}) {
       }
       hero.mesh.instanceMatrix.needsUpdate = true;
       hero.glow.geometry.attributes.position.needsUpdate = true;
-      hero.group.rotation.y = (still ? 0 : Math.sin(t * 0.25) * 0.35) + mouse.x * 0.5;
-      hero.group.rotation.x = mouse.y * 0.18;
+      // the figure sways; the ring and the number spin slowly like a hologram
+      const spin = hero.idx === 0 ? Math.sin(t * 0.25) * 0.35 : t * 0.35;
+      hero.group.rotation.y = (still ? 0 : spin) + sp * Math.PI * 0.5 + mouse.x * 0.5;
+      hero.group.rotation.x = mouse.y * 0.18 + (hero.idx === 1 ? Math.sin(t * 0.3) * 0.15 : 0);
       hero.group.position.y = small ? 1.5 : 1.0;
       hero.mesh.material.opacity = 1 - explode * 0.7;
     }
@@ -209,6 +219,8 @@ export function start(host, { mode = 'ambient', still = false } = {}) {
   return {
     next: () => { lastSwitch = performance.now(); morphTo(hero ? hero.idx + 1 : 0); if (still) frame(performance.now() + 1e5); },
     shape: () => (hero ? ['figure', 'ring', '407'][hero.idx] : null),
+    // 0..1 progress through the home hero; drives morphs, camera dolly and the final burst
+    setProgress: (p) => { scrollP = Math.max(0, Math.min(1, p)); if (still) { sp = scrollP; frame(performance.now()); } },
   };
 }
 

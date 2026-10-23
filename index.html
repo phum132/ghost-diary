@@ -20,28 +20,45 @@
 <body>
 <noscript><div class="noscript">เว็บนี้ต้องเปิด JavaScript ถึงจะอ่านไดอารี่ได้</div></noscript>
 <main id="main" class="page">
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="hud-corner tl" aria-hidden="true"><span>REC ●</span><span class="mono" id="clock">--:--:--</span></div>
-    <div class="hud-corner tr" aria-hidden="true"><span>หอพักศรีวิไล</span><span class="mono">ชั้น 4 · ห้อง 407</span></div>
-    <button class="apparition" type="button" id="morph" aria-label="เปลี่ยนรูปร่างของเงา">
-      <span class="hud-label" id="shape-label">SUBJECT: ร่างที่ประตู</span>
-    </button>
-    <div class="hero-copy">
-      <p class="eyebrow">บันทึก 14 วัน · เปิดวันละหน้า · ไขปริศนาด้วยวิทยาศาสตร์</p>
-      <h1 id="hero-title" class="hero-title"><span>ไดอารี่</span><span class="red">คนเห็นผี</span></h1>
-      <div class="hero-row">
-        <p class="hero-lede">สมุดเล่มนี้ถูกทิ้งไว้ในห้อง 407 เจ้าของเขียนทุกคืนว่าเจออะไร อ่านไปพร้อมกัน แล้วช่วยกันพิสูจน์ว่ามันคือผี หรือมีคำอธิบาย</p>
-        <div class="hero-cta">
-          <a class="btn primary" id="cta-latest" href="entry.html?id=001">อ่านบันทึกวันที่ 1</a>
-          <p class="next-line" id="next-line" aria-live="off"></p>
+  <section class="hero" id="hero" data-stage="0" aria-labelledby="hero-title">
+    <div class="hero-sticky">
+      <div class="hud-corner tl" aria-hidden="true"><span>REC ●</span><span class="mono" id="clock">--:--:--</span></div>
+      <div class="hud-corner tr" aria-hidden="true"><span>หอพักศรีวิไล</span><span class="mono">ชั้น 4 · ห้อง 407</span></div>
+      <button class="apparition" type="button" id="morph" aria-label="เปลี่ยนรูปร่างของเงา">
+        <span class="hud-label" id="shape-label" data-scramble>SUBJECT: FIGURE AT THE DOOR</span>
+      </button>
+      <ol class="rail" aria-hidden="true"><li>01</li><li>02</li><li>03</li></ol>
+      <button class="motion-chip" type="button" id="motion-chip" hidden>✦ เครื่องนี้ปิดแอนิเมชันไว้ — กดเพื่อเปิดแบบเต็ม</button>
+      <div class="hero-copy">
+        <div class="stage-wrap">
+        <div class="stage s0">
+          <p class="eyebrow">บันทึก 14 วัน · เปิดวันละหน้า · ไขปริศนาด้วยวิทยาศาสตร์</p>
+          <h1 id="hero-title" class="hero-title"><span>ไดอารี่</span><span class="red">คนเห็นผี</span></h1>
+        </div>
+        <div class="stage s1" aria-hidden="true">
+          <p class="eyebrow">บันทึกวันที่ 3 · 03:07</p>
+          <p class="hero-title"><span>มีคนยืนอยู่</span><span class="red">ตรงประตู</span></p>
+        </div>
+        <div class="stage s2" aria-hidden="true">
+          <p class="eyebrow">บันทึกวันที่ 1 · หมึกล่องหน</p>
+          <p class="hero-title"><span>ไม่มีใครอยู่</span><span class="red">ครบเทอม</span></p>
+        </div>
+        </div>
+        <div class="hero-row">
+          <p class="hero-lede">สมุดเล่มนี้ถูกทิ้งไว้ในห้อง 407 เจ้าของเขียนทุกคืนว่าเจออะไร อ่านไปพร้อมกัน แล้วช่วยกันพิสูจน์ว่ามันคือผี หรือมีคำอธิบาย</p>
+          <div class="hero-cta">
+            <a class="btn primary" id="cta-latest" href="entry.html?id=001">อ่านบันทึกวันที่ 1</a>
+            <p class="next-line" id="next-line" aria-live="off"></p>
+          </div>
         </div>
       </div>
+      <div class="scroll-cue" aria-hidden="true"><span>เลื่อนลง</span><i></i></div>
     </div>
-    <div class="scroll-cue" aria-hidden="true">เลื่อนลง</div>
   </section>
+  <div class="ticker" aria-hidden="true"><div class="ticker-track" id="ticker"></div></div>
 
   <section id="toc" class="container" aria-labelledby="toc-title">
-    <div class="sec-head">
+    <div class="sec-head reveal">
       <p class="eyebrow">สารบัญ</p>
       <h2 id="toc-title">บันทึกทั้งหมด</h2>
       <p class="dim">หน้าใหม่เปิดทุกวัน 2 ทุ่ม · บางหน้าล็อกด้วยรหัสที่ซ่อนอยู่ในหลักฐาน</p>
@@ -50,17 +67,17 @@
   </section>
 
   <section class="container how" aria-labelledby="how-title">
-    <p class="eyebrow">วิธีเล่น</p>
-    <h2 id="how-title">อ่าน · สืบ · พิสูจน์</h2>
+    <p class="eyebrow reveal">วิธีเล่น</p>
+    <h2 id="how-title" class="reveal">อ่าน · สืบ · พิสูจน์</h2>
     <div class="how-grid">
-      <article class="hud"><span class="hud-label">01 / อ่าน</span><h3>เปิดไดอารี่วันละหน้า</h3><p class="dim">เจ้าของสมุดจดทุกอย่างที่เจอ ทั้งรูปจากมือถือและเสียงที่อัดไว้ตอนดึก</p></article>
-      <article class="hud"><span class="hud-label">02 / สืบ</span><h3>ส่องหลักฐาน</h3><p class="dim">ซูมรูป ดึงเงา เปิดเสียงย้อน ดูสเปกโตรแกรม ส่องไฟ UV หาหมึกล่องหน แล้วปักหมุดลงกระดาน</p></article>
-      <article class="hud"><span class="hud-label">03 / พิสูจน์</span><h3>ทดลองใน SLUR Lab</h3><p class="dim">ของเล่นวิทยาศาสตร์ 9 ชิ้น ตั้งแต่เสียง 19 เฮิรตซ์ ไปจนถึงทฤษฎีของเบย์ ช่วยตัดสินว่าอะไรอธิบายได้</p></article>
+      <article class="hud reveal" data-tilt><span class="hud-label" data-scramble>01 / READ</span><h3>เปิดไดอารี่วันละหน้า</h3><p class="dim">เจ้าของสมุดจดทุกอย่างที่เจอ ทั้งรูปจากมือถือและเสียงที่อัดไว้ตอนดึก</p></article>
+      <article class="hud reveal" data-tilt style="--d:120ms"><span class="hud-label" data-scramble>02 / INVESTIGATE</span><h3>ส่องหลักฐาน</h3><p class="dim">ซูมรูป ดึงเงา เปิดเสียงย้อน ดูสเปกโตรแกรม ส่องไฟ UV หาหมึกล่องหน แล้วปักหมุดลงกระดาน</p></article>
+      <article class="hud reveal" data-tilt style="--d:240ms"><span class="hud-label" data-scramble>03 / PROVE</span><h3>ทดลองใน SLUR Lab</h3><p class="dim">ของเล่นวิทยาศาสตร์ 9 ชิ้น ตั้งแต่เสียง 19 เฮิรตซ์ ไปจนถึงทฤษฎีของเบย์ ช่วยตัดสินว่าอะไรอธิบายได้</p></article>
     </div>
   </section>
 
   <section class="container lab-teaser" aria-labelledby="lab-title">
-    <div class="hud lab-card">
+    <div class="hud lab-card reveal" data-tilt>
       <div>
         <p class="eyebrow">SLUR Lab</p>
         <h2 id="lab-title">ห้องแล็บไขเรื่องผี</h2>

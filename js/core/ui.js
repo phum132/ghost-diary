@@ -1,4 +1,6 @@
 // Small DOM helpers: element builder, toasts, live region, seeded random
+import { prefs } from './store.js';
+
 export function el(tag, attrs = {}, ...children) {
   const n = document.createElement(tag);
   for (const [k, v] of Object.entries(attrs || {})) {
@@ -57,9 +59,14 @@ export function rng(seed) {
   };
 }
 
-export const reduceMotion = () =>
-  document.documentElement.classList.contains('reduce-motion') ||
-  matchMedia('(prefers-reduced-motion: reduce)').matches;
+// The reader's own choice wins; otherwise follow the OS setting (Windows "Animation effects" etc.)
+export const osReducesMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+export const reduceMotion = () => {
+  const m = prefs().motion;
+  if (m === 'full') return false;
+  if (m === 'reduce') return true;
+  return osReducesMotion();
+};
 
 export function fmtCountdown(ms) {
   if (ms <= 0) return '00:00:00';

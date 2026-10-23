@@ -26,7 +26,7 @@ export function ssave(key, value) {
   } catch { /* ignore */ }
 }
 
-const DEFAULT_PREFS = { sound: false, reduce: false, typed: false, fs: 1 };
+const DEFAULT_PREFS = { sound: false, motion: 'auto', typed: false, fs: 1 }; // motion: auto (follow OS) | full | reduce
 export function prefs() { return { ...DEFAULT_PREFS, ...load('prefs', {}) }; }
 export function setPref(k, v) { const p = prefs(); p[k] = v; save('prefs', p); return p; }
 

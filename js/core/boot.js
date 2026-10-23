@@ -1,5 +1,6 @@
 // Shared page chrome: header, settings sheet, footer, preview bar, easter eggs, 3D background
 import { el, reduceMotion } from './ui.js';
+import { initFx } from './fx.js';
 import { prefs, setPref } from './store.js';
 import { url, initPreview, exitPreview, now } from './content.js';
 import { refreshCount } from './board-store.js';
@@ -15,7 +16,7 @@ const NAV = [
 function applyPrefs() {
   const p = prefs();
   const r = document.documentElement;
-  r.classList.toggle('reduce-motion', !!p.reduce);
+  r.classList.toggle('reduce-motion', reduceMotion());
   r.classList.toggle('typed', !!p.typed);
   r.style.setProperty('--fs', p.fs);
   document.querySelectorAll('[data-pref="sound"]').forEach((b) => {
@@ -23,7 +24,7 @@ function applyPrefs() {
     b.querySelector('.lbl').textContent = p.sound ? 'เสียง: เปิด' : 'เสียง: ปิด';
     const ico = b.querySelector('.ico'); if (ico) ico.textContent = p.sound ? '🔊' : '🔇';
   });
-  document.querySelectorAll('[data-pref="reduce"]').forEach((b) => b.setAttribute('aria-pressed', String(!!p.reduce)));
+  document.querySelectorAll('[data-pref="motion"]').forEach((b) => { b.textContent = reduceMotion() ? 'ลดอยู่ → เปิดเต็ม' : 'เต็ม → ลด'; });
   document.querySelectorAll('[data-pref="typed"]').forEach((b) => b.setAttribute('aria-pressed', String(!!p.typed)));
 }
 
@@ -49,8 +50,8 @@ function header(page) {
     el('div', { class: 'prefs' },
       el('p', { class: 'eyebrow' }, 'การตั้งค่า'),
       el('div', { class: 'pref-row' }, el('span', {}, 'เสียงบรรยากาศ'), soundBtn('btn small')),
-      el('div', { class: 'pref-row' }, el('span', {}, 'ลดการเคลื่อนไหว'),
-        el('button', { class: 'btn small', type: 'button', 'data-pref': 'reduce', 'aria-pressed': 'false', onclick: () => { setPref('reduce', !prefs().reduce); applyPrefs(); location.reload(); } }, 'สลับ')),
+      el('div', { class: 'pref-row' }, el('span', {}, 'แอนิเมชัน'),
+        el('button', { class: 'btn small', type: 'button', 'data-pref': 'motion', onclick: () => { setPref('motion', reduceMotion() ? 'full' : 'reduce'); location.reload(); } }, 'สลับ')),
       el('div', { class: 'pref-row' }, el('span', {}, 'อ่านไดอารี่แบบตัวพิมพ์ (อ่านง่าย)'),
         el('button', { class: 'btn small', type: 'button', 'data-pref': 'typed', 'aria-pressed': 'false', onclick: () => { setPref('typed', !prefs().typed); applyPrefs(); } }, 'สลับ')),
       el('div', { class: 'pref-row' }, el('span', {}, 'ขนาดตัวอักษร'),
@@ -142,6 +143,7 @@ export async function boot(page, { scene = 'ambient' } = {}) {
   applyPrefs();
   refreshCount();
   eggs();
+  initFx();
   if (prefs().sound) {
     // browsers need a gesture before audio can start
     addEventListener('pointerdown', () => { audioCtx(); hum(true); }, { once: true });

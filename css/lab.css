@@ -45,5 +45,7 @@ table.mini th, table.mini td { border: 1px solid var(--line); padding: 4px 6px; 
 .tool-card:hover { transform: translateY(-2px); border-color: var(--line-strong); color: var(--text); }
 .tool-card h3 { margin: 6px 0 0; }
 .tool-card p { margin: 0; color: var(--text-dim); font-size: .95rem; }
-.tool-card .num { font-family: var(--f-mono); color: var(--red); font-size: .85rem; }
+.tool-card .num { font-family: var(--f-mono); color: var(--red); font-size: .85rem; letter-spacing: .1em; }
+.tool-card .topic-line { font-family: var(--f-hud); font-size: .8rem; color: var(--text-faint); }
+.tool-card.reveal.in:hover { transform: translateY(-2px); }
 .back-row { margin: 18px 0; }

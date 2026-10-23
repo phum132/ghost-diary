@@ -6,6 +6,8 @@ import { decrypt, normalizeKey } from '../core/crypto.js';
 import { markRead, savedKey, saveKey, load, save, prefs, setPref } from '../core/store.js';
 import { pin, TAGS } from '../core/board-store.js';
 import { click } from '../core/sfx.js';
+import { setPreset, hauntOn, play, tension } from '../core/haunt.js';
+import { scare } from '../core/scare.js';
 import { TOYS, mountToy } from '../toys/index.js';
 import { openPhoto } from '../viewer/photo.js';
 import { audioPlayer } from '../viewer/audio.js';
@@ -108,11 +110,20 @@ function renderEntry(src, meta, list, ev, cfg, justUnlocked = false) {
   const mood = Math.max(1, Math.min(5, +fm.mood || 1));
   const notes = [];
   const used = [];
+  const sentinels = [];
   const tilt = rng(id);
+  // each page can pick its own soundscape (swamp, mountain, machine room…)
+  document.body.dataset.sound = fm.sound || 'room';
+  if (hauntOn()) setPreset(document.body.dataset.sound);
 
   const hooks = {
     block(type, ref) {
       if (type === 'lab') return labEmbed(ref);
+      if (type === 'sound' || type === 'scare') {
+        const mark = el('span', { class: 'sentinel', 'aria-hidden': 'true', 'data-kind': type, 'data-ref': ref });
+        sentinels.push(mark);
+        return mark;
+      }
       const e = ev[ref];
       if (!e) return el('p', { class: 'faint' }, preview() ? `[ไม่พบหลักฐาน ${ref} ใน evidence.json]` : '');
       used.push(ref);
@@ -189,7 +200,25 @@ function renderEntry(src, meta, list, ev, cfg, justUnlocked = false) {
   ].filter(Boolean));
   setMode(load('modes', {})[id] || 'read', false);
   markRead(id);
+  watchSentinels(sentinels);
   if (justUnlocked) window.scrollTo({ top: 0, behavior: reduceMotion() ? 'auto' : 'smooth' });
+}
+
+// sounds and the opt-in scare fire when the reader scrolls a marked line into view
+function watchSentinels(list) {
+  if (!list.length) return;
+  const io = new IntersectionObserver((es) => {
+    for (const e of es) {
+      if (!e.isIntersecting) continue;
+      io.unobserve(e.target);
+      const { kind, ref } = e.target.dataset;
+      if (kind === 'scare') scare();
+      else if (ref === 'tense') tension(0.8);
+      else if (ref === 'calm') tension(0);
+      else play(ref);
+    }
+  }, { rootMargin: '0px 0px -35% 0px' });
+  list.forEach((n) => io.observe(n));
 }
 
 function pinBtn(fn, label) {

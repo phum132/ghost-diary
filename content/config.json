@@ -2,7 +2,7 @@
   "siteTitle": "ไดอารี่คนเห็นผี",
   "startDate": "2026-10-24",
   "unlockHour": 20,
-  "freeDays": 3,
+  "freeDays": 14,
   "totalDays": 14,
   "giscus": {
     "repo": "phum132/ghost-diary",

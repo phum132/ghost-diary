@@ -177,14 +177,16 @@ function renderEntry(src, meta, list, ev, cfg, justUnlocked = false) {
           : { kind: 'photo', ref: r, entry: id, day: meta.day, title: e.caption, thumb: e.thumb || e.file }) }, '📌'));
     })));
 
-  root.replaceChildren(
+  // replaceChildren() would print a literal "null", so drop the optional sections that are absent
+  root.replaceChildren(...[
     modeSwitch(),
     el('div', { class: 'entry-grid' }, paper, side),
     tray,
     fm.finale === 'yes' ? quiz() : null,
     discussion(cfg, meta),
     navRow(meta, list),
-    toolbar());
+    toolbar(),
+  ].filter(Boolean));
   setMode(load('modes', {})[id] || 'read', false);
   markRead(id);
   if (justUnlocked) window.scrollTo({ top: 0, behavior: reduceMotion() ? 'auto' : 'smooth' });

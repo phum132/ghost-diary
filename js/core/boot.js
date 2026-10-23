@@ -4,10 +4,12 @@ import { initFx } from './fx.js';
 import { prefs, setPref } from './store.js';
 import { url, initPreview, exitPreview, now } from './content.js';
 import { refreshCount } from './board-store.js';
-import { click, hum, audioCtx } from './sfx.js';
+import { click, audioCtx } from './sfx.js';
+import { startHaunt, stopHaunt } from './haunt.js';
 
 const NAV = [
   ['index.html#toc', 'สารบัญ', 'home'],
+  ['archive.html', 'ผีทั่วโลก', 'archive'],
   ['lab.html', 'SLUR Lab', 'lab'],
   ['board.html', 'กระดาน', 'board'],
   ['about.html', 'เกี่ยวกับ', 'about'],
@@ -26,11 +28,13 @@ function applyPrefs() {
   });
   document.querySelectorAll('[data-pref="motion"]').forEach((b) => { b.textContent = reduceMotion() ? 'ลดอยู่ → เปิดเต็ม' : 'เต็ม → ลด'; });
   document.querySelectorAll('[data-pref="typed"]').forEach((b) => b.setAttribute('aria-pressed', String(!!p.typed)));
+  document.querySelectorAll('[data-pref="scare"]').forEach((b) => { b.setAttribute('aria-pressed', String(!!p.scare)); b.textContent = p.scare ? 'เปิดอยู่ → ปิด' : 'ปิดอยู่ → เปิด'; });
 }
 
 function toggleSound() {
   const p = setPref('sound', !prefs().sound);
-  if (p.sound) { audioCtx(); click(); hum(true); } else hum(false);
+  if (p.sound) { audioCtx(); click(); startHaunt(document.body.dataset.sound || 'dorm'); } else stopHaunt();
+  document.querySelector('.sound-pill')?.remove();
   applyPrefs();
 }
 
@@ -52,6 +56,8 @@ function header(page) {
       el('div', { class: 'pref-row' }, el('span', {}, 'เสียงบรรยากาศ'), soundBtn('btn small')),
       el('div', { class: 'pref-row' }, el('span', {}, 'แอนิเมชัน'),
         el('button', { class: 'btn small', type: 'button', 'data-pref': 'motion', onclick: () => { setPref('motion', reduceMotion() ? 'full' : 'reduce'); location.reload(); } }, 'สลับ')),
+      el('div', { class: 'pref-row' }, el('span', {}, 'โหมดโหด (มีฉากตกใจ + เสียงดังกะทันหัน)'),
+        el('button', { class: 'btn small', type: 'button', 'data-pref': 'scare', 'aria-pressed': 'false', onclick: () => { setPref('scare', !prefs().scare); applyPrefs(); } }, 'สลับ')),
       el('div', { class: 'pref-row' }, el('span', {}, 'อ่านไดอารี่แบบตัวพิมพ์ (อ่านง่าย)'),
         el('button', { class: 'btn small', type: 'button', 'data-pref': 'typed', 'aria-pressed': 'false', onclick: () => { setPref('typed', !prefs().typed); applyPrefs(); } }, 'สลับ')),
       el('div', { class: 'pref-row' }, el('span', {}, 'ขนาดตัวอักษร'),
@@ -128,6 +134,15 @@ function signature() {
   step();
 }
 
+// invite the reader to turn on the haunted soundscape (sound always starts from a click)
+function soundPill() {
+  try { if (sessionStorage.getItem('slur.v1.pillGone')) return; } catch { /* ignore */ }
+  const pill = el('div', { class: 'sound-pill', role: 'region', 'aria-label': 'เปิดเสียงหลอน' },
+    el('button', { type: 'button', class: 'go', onclick: toggleSound }, el('span', { class: 'eq', 'aria-hidden': 'true' }, el('i'), el('i'), el('i')), '🎧 เปิดเสียงหลอน', el('small', {}, 'ใส่หูฟังจะหลอนกว่า')),
+    el('button', { type: 'button', class: 'x', 'aria-label': 'ไม่เปิดเสียง', onclick: () => { pill.remove(); try { sessionStorage.setItem('slur.v1.pillGone', '1'); } catch { /* ignore */ } } }, '✕'));
+  document.body.append(pill);
+}
+
 export async function boot(page, { scene = 'ambient' } = {}) {
   applyPrefs();
   const pv = await initPreview().catch(() => null);
@@ -144,9 +159,10 @@ export async function boot(page, { scene = 'ambient' } = {}) {
   refreshCount();
   eggs();
   initFx();
+  if (!prefs().sound) soundPill();
   if (prefs().sound) {
     // browsers need a gesture before audio can start
-    addEventListener('pointerdown', () => { audioCtx(); hum(true); }, { once: true });
+    addEventListener('pointerdown', () => { audioCtx(); startHaunt(document.body.dataset.sound || 'dorm'); }, { once: true });
   }
   const host = el('div', { id: 'bg3d', 'aria-hidden': 'true' });
   document.body.prepend(host);

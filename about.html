@@ -25,7 +25,7 @@
 </style>
 <script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js" } }</script>
 </head>
-<body>
+<body data-sound="house">
 <main id="main" class="page container narrow about">
   <p class="eyebrow">เกี่ยวกับ</p>
   <h1>SLUR กับสมุดห้อง 407</h1>
@@ -61,16 +61,24 @@
 </main>
 <script type="module">
   import { boot } from './js/core/boot.js';
-  import { evidence, url } from './js/core/content.js';
+  import { evidence, url, getJSON } from './js/core/content.js';
   import { el } from './js/core/ui.js';
   boot('about');
   const box = document.getElementById('credit-list');
-  evidence().then((ev) => {
+  Promise.all([evidence(), getJSON('content/stories/index.json').catch(() => [])]).then(([ev, stories]) => {
     const rows = Object.entries(ev).filter(([, e]) => e.type === 'photo').map(([id, e]) => el('div', { class: 'credit-row' },
       el('img', { src: url(e.thumb), alt: '' }),
       el('p', {}, el('strong', {}, e.caption), el('br'), 'ภาพต้นฉบับ: ', e.sourceTitle || id, ' โดย ', e.credit, el('br'),
         'สัญญาอนุญาต: ', e.licenseUrl ? el('a', { href: e.licenseUrl, target: '_blank', rel: 'noopener' }, e.license) : e.license,
         ' · ', el('a', { href: e.source, target: '_blank', rel: 'noopener' }, 'ที่มา'))));
+    // images used in the world ghost archive
+    const seen = new Set();
+    for (const s of stories) for (const im of Object.values(s.images || {})) {
+      if (seen.has(im.file)) continue; seen.add(im.file);
+      rows.push(el('div', { class: 'credit-row' }, el('img', { src: url(im.file), alt: '', loading: 'lazy' }),
+        el('p', {}, el('strong', {}, im.caption), ` (เรื่อง: ${s.title})`, el('br'), 'โดย ', im.credit, ' · สัญญาอนุญาต: ', im.license, ' · ',
+          el('a', { href: im.source, target: '_blank', rel: 'noopener' }, 'ที่มา'))));
+    }
     box.replaceChildren(...rows);
   }).catch(() => { box.replaceChildren(el('p', {}, 'โหลดรายชื่อเครดิตไม่ได้')); });
 </script>

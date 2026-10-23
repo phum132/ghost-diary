@@ -191,6 +191,21 @@ section { padding: 56px 0; }
 .ticker-track span::before { content: '●'; margin-right: 10px; color: var(--red); }
 @keyframes ticker { to { transform: translateX(-50%); } }
 
+/* sound invite */
+.sound-pill { position: fixed; left: 16px; bottom: 16px; z-index: 60; display: flex; align-items: stretch; border: 1px solid var(--line-strong); border-radius: 14px; background: rgba(14, 6, 7, .92); box-shadow: 0 10px 30px rgba(0, 0, 0, .6), 0 0 30px rgba(255, 59, 47, .15); animation: toast-in .5s ease-out 1.2s both; max-width: calc(100vw - 32px); }
+.sound-pill .go { display: grid; grid-template-columns: auto 1fr; column-gap: 10px; align-items: center; text-align: left; background: none; border: 0; padding: 10px 14px; cursor: pointer; color: var(--text); font-family: var(--f-hud); font-weight: 600; min-height: 48px; }
+.sound-pill .go small { grid-column: 2; font-weight: 400; color: var(--text-faint); font-size: .75rem; }
+.sound-pill .eq { grid-row: span 2; display: flex; gap: 2px; align-items: end; height: 18px; }
+.sound-pill .eq i { width: 3px; background: var(--red); animation: eq 1s ease-in-out infinite; height: 40%; }
+.sound-pill .eq i:nth-child(2) { animation-delay: .2s; } .sound-pill .eq i:nth-child(3) { animation-delay: .4s; }
+@keyframes eq { 50% { height: 100%; } }
+.sound-pill .x { background: none; border: 0; border-left: 1px solid var(--line); color: var(--text-faint); width: 44px; cursor: pointer; }
+@media (max-width: 900px) { .sound-pill { bottom: 84px; } }
+
+/* opt-in scare */
+.scare { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; background: #000; pointer-events: none; }
+.scare canvas { width: min(90vw, 90vh); height: min(90vw, 90vh); }
+
 /* reduced motion via pref switch */
 html.reduce-motion *, html.reduce-motion *::before, html.reduce-motion *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 

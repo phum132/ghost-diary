@@ -1,7 +1,7 @@
 // Site sound: one AudioContext, created only after the reader turns sound on. Everything is synthesized.
 import { prefs } from './store.js';
 
-let ctx, master, amb;
+let ctx, master;
 
 export function audioCtx() {
   if (!ctx) {
@@ -47,20 +47,6 @@ export function thump() {
   o.connect(g).connect(master); o.start(); o.stop(ctx.currentTime + 0.15);
 }
 
-export function hum(on_) {
-  if (!audioCtx()) return;
-  if (on_ && !amb) {
-    const s = ctx.createBufferSource(); s.buffer = noiseBuffer(4, true); s.loop = true;
-    const f = ctx.createBiquadFilter(); f.type = 'lowpass'; f.frequency.value = 300;
-    const g = ctx.createGain(); g.gain.setValueAtTime(0, ctx.currentTime); g.gain.linearRampToValueAtTime(0.09, ctx.currentTime + 1.2);
-    s.connect(f).connect(g).connect(master); s.start();
-    amb = { s, g };
-  } else if (!on_ && amb) {
-    const a = amb; amb = null;
-    a.g.gain.linearRampToValueAtTime(0, ctx.currentTime + 0.4);
-    setTimeout(() => a.s.stop(), 500);
-  }
-}
 
 document.addEventListener('visibilitychange', () => {
   if (!ctx) return;

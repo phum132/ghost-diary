@@ -15,24 +15,43 @@ export function parseFront(src) {
   return { meta, body };
 }
 
-const BLOCK = /^\[\[(photo|audio|lab|draw):([\w-]+)\]\]$/;
-const INLINE = /\[\[(note|uv|scratch):([^\]]*)\]\]|\[\[shaky\]\]([\s\S]*?)\[\[\/shaky\]\]|\*\*([^*]+)\*\*|\*([^*\n]+)\*/g;
+const BLOCK = /^\[\[(photo|audio|lab|draw|widget|img|scare|sound):([\w-]+)\]\]$/;
+const INLINE = /\[\[(note|uv|scratch):([^\]]*)\]\]|\[\[shaky\]\]([\s\S]*?)\[\[\/shaky\]\]|\*\*([^*]+)\*\*|\*([^*\n]+)\*|\[([^\][]+)\]\(([^)\s]+)\)/g;
+const LIST = /^(- |\d+\. )/;
 
 // hooks.block(type, id) -> Node ; hooks.note(phrase, question, tool, n) -> Node ; hooks.uv(text) -> Node
 export function render(body, hooks, idPrefix) {
   const frag = document.createDocumentFragment();
-  const blocks = body.replace(/\r\n/g, '\n').split(/\n{2,}/).map((b) => b.trim()).filter(Boolean);
+  // a list written straight under a paragraph (no blank line) still becomes its own block
+  const blocks = body.replace(/\r\n/g, '\n').split(/\n{2,}/).map((b) => b.trim()).filter(Boolean)
+    .flatMap((b) => {
+      if (b.startsWith('[[thread:')) return [b];
+      const groups = [];
+      for (const line of b.split('\n')) {
+        const isList = LIST.test(line);
+        const g = groups[groups.length - 1];
+        if (g && g.isList === isList) g.lines.push(line); else groups.push({ isList, lines: [line] });
+      }
+      return groups.map((g) => g.lines.join('\n'));
+    });
   let p = 0;
   let notes = 0;
   for (const b of blocks) {
     const bm = b.match(BLOCK);
     if (bm) { frag.append(hooks.block(bm[1], bm[2])); continue; }
+    if (b.startsWith('[[thread:') && hooks.thread) { frag.append(hooks.thread(b)); continue; }
     if (/^#{1,3} /.test(b)) {
       const lvl = b.match(/^#+/)[0].length + 1;
       frag.append(el('h' + Math.min(lvl, 4), { class: 'paper-h' }, inline(b.replace(/^#+ /, ''))));
       continue;
     }
     if (/^---+$/.test(b)) { frag.append(el('hr', { class: 'paper-hr' })); continue; }
+    if (/^> /.test(b)) { frag.append(el('blockquote', { class: 'quote' }, inline(b.replace(/^> ?/gm, '')))); continue; }
+    if (LIST.test(b)) {
+      const ordered = /^\d+\. /.test(b);
+      frag.append(el(ordered ? 'ol' : 'ul', { class: 'md-list' }, ...b.split('\n').map((li) => el('li', {}, inline(li.replace(LIST, ''))))));
+      continue;
+    }
     const para = el('p', { id: `${idPrefix}-p${++p}`, class: 'para' });
     para.append(inline(b));
     frag.append(para);
@@ -53,6 +72,11 @@ export function render(body, hooks, idPrefix) {
       else if (m[3] != null) f.append(hooks.shaky(m[3]));
       else if (m[4] != null) f.append(el('strong', {}, m[4]));
       else if (m[5] != null) f.append(el('em', {}, m[5]));
+      else if (m[6] != null) {
+        // only same-site relative links or https, never javascript:/data:
+        const href = /^https:\/\//.test(m[7]) || !/^[a-z][\w+.-]*:/i.test(m[7]) ? m[7] : '#';
+        f.append(el('a', { href, ...(href.startsWith('https:') ? { target: '_blank', rel: 'noopener' } : {}) }, m[6]));
+      }
       last = INLINE.lastIndex;
     }
     f.append(lines(text.slice(last)));

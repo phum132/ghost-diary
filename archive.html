@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ผีทั่วโลก — ไดอารี่คนเห็นผี</title>
+<meta name="description" content="คลังเรื่องผีที่มีคนเล่าจริงจากญี่ปุ่น จีน ไต้หวัน เกาหลี และฝั่งตะวันตก เล่าใหม่เป็นภาษาไทย พร้อมลูกเล่นให้เล่นตาม">
+<meta property="og:image" content="assets/img/og.png">
+<meta name="theme-color" content="#060304">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;800&family=Chakra+Petch:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/stories.css">
+<script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js" } }</script>
+</head>
+<body data-sound="house">
+<noscript><div class="noscript">คลังเรื่องผีต้องเปิด JavaScript</div></noscript>
+<main id="main" class="page">
+  <section class="arch-hero container">
+    <div class="arch-copy">
+      <p class="eyebrow" data-scramble>WORLD GHOST ARCHIVE</p>
+      <h1>เรื่องผีที่มีคนเล่า<span class="red">จริง</span><br>จากทั่วโลก</h1>
+      <p class="lead">กระทู้สดจาก 2channel ที่คนโพสต์ไม่เคยกลับมา ข่าวลือที่ทำให้ทั้งญี่ปุ่นต้องพาเด็กเดินกลับบ้านเป็นกลุ่ม วิดีโอครอบครัวที่มีเด็กชุดแดงเดินตามหลัง หมุนลูกโลก จิ้มหมุดแดง แล้วเลือกเรื่องที่กล้าอ่าน</p>
+      <div class="row">
+        <button class="btn primary" type="button" id="random">🎲 สุ่มเรื่องมาให้</button>
+        <a class="btn" href="#list">ดูทั้งหมด ↓</a>
+      </div>
+      <p class="faint small-note">ทุกเรื่องเล่าใหม่ด้วยภาษาของเรา ไม่ใช่การก๊อปโพสต์ต้นฉบับ มีลิงก์แหล่งที่มาท้ายเรื่อง · เรื่องคลาสสิกที่หมดลิขสิทธิ์แล้วแปลจากต้นฉบับ</p>
+    </div>
+    <div class="globe-wrap">
+      <div id="globe" class="globe" role="img" aria-label="ลูกโลกสามมิติ มีหมุดสีแดงตามประเทศที่มีเรื่องผี ใช้รายการด้านล่างแทนได้"></div>
+      <div class="globe-card hud" id="globe-card" hidden></div>
+      <p class="globe-hint faint">ลากเพื่อหมุน · แตะหมุดแดง</p>
+    </div>
+  </section>
+
+  <section class="container" id="list" aria-labelledby="list-title">
+    <div class="list-head">
+      <h2 id="list-title" class="reveal">คลังเรื่อง</h2>
+      <div class="chips" role="group" aria-label="กรองตามประเทศ" id="filters"></div>
+    </div>
+    <div class="story-grid" id="grid"><p class="faint">กำลังเปิดคลัง…</p></div>
+  </section>
+</main>
+<script type="module" src="js/pages/archive.js"></script>
+</body>
+</html>

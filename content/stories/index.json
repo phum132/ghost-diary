@@ -1,0 +1,403 @@
+[
+ {
+  "id": "kisaragi",
+  "title": "สถานีคิซาราางิ",
+  "orig": "きさらぎ駅 · Kisaragi Station",
+  "cc": "JP",
+  "place": "ฮามามัตสึ, ชิซุโอกะ",
+  "lat": 34.71,
+  "lon": 137.73,
+  "year": 2004,
+  "type": "thread",
+  "sound": "station",
+  "blurb": "ผู้หญิงคนหนึ่งโพสต์สดๆ ว่ารถไฟไม่ยอมจอด จนไปถึงสถานีที่ไม่มีในแผนที่ แล้วโพสต์สุดท้ายของเธอก็ไม่เคยมาถึง",
+  "sources": [
+   [
+    "Kisaragi Station — Wikipedia",
+    "https://en.wikipedia.org/wiki/Kisaragi_Station"
+   ],
+   [
+    "きさらぎ駅 — Wikipedia (ญี่ปุ่น)",
+    "https://ja.wikipedia.org/wiki/%E3%81%8D%E3%81%95%E3%82%89%E3%81%8E%E9%A7%85"
+   ]
+  ]
+ },
+ {
+  "id": "hasshaku",
+  "title": "ฮัสชาคุซามะ",
+  "orig": "八尺様 · Hasshaku-sama",
+  "cc": "JP",
+  "place": "ชนบทญี่ปุ่น",
+  "lat": 36.3,
+  "lon": 138.2,
+  "year": 2008,
+  "type": "thread",
+  "sound": "field",
+  "blurb": "ผู้หญิงสูง 2.4 เมตร หมวกขาวลอยอยู่เหนือรั้ว กับเสียง \"โปะ โปะ โปะ\" และคืนเดียวที่ห้ามเปิดประตูไม่ว่าใครจะเรียก",
+  "images": {
+   "jizo": {
+    "file": "assets/stories/jizo-row.jpg",
+    "w": 1600,
+    "h": 848,
+    "caption": "แถวรูปปั้นจิโซ ญี่ปุ่น",
+    "credit": "KimonBerlin",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Row_of_Jizo_statues_(4154475692).jpg",
+    "alt": "แถวรูปปั้นจิโซ"
+   }
+  },
+  "sources": [
+   [
+    "Hasshaku-sama — Wikipedia",
+    "https://en.wikipedia.org/wiki/Hasshaku-sama"
+   ]
+  ]
+ },
+ {
+  "id": "kunekune",
+  "title": "คุเนะคุเนะ",
+  "orig": "くねくね · Kunekune",
+  "cc": "JP",
+  "place": "ทุ่งนาญี่ปุ่น",
+  "lat": 37.9,
+  "lon": 139,
+  "year": 2003,
+  "type": "thread",
+  "sound": "field",
+  "blurb": "อะไรขาวๆ ดิ้นอยู่กลางทุ่งนาตอนเที่ยง ตำนานบอกว่าคนที่มองจนเข้าใจว่ามันคืออะไรจะเสียสติตลอดไป",
+  "images": {
+   "field": {
+    "file": "assets/stories/rice-field.jpg",
+    "w": 1600,
+    "h": 1064,
+    "caption": "ทุ่งนาตอนกลางวันในชนบทญี่ปุ่น",
+    "credit": "rumpleteaser from Nagoya, Japan",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Field_of_green_(6088657138).jpg",
+    "alt": "ทุ่งนาเขียวในชนบทญี่ปุ่น"
+   }
+  },
+  "sources": [
+   [
+    "Kunekune (urban legend) — Wikipedia",
+    "https://en.wikipedia.org/wiki/Kunekune_(urban_legend)"
+   ],
+   [
+    "Kunekune — yokai.jp",
+    "https://yokai.jp/en/yokai/kunekune"
+   ]
+  ]
+ },
+ {
+  "id": "kuchisake",
+  "title": "ผู้หญิงปากฉีก",
+  "orig": "口裂け女 · Kuchisake-onna",
+  "cc": "JP",
+  "place": "กิฟุ",
+  "lat": 35.42,
+  "lon": 136.76,
+  "year": 1979,
+  "type": "rumor",
+  "sound": "dorm",
+  "blurb": "ข่าวลือปี 1979 ที่ทำให้โรงเรียนทั่วญี่ปุ่นต้องเดินส่งเด็กกลับบ้าน กับคำถามที่ตอบยังไงก็ไม่รอด \"ฉันสวยไหม?\"",
+  "sources": [
+   [
+    "Kuchisake-onna — Wikipedia",
+    "https://en.wikipedia.org/wiki/Kuchisake-onna"
+   ]
+  ]
+ },
+ {
+  "id": "hoichi",
+  "title": "โฮอิจิไร้หู",
+  "orig": "耳なし芳一 · Mimi-nashi Hōichi",
+  "cc": "JP",
+  "place": "ชิโมโนเซกิ",
+  "lat": 33.96,
+  "lon": 130.95,
+  "year": 1904,
+  "type": "classic",
+  "sound": "temple",
+  "blurb": "นักดีดพิณตาบอดถูกเชิญไปบรรเลงให้ผีซามูไรฟังทุกคืน คืนสุดท้ายพระเขียนพระสูตรทั่วตัวเขา ยกเว้นที่เดียว",
+  "image": "assets/stories/hoichi-book.jpg",
+  "creditShort": "สาธารณสมบัติ",
+  "images": {
+   "hoichi": {
+    "file": "assets/stories/hoichi-book.jpg",
+    "w": 1600,
+    "h": 1158,
+    "caption": "ภาพประกอบเรื่องโฮอิจิไร้หู จากหนังสือภาพสมัยเอโดะ",
+    "credit": "ไม่ทราบผู้วาด",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Miminashi_houichi_gayuu_kidan_volume_2.jpg",
+    "alt": "ภาพวาดโบราณ โฮอิจิกำลังดีดพิณบิวะ"
+   },
+   "pagodas": {
+    "file": "assets/stories/akama-pagodas.jpg",
+    "w": 1600,
+    "h": 2134,
+    "caption": "เจดีย์หินของตระกูลเฮเกะที่ศาลเจ้าอากามะ ชิโมโนเซกิ",
+    "credit": "そらみみ (Soramimi)",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Suiten_Pagodas_in_Akama_Shrine.jpg",
+    "alt": "เจดีย์หินตระกูลเฮเกะ"
+   }
+  },
+  "sources": [
+   [
+    "Kwaidan โดย Lafcadio Hearn (Project Gutenberg)",
+    "https://www.gutenberg.org/ebooks/1210"
+   ],
+   [
+    "Hoichi the Earless — Wikipedia",
+    "https://en.wikipedia.org/wiki/Hoichi_the_Earless"
+   ]
+  ]
+ },
+ {
+  "id": "red-girl",
+  "title": "เด็กหญิงชุดแดง",
+  "orig": "紅衣小女孩 · The Little Girl in Red",
+  "cc": "TW",
+  "place": "ต้าเคิง, ไถจง",
+  "lat": 24.18,
+  "lon": 120.73,
+  "year": 1998,
+  "type": "case",
+  "sound": "forest",
+  "blurb": "เทปวิดีโอเดินป่าของครอบครัวหนึ่ง มีเด็กชุดแดงหน้าซีดเดินตามหลัง ทั้งที่วันนั้นไม่มีใครเห็นเธอเลย",
+  "image": "assets/stories/dakeng-trail.jpg",
+  "creditShort": "lienyuan lee (CC BY 3.0)",
+  "images": {
+   "trail": {
+    "file": "assets/stories/dakeng-trail.jpg",
+    "w": 1600,
+    "h": 1200,
+    "caption": "เส้นทางเดินป่าต้าเคิง ไถจง",
+    "credit": "lienyuan lee",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E5%9D%91%E7%99%BB%E5%B1%B1%E6%AD%A5%E9%81%93_Dakeng_Hiking_Trail_-_panoramio.jpg",
+    "alt": "ทางเดินป่าต้าเคิง"
+   }
+  },
+  "sources": [
+   [
+    "紅衣小女孩 都市傳說 — The News Lens",
+    "https://www.thenewslens.com/article/134514"
+   ],
+   [
+    "紅衣小女孩 — vocus",
+    "https://vocus.cc/article/6915e7acfd897800017f41df"
+   ]
+  ]
+ },
+ {
+  "id": "mosina",
+  "title": "มอซินอา",
+  "orig": "魔神仔 · Mô͘-sîn-á",
+  "cc": "TW",
+  "place": "ป่าเขาไต้หวัน",
+  "lat": 22.2,
+  "lon": 120.85,
+  "year": 2008,
+  "type": "folklore",
+  "sound": "forest",
+  "blurb": "ผีป่าที่ชวนคนไปกินข้าว คนที่หายแล้วถูกพบในปากมีแต่ดินกับใบไม้ และเคสหญิงชราที่หายไปห้าวันในปี 2008",
+  "image": "assets/stories/fog-village.jpg",
+  "creditShort": "Yu-Ching Chu (CC BY 2.0)",
+  "images": {
+   "fog": {
+    "file": "assets/stories/fog-village.jpg",
+    "w": 1600,
+    "h": 1070,
+    "caption": "หมู่บ้านบนเขาในไต้หวันตอนหมอกลง",
+    "credit": "Yu-Ching Chu",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Fenchihu_in_foggy_forest.jpg",
+    "alt": "หมู่บ้านบนเขาตอนหมอกลง"
+   }
+  },
+  "sources": [
+   [
+    "魔神仔 — 中央社 CNA",
+    "https://www.cna.com.tw/culture/article/20190420w002"
+   ],
+   [
+    "魔神仔 — 公視新聞網",
+    "https://news.pts.org.tw/article/369147"
+   ]
+  ]
+ },
+ {
+  "id": "painted-skin",
+  "title": "หนังวาด",
+  "orig": "畫皮 · Painted Skin (聊齋誌異)",
+  "cc": "CN",
+  "place": "ไท่หยวน",
+  "lat": 37.87,
+  "lon": 112.55,
+  "year": 1740,
+  "type": "classic",
+  "sound": "temple",
+  "blurb": "บัณฑิตพาหญิงงามมาซ่อนในบ้าน จนคืนหนึ่งแอบมองเข้าไปในห้อง แล้วเห็นปีศาจกำลังวาดหน้าลงบนหนังมนุษย์",
+  "image": "assets/stories/painted-skin.jpg",
+  "creditShort": "สาธารณสมบัติ",
+  "images": {
+   "painted": {
+    "file": "assets/stories/painted-skin.jpg",
+    "w": 1260,
+    "h": 1964,
+    "caption": "ภาพประกอบ \"หนังวาด\" จากฉบับพิมพ์เก่าของเหลียวจายจื้ออี้",
+    "credit": "ไม่ทราบผู้วาด",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Painted_Skin.jpg",
+    "alt": "ภาพประกอบเรื่องหนังวาด"
+   }
+  },
+  "sources": [
+   [
+    "Painted Skin — Wikipedia",
+    "https://en.wikipedia.org/wiki/Painted_Skin"
+   ],
+   [
+    "聊齋志異 畫皮 — Wikisource (ต้นฉบับภาษาจีน)",
+    "https://zh.wikisource.org/wiki/%E8%81%8A%E9%BD%8B%E5%BF%97%E7%95%B0/%E5%8D%B7%E4%B8%80/%E7%95%AB%E7%9A%AE"
+   ]
+  ]
+ },
+ {
+  "id": "chaonei",
+  "title": "บ้านเลขที่ 81",
+  "orig": "朝内81号 · Chaonei No. 81",
+  "cc": "CN",
+  "place": "ปักกิ่ง",
+  "lat": 39.92,
+  "lon": 116.42,
+  "year": 1949,
+  "type": "place",
+  "sound": "house",
+  "blurb": "คฤหาสน์อิฐแดงกลางปักกิ่ง ที่ว่ากันว่าภรรยาที่ถูกทิ้งในปี 1949 ยังยืนอยู่ที่หน้าต่างชั้นสอง",
+  "image": "assets/stories/chaonei-front.jpg",
+  "creditShort": "Daniel Case (CC BY-SA 3.0)",
+  "images": {
+   "chaonei": {
+    "file": "assets/stories/chaonei-front.jpg",
+    "w": 1600,
+    "h": 1066,
+    "caption": "ด้านหน้าบ้านเลขที่ 81 ถนนเฉาเน่ย ปักกิ่ง",
+    "credit": "Daniel Case",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Front_elevation,_81_Chaonei,_Beijing.jpg",
+    "alt": "ด้านหน้าบ้านเลขที่ 81"
+   },
+   "warning": {
+    "file": "assets/stories/chaonei-warning.jpg",
+    "w": 1600,
+    "h": 2876,
+    "caption": "ข้อความเตือนเรื่องผีที่มีคนเขียนไว้บนกำแพงบ้านเลขที่ 81",
+    "credit": "Daniel Case",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ghost_warning_on_Chaonei_81,_Beijing.jpg",
+    "alt": "ข้อความเตือนบนกำแพง"
+   }
+  },
+  "sources": [
+   [
+    "Chaonei No. 81 — Wikipedia",
+    "https://en.wikipedia.org/wiki/Chaonei_No._81"
+   ]
+  ]
+ },
+ {
+  "id": "bunshinsaba",
+  "title": "บุนชินซาบะ",
+  "orig": "분신사바 · Bunshinsaba",
+  "cc": "KR",
+  "place": "โรงเรียนในเกาหลี",
+  "lat": 37.57,
+  "lon": 126.98,
+  "year": 1990,
+  "type": "folklore",
+  "sound": "room",
+  "blurb": "พิธีเรียกวิญญาณด้วยปากกาแดงด้ามเดียวกับเพื่อน กฎข้อเดียวคือห้ามปล่อยมือ จนกว่าวิญญาณจะยอมกลับ",
+  "sources": [
+   [
+    "Bunshinsaba — USC Digital Folklore Archives",
+    "https://folklore.usc.edu/bunshinsaba/"
+   ],
+   [
+    "Bunshinsaba (2004 film) — Wikipedia",
+    "https://en.wikipedia.org/wiki/Bunshinsaba_(2004_film)"
+   ]
+  ]
+ },
+ {
+  "id": "gonjiam",
+  "title": "โรงพยาบาลคนจีอัม",
+  "orig": "곤지암 정신병원 · Gonjiam",
+  "cc": "KR",
+  "place": "ควังจู, คยองกี",
+  "lat": 37.39,
+  "lon": 127.29,
+  "year": 1996,
+  "type": "place",
+  "sound": "house",
+  "blurb": "ตึกร้างที่ CNN จัดให้เป็นหนึ่งในที่ชวนขนลุกที่สุดในโลก กับห้อง 402 ที่ไม่เคยมีใครเปิดได้",
+  "sources": [
+   [
+    "Gonjiam: Haunted Asylum — Wikipedia",
+    "https://en.wikipedia.org/wiki/Gonjiam:_Haunted_Asylum"
+   ],
+   [
+    "Gonjiam Psychiatric Hospital — Atlas Obscura",
+    "https://www.atlasobscura.com/places/gonjiam-psychiatric-hospital"
+   ],
+   [
+    "Korea Herald (2018)",
+    "https://www.koreaherald.com/view.php?ud=20180321000768"
+   ]
+  ]
+ },
+ {
+  "id": "black-eyed",
+  "title": "เด็กตาดำ",
+  "orig": "Black-Eyed Children",
+  "cc": "US",
+  "place": "แอบิลีน, เท็กซัส",
+  "lat": 32.45,
+  "lon": -99.73,
+  "year": 1996,
+  "type": "thread",
+  "sound": "rain",
+  "blurb": "เด็กสองคนเคาะกระจกรถขอติดรถไปโรงหนัง พูดสุภาพผิดปกติ จนกระทั่งเขาเห็นว่าตาของเด็กดำสนิททั้งลูก",
+  "sources": [
+   [
+    "Black-eyed children — Wikipedia",
+    "https://en.wikipedia.org/wiki/Black-eyed_children"
+   ],
+   [
+    "Skeptoid: Black Eyed Kids",
+    "https://skeptoid.com/episodes/4410"
+   ]
+  ]
+ },
+ {
+  "id": "enfield",
+  "title": "ผีแห่งเอนฟิลด์",
+  "orig": "The Enfield Poltergeist",
+  "cc": "GB",
+  "place": "เอนฟิลด์, ลอนดอน",
+  "lat": 51.65,
+  "lon": -0.06,
+  "year": 1977,
+  "type": "case",
+  "sound": "house",
+  "blurb": "สองปีในบ้านเลขที่ 284 ตู้เลื่อนเอง เด็กลอย และเสียงชายแก่ที่ออกมาจากปากเด็ก 11 ขวบ คดีที่กลายเป็น The Conjuring 2",
+  "sources": [
+   [
+    "Enfield poltergeist — Wikipedia",
+    "https://en.wikipedia.org/wiki/Enfield_poltergeist"
+   ]
+  ]
+ }
+]

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>เว็บบอร์ดผี — ไดอารี่คนเห็นผี</title>
+<meta name="description" content="กระทู้ผีดังจาก Pantip, 2channel, PTT, Reddit และเว็บบอร์ดเกาหลี เล่าใหม่เป็นภาษาไทยพร้อมลิงก์ต้นฉบับ และห้องให้คุณมาเล่าเรื่องที่เจอกับตัว">
+<meta property="og:image" content="assets/img/og.png">
+<meta name="theme-color" content="#060304">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;800&family=Chakra+Petch:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/webboard.css">
+</head>
+<body data-sound="dorm">
+<noscript><div class="noscript">เว็บบอร์ดต้องเปิด JavaScript</div></noscript>
+<main id="main" class="page container wb-page">
+  <header class="wb-head">
+    <p class="eyebrow" data-scramble>GHOST WEBBOARD</p>
+    <h1>เว็บบอร์ดผี</h1>
+    <p class="dim">กระทู้ผีที่คนทั้งโลกเคยอ่านแล้วนอนไม่หลับ เล่าใหม่เป็นภาษาไทยพร้อมลิงก์ไปกระทู้จริง และห้องให้คุณมาเล่าเรื่องที่เจอกับตัวเอง</p>
+  </header>
+  <div class="wb-tabs" role="tablist" aria-label="ส่วนของเว็บบอร์ด">
+    <button role="tab" id="tab-world" aria-controls="pane-world" type="button">💬 กระทู้ผีจากทั่วโลก</button>
+    <button role="tab" id="tab-ours" aria-controls="pane-ours" type="button">🕯️ ห้องเล่าเรื่องของเรา</button>
+  </div>
+  <section id="pane-world" role="tabpanel" aria-labelledby="tab-world">
+    <div class="chips" role="group" aria-label="กรองตามเว็บบอร์ด" id="boards"></div>
+    <div class="wb-table hud" id="threads"><p class="faint">กำลังโหลดกระทู้…</p></div>
+    <p class="faint wb-note">ทุกกระทู้เป็นการสรุปเล่าใหม่ด้วยภาษาของเรา ไม่ได้คัดลอกหรือแปลทั้งโพสต์ และไม่ได้ใช้รูปของเจ้าของกระทู้ อ่านฉบับเต็มได้ที่ลิงก์ต้นฉบับ</p>
+  </section>
+  <section id="pane-ours" role="tabpanel" aria-labelledby="tab-ours" hidden>
+    <div class="wb-rooms" id="rooms"></div>
+    <div class="hud wb-room">
+      <div class="wb-room-head">
+        <h2 id="room-title">ห้อง</h2>
+        <p class="faint" id="room-desc"></p>
+      </div>
+      <div id="room-box"><p class="faint">อ่านได้ทุกคน ถ้าจะพิมพ์ต้องล็อกอิน GitHub (ฟรี)</p></div>
+      <p class="faint wb-rules">กติกา: เล่าเรื่องที่เจอเองหรือคนใกล้ตัว ไม่ใส่ชื่อจริง ที่อยู่ หรือรูปของคนอื่น ไม่เอาเรื่องคนตายจริงมาล้อ อยากตั้งกระทู้ใหม่ยาวๆ <a href="https://github.com/phum132/ghost-diary/discussions/new?category=general" target="_blank" rel="noopener">ตั้งกระทู้ที่ GitHub ↗</a></p>
+    </div>
+  </section>
+</main>
+<script type="module" src="js/pages/webboard.js"></script>
+</body>
+</html>

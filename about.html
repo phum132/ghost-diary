@@ -22,6 +22,8 @@
   .credit-row { display: grid; grid-template-columns: 72px 1fr; gap: 12px; align-items: start; padding: 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); }
   .credit-row img { width: 72px; height: 54px; object-fit: cover; border-radius: 3px; }
   .credit-row p { margin: 0; font-size: .92rem; overflow-wrap: anywhere; }
+  .sound-credits { columns: 2 260px; font-size: .88rem; color: var(--text-dim); padding-left: 18px; }
+  .sound-credits li { break-inside: avoid; margin-bottom: 4px; overflow-wrap: anywhere; }
 </style>
 <script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js" } }</script>
 </head>
@@ -44,14 +46,17 @@
 
   <section aria-labelledby="safe">
     <h2 id="safe">ความปลอดภัย</h2>
-    <p class="dim">เว็บนี้ไม่มีภาพกระโดดหลอก ไม่มีเสียงกรีดร้อง ไม่มีไฟกะพริบถี่ เสียงทุกเสียงต้องกดเปิดเอง ถ้าต้องการลดการเคลื่อนไหว เปิดได้ที่เมนู ☰</p>
+    <p class="dim">ภาพผีโผล่และเสียงกรีดร้องมีเฉพาะใน "โหมดโหด" ที่ต้องกดเปิดเอง (ไม่เกินครั้งละหนึ่งภาพทุก 20 วินาที) เว็บนี้ไม่มีไฟกะพริบถี่ เสียงทุกเสียงต้องกดเปิดเอง ถ้าต้องการลดการเคลื่อนไหว เปิดได้ที่เมนู ☰</p>
     <p class="dim">เรื่องก๊าซคาร์บอนมอนอกไซด์ในไดอารี่เป็นอันตรายจริง: ถ้าคนในบ้านปวดหัวพร้อมกันและอาการดีขึ้นเมื่อออกไปข้างนอก ให้ออกไปที่โล่งแล้วโทร 1669</p>
   </section>
 
   <section aria-labelledby="credits">
     <h2 id="credits">เครดิตรูปและเสียง</h2>
-    <p class="dim">รูปถ่ายมาจาก Wikimedia Commons ใช้ตามสัญญาอนุญาตของแต่ละภาพ (นำมาปรับแสง สี และเพิ่มสัญญาณรบกวนให้ดูเหมือนถ่ายจากมือถือ ไม่ได้หมายความว่าเจ้าของภาพรับรองเว็บนี้) เสียงทั้งหมดสังเคราะห์ด้วยโค้ด เสียงพูดสร้างจากเสียงสังเคราะห์ภาษาไทยของ Windows</p>
+    <p class="dim">รูปถ่ายมาจาก Wikimedia Commons ใช้ตามสัญญาอนุญาตของแต่ละภาพ (นำมาปรับแสง สี และเพิ่มสัญญาณรบกวนให้ดูเหมือนถ่ายจากมือถือ ไม่ได้หมายความว่าเจ้าของภาพรับรองเว็บนี้)</p>
     <div class="credits" id="credit-list"><p class="faint">กำลังโหลดรายชื่อ…</p></div>
+    <h3>เสียงหลอน</h3>
+    <p class="dim">เสียงหลอนทั้งหมดเป็นเสียงจริงที่คนอัดไว้ ทั้งเสียงลม ฝน จิ้งหรีด ระฆังวัด พระสวด ประตู ฝีเท้า และเสียงกระซิบ จาก <a href="https://freesound.org" target="_blank" rel="noopener">Freesound</a> เลือกเฉพาะไฟล์ที่ปล่อยเป็นสาธารณสมบัติ (CC0) และอัปโหลดก่อนปี 2020 นำมาตัดความยาวและปรับความดังให้เท่ากัน ขอบคุณคนอัดเสียงทุกคนตามรายชื่อด้านล่าง ยกเว้นเสียง "ปป ปป" ของฮัสชาคุซามะที่ไม่มีใครอัดไว้ จึงยังทำด้วยโค้ด และเสียงพูดในไดอารี่ที่ใช้เสียงอ่านภาษาไทยของ Windows</p>
+    <ul class="sound-credits" id="sound-list"><li class="faint">กำลังโหลดรายชื่อ…</li></ul>
   </section>
 
   <section aria-labelledby="tech">
@@ -81,6 +86,12 @@
     }
     box.replaceChildren(...rows);
   }).catch(() => { box.replaceChildren(el('p', {}, 'โหลดรายชื่อเครดิตไม่ได้')); });
+  // real recordings used by the haunted soundscape
+  const sl = document.getElementById('sound-list');
+  getJSON('content/sounds.json').then((s) => {
+    sl.replaceChildren(...Object.values(s.sources).map((x) => el('li', {},
+      el('a', { href: x.page, target: '_blank', rel: 'noopener' }, x.title), ' โดย ', x.user, ' (CC0)')));
+  }).catch(() => { sl.replaceChildren(el('li', {}, 'โหลดรายชื่อเสียงไม่ได้')); });
 </script>
 </body>
 </html>

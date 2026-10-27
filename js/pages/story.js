@@ -9,8 +9,7 @@ import { reveals } from '../core/fx.js';
 import { cover } from '../stories/covers.js';
 import { mountWidget } from '../stories/widgets.js';
 
-const COUNTRIES = { JP: 'ญี่ปุ่น', CN: 'จีน', TW: 'ไต้หวัน', KR: 'เกาหลี', US: 'อเมริกา', GB: 'อังกฤษ' };
-const TYPES = { thread: 'กระทู้เน็ต', rumor: 'ข่าวลือจริง', case: 'เหตุการณ์จริง', folklore: 'ตำนานพื้นบ้าน', classic: 'วรรณกรรมคลาสสิก', place: 'สถานที่จริง' };
+import { COUNTRIES, TYPES } from '../stories/meta.js';
 const id = (new URLSearchParams(location.search).get('id') || '').replace(/[^\w-]/g, '');
 const root = document.getElementById('story-root');
 
@@ -33,7 +32,7 @@ async function main() {
 
   // ---- hero ----
   const bg = el('div', { class: 'bg' });
-  if (s.image) bg.append(el('img', { src: url(s.image), alt: '' })); else bg.append(cover(s.id));
+  if (s.image) bg.append(el('img', { src: url(s.image), alt: '' })); else bg.append(cover(s.id, 960, 540, s));
   const hero = el('header', { class: 'st-hero' }, bg,
     el('div', { class: 'copy' },
       el('p', { class: 'eyebrow' }, `${COUNTRIES[s.cc] || s.cc} · ${s.place} · ${s.year}`),
@@ -104,12 +103,23 @@ async function main() {
     el('h2', { id: 'src-t', class: 'eyebrow' }, 'ที่มาและอ่านต่อ'),
     el('p', { class: 'faint' }, s.type === 'classic'
       ? 'ต้นฉบับเป็นสาธารณสมบัติแล้ว ฉบับนี้แปลและเรียบเรียงเป็นภาษาไทยโดย SLUR'
+      : s.type === 'forum'
+      ? 'เรื่องนี้เป็นการสรุปเล่าใหม่ด้วยภาษาของเรา ไม่ใช่คำแปลทั้งกระทู้ และไม่ได้ใช้รูปของเจ้าของโพสต์ ใครอยากอ่านฉบับเต็มกดลิงก์ด้านล่างไปที่กระทู้จริงได้เลย'
       : 'เรื่องนี้เล่าใหม่ด้วยภาษาของเราจากข้อมูลที่มีคนบันทึกไว้ ไม่ใช่คำแปลของโพสต์ต้นฉบับ รายละเอียดบางส่วนแต่ละแหล่งเล่าไม่ตรงกัน'),
     el('ol', {}, ...(s.sources || []).map(([t, u]) => el('li', {}, el('a', { href: u, target: '_blank', rel: 'noopener' }, t)))));
-  root.replaceChildren(hero, tools, article, rating(s), sources, discussion(s), nav(list, i));
+  root.replaceChildren(...[hero, tools, s.type === 'forum' ? opCard(s) : null, article, rating(s), sources, discussion(s), nav(list, i)].filter(Boolean));
   reveals(root);
   watchSentinels(sentinels);
   const r = load('storyRead', {}); r[s.id] = Date.now(); save('storyRead', r);
+}
+
+function opCard(s) {
+  const link = s.thread || (s.sources || [])[0]?.[1];
+  return el('aside', { class: 'op-card hud', 'aria-label': 'ข้อมูลกระทู้ต้นฉบับ' },
+    el('span', { class: 'hud-label' }, 'กระทู้ต้นฉบับ'),
+    el('p', {}, el('b', {}, s.board || 'เว็บบอร์ด'), ` · โพสต์ราวปี ${s.year}`, s.orig.startsWith(s.board) ? '' : ` · ${s.orig}`),
+    el('p', { class: 'faint' }, 'ด้านล่างคือฉบับเล่าใหม่ ตัดให้กระชับ เปลี่ยนชื่อคนในเรื่อง และไม่ใช้รูปของเจ้าของกระทู้'),
+    link ? el('a', { class: 'btn small', href: link, target: '_blank', rel: 'noopener' }, s.thread ? 'อ่านกระทู้ต้นฉบับ ↗' : 'อ่านที่มาของกระทู้ ↗') : null);
 }
 
 function torchFollow() {

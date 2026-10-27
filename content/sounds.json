@@ -1,0 +1,364 @@
+{
+ "beds": {
+  "wind": "assets/sounds/bed-wind.mp3",
+  "wind2": "assets/sounds/bed-wind2.mp3",
+  "rain": "assets/sounds/bed-rain.mp3",
+  "crickets": "assets/sounds/bed-crickets.mp3",
+  "forest": "assets/sounds/bed-forest.mp3",
+  "cicada": "assets/sounds/bed-cicada.mp3",
+  "hum": "assets/sounds/bed-hum.mp3",
+  "clock": "assets/sounds/bed-clock.mp3",
+  "drone": "assets/sounds/bed-drone.mp3",
+  "drone2": "assets/sounds/bed-drone2.mp3",
+  "station": "assets/sounds/bed-station.mp3",
+  "chant": "assets/sounds/bed-chant.mp3"
+ },
+ "events": {
+  "creak": [
+   "assets/sounds/creak-0.mp3",
+   "assets/sounds/creak-1.mp3"
+  ],
+  "door": [
+   "assets/sounds/door-0.mp3",
+   "assets/sounds/door-1.mp3",
+   "assets/sounds/door-2.mp3"
+  ],
+  "knock": [
+   "assets/sounds/knock-0.mp3",
+   "assets/sounds/knock-1.mp3",
+   "assets/sounds/knock-2.mp3"
+  ],
+  "footsteps": [
+   "assets/sounds/footsteps-0.mp3",
+   "assets/sounds/footsteps-1.mp3"
+  ],
+  "drip": [
+   "assets/sounds/drip-0.mp3",
+   "assets/sounds/drip-1.mp3"
+  ],
+  "whisper": [
+   "assets/sounds/whisper-0.mp3",
+   "assets/sounds/whisper-1.mp3",
+   "assets/sounds/whisper-2.mp3"
+  ],
+  "breath": [
+   "assets/sounds/breath-0.mp3",
+   "assets/sounds/breath-1.mp3"
+  ],
+  "bell": [
+   "assets/sounds/bell-0.mp3"
+  ],
+  "templebell": [
+   "assets/sounds/templebell-0.mp3"
+  ],
+  "crossing": [
+   "assets/sounds/crossing-0.mp3",
+   "assets/sounds/crossing-1.mp3"
+  ],
+  "taiko": [
+   "assets/sounds/taiko-0.mp3",
+   "assets/sounds/taiko-1.mp3"
+  ],
+  "train": [
+   "assets/sounds/train-0.mp3",
+   "assets/sounds/train-1.mp3"
+  ],
+  "branch": [
+   "assets/sounds/branch-0.mp3",
+   "assets/sounds/branch-1.mp3"
+  ],
+  "childhum": [
+   "assets/sounds/childhum-0.mp3",
+   "assets/sounds/childhum-1.mp3",
+   "assets/sounds/childhum-2.mp3"
+  ],
+  "click": [
+   "assets/sounds/click-0.mp3"
+  ],
+  "owl": [
+   "assets/sounds/owl-0.mp3"
+  ],
+  "crow": [
+   "assets/sounds/crow-0.mp3"
+  ],
+  "dog": [
+   "assets/sounds/dog-0.mp3"
+  ],
+  "scream": [
+   "assets/sounds/scream-0.mp3",
+   "assets/sounds/scream-1.mp3"
+  ],
+  "thunder": [
+   "assets/sounds/thunder-0.mp3"
+  ],
+  "heartbeat": [
+   "assets/sounds/heartbeat-0.mp3"
+  ],
+  "laugh": [
+   "assets/sounds/laugh-0.mp3",
+   "assets/sounds/laugh-1.mp3"
+  ]
+ },
+ "sources": {
+  "22416": {
+   "title": "Four Heartbeats HQ_BeatSmith.wav",
+   "user": "Lunardrive",
+   "page": "https://freesound.org/s/22416/"
+  },
+  "66763": {
+   "title": "Raven.mp3",
+   "user": "Bidone",
+   "page": "https://freesound.org/s/66763/"
+  },
+  "69979": {
+   "title": "girlprettyvoicehumming.wav",
+   "user": "nayruslove",
+   "page": "https://freesound.org/s/69979/"
+  },
+  "73258": {
+   "title": "Bells at level crossing.wav",
+   "user": "jakobhandersen",
+   "page": "https://freesound.org/s/73258/"
+  },
+  "79086": {
+   "title": "AkasakaHieJinjaCicadas_4mics.wav",
+   "user": "markystar",
+   "page": "https://freesound.org/s/79086/"
+  },
+  "112557": {
+   "title": "Frightened Breathing.aiff",
+   "user": "nickrave",
+   "page": "https://freesound.org/s/112557/"
+  },
+  "115357": {
+   "title": "dog howling.wav",
+   "user": "simcotter",
+   "page": "https://freesound.org/s/115357/"
+  },
+  "117513": {
+   "title": "winter wind 01c.aiff",
+   "user": "klangfabrik",
+   "page": "https://freesound.org/s/117513/"
+  },
+  "119910": {
+   "title": "Fluorescent Lightbulb Hum.aif",
+   "user": "ftpalad",
+   "page": "https://freesound.org/s/119910/"
+  },
+  "119914": {
+   "title": "Footsteps on Wooden Floor.aif",
+   "user": "ftpalad",
+   "page": "https://freesound.org/s/119914/"
+  },
+  "121260": {
+   "title": "railway-crossing-bell.wav",
+   "user": "ondrosik",
+   "page": "https://freesound.org/s/121260/"
+  },
+  "131348": {
+   "title": "Bell at Daitokuji temple,kyoto.wav",
+   "user": "nahmandub",
+   "page": "https://freesound.org/s/131348/"
+  },
+  "155142": {
+   "title": "terror ambience.mp3",
+   "user": "burning-mir",
+   "page": "https://freesound.org/s/155142/"
+  },
+  "157873": {
+   "title": "Train upon us.wav",
+   "user": "markedit",
+   "page": "https://freesound.org/s/157873/"
+  },
+  "159509": {
+   "title": "Halloween - Graveyard At Night Howling Wind.mp3",
+   "user": "mistersherlock",
+   "page": "https://freesound.org/s/159509/"
+  },
+  "163383": {
+   "title": "Heavy Breathing",
+   "user": "Under7dude",
+   "page": "https://freesound.org/s/163383/"
+  },
+  "163644": {
+   "title": "Music Box Lullaby Clip",
+   "user": "AudioBitsAndBytes",
+   "page": "https://freesound.org/s/163644/"
+  },
+  "164472": {
+   "title": "Crack of branch 3.wav",
+   "user": "deleted_user_2104797",
+   "page": "https://freesound.org/s/164472/"
+  },
+  "169810": {
+   "title": "Female scream 01",
+   "user": "missozzy",
+   "page": "https://freesound.org/s/169810/"
+  },
+  "172104": {
+   "title": "Monks praying in temple at night.mp3",
+   "user": "nonzeroenfilade",
+   "page": "https://freesound.org/s/172104/"
+  },
+  "173932": {
+   "title": "Ding Ding Small Bell",
+   "user": "JohnsonBrandEditing",
+   "page": "https://freesound.org/s/173932/"
+  },
+  "175205": {
+   "title": "scary-creaking-knocking-wood.wav",
+   "user": "MinigunFiend",
+   "page": "https://freesound.org/s/175205/"
+  },
+  "175944": {
+   "title": "Ghost Whispers",
+   "user": "Litruv",
+   "page": "https://freesound.org/s/175944/"
+  },
+  "177958": {
+   "title": "Water Dripping in Cave.wav",
+   "user": "Sclolex",
+   "page": "https://freesound.org/s/177958/"
+  },
+  "194844": {
+   "title": "Kitano jinja shrine matsuri",
+   "user": "Ignat",
+   "page": "https://freesound.org/s/194844/"
+  },
+  "200273": {
+   "title": "Rain light 2 (rural)",
+   "user": "jmbphilmes",
+   "page": "https://freesound.org/s/200273/"
+  },
+  "210770": {
+   "title": "footsteps socks wood ",
+   "user": "Yuval",
+   "page": "https://freesound.org/s/210770/"
+  },
+  "219492": {
+   "title": "Door - Creak 02.wav",
+   "user": "JarredGibb",
+   "page": "https://freesound.org/s/219492/"
+  },
+  "219499": {
+   "title": "Door - Creak.wav",
+   "user": "JarredGibb",
+   "page": "https://freesound.org/s/219499/"
+  },
+  "234044": {
+   "title": "Creepy Whispering",
+   "user": "RaspberryTickle",
+   "page": "https://freesound.org/s/234044/"
+  },
+  "237210": {
+   "title": "Clock ticking",
+   "user": "Mortifreshman",
+   "page": "https://freesound.org/s/237210/"
+  },
+  "237327": {
+   "title": "Train passing by",
+   "user": "Soundkrampf",
+   "page": "https://freesound.org/s/237327/"
+  },
+  "240895": {
+   "title": "abandoned warehouse",
+   "user": "Kostrava",
+   "page": "https://freesound.org/s/240895/"
+  },
+  "241523": {
+   "title": "creepy distant laughter.mp3",
+   "user": "Reitanna",
+   "page": "https://freesound.org/s/241523/"
+  },
+  "244053": {
+   "title": "Thunder.ogg",
+   "user": "lennyboy",
+   "page": "https://freesound.org/s/244053/"
+  },
+  "263486": {
+   "title": "room tone empty train station quiet.wav",
+   "user": "lwdickens",
+   "page": "https://freesound.org/s/263486/"
+  },
+  "267931": {
+   "title": "Knock_the_door.wav",
+   "user": "anagar",
+   "page": "https://freesound.org/s/267931/"
+  },
+  "268500": {
+   "title": "door_knock.wav",
+   "user": "wjtaylor",
+   "page": "https://freesound.org/s/268500/"
+  },
+  "273870": {
+   "title": "water drop 1.aif",
+   "user": "beskhu",
+   "page": "https://freesound.org/s/273870/"
+  },
+  "274379": {
+   "title": "creepy music box.wav",
+   "user": "Modification1089",
+   "page": "https://freesound.org/s/274379/"
+  },
+  "278205": {
+   "title": "Switch Flip #1",
+   "user": "IanStarGem",
+   "page": "https://freesound.org/s/278205/"
+  },
+  "316797": {
+   "title": "Ghostly Whispers",
+   "user": "dimbark1",
+   "page": "https://freesound.org/s/316797/"
+  },
+  "319258": {
+   "title": "woman screaming of fear .wav",
+   "user": "The_Sound_Side",
+   "page": "https://freesound.org/s/319258/"
+  },
+  "326460": {
+   "title": "creaking floor OWI.wav",
+   "user": "miekyj",
+   "page": "https://freesound.org/s/326460/"
+  },
+  "328293": {
+   "title": "Forest at night, crickets, cicadas and insects in the Sian Ka'an Biosphere Reserve",
+   "user": "felix.blume",
+   "page": "https://freesound.org/s/328293/"
+  },
+  "333221": {
+   "title": "Night Crickets Back Porch.aiff",
+   "user": "hdfreema",
+   "page": "https://freesound.org/s/333221/"
+  },
+  "364699": {
+   "title": "Twig Snap",
+   "user": "alegemaate",
+   "page": "https://freesound.org/s/364699/"
+  },
+  "368385": {
+   "title": "Insane girl laughter",
+   "user": "mvVoiceActing",
+   "page": "https://freesound.org/s/368385/"
+  },
+  "393800": {
+   "title": "short creaks creek creaky door open close.wav",
+   "user": "HowardV",
+   "page": "https://freesound.org/s/393800/"
+  },
+  "465697": {
+   "title": "Owl Hoot",
+   "user": "Breviceps",
+   "page": "https://freesound.org/s/465697/"
+  },
+  "486140": {
+   "title": "taiko.wav",
+   "user": "Anuj_Shrestha1",
+   "page": "https://freesound.org/s/486140/"
+  },
+  "502507": {
+   "title": "Creaking Wood 4 Steps",
+   "user": "Rudmer_Rotteveel",
+   "page": "https://freesound.org/s/502507/"
+  }
+ }
+}

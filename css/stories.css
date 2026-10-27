@@ -105,3 +105,8 @@ body.torch .st-tools { z-index: 31; }
 .dialog-line { padding: 16px 12px 8px; font-family: var(--f-display); font-size: 1.4rem; }
 .wobble { animation: wobble 0.6s ease-in-out infinite; }
 @keyframes wobble { 0%, 100% { filter: none; transform: none; } 50% { filter: blur(1.5px) hue-rotate(20deg); transform: skewX(2deg) scale(1.01); } }
+
+.op-card { max-width: 72ch; margin: 18px auto 0; padding: 14px 18px; display: grid; gap: 6px; border-left: 3px solid var(--ember); }
+.op-card p { margin: 0; }
+.op-card .btn { justify-self: start; }
+#kinds { margin-bottom: 8px; }

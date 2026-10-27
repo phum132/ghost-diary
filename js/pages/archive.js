@@ -4,15 +4,16 @@ import { el, reduceMotion } from '../core/ui.js';
 import { load } from '../core/store.js';
 import { reveals, tilt } from '../core/fx.js';
 import { cover } from '../stories/covers.js';
+import { COUNTRIES, TYPES } from '../stories/meta.js';
 
 boot('archive');
-const COUNTRIES = { JP: 'ญี่ปุ่น', CN: 'จีน', TW: 'ไต้หวัน', KR: 'เกาหลี', US: 'อเมริกา', GB: 'อังกฤษ' };
-const TYPES = { thread: 'กระทู้เน็ต', rumor: 'ข่าวลือจริง', case: 'เหตุการณ์จริง', folklore: 'ตำนานพื้นบ้าน', classic: 'วรรณกรรมคลาสสิก', place: 'สถานที่จริง' };
 
 const grid = document.getElementById('grid');
 const filters = document.getElementById('filters');
 let all = [];
 let filter = 'all';
+let kind = new URLSearchParams(location.search).get('type') === 'forum' ? 'forum' : 'all';
+const kinds = document.getElementById('kinds');
 
 const storyUrl = (s) => url(`story.html?id=${s.id}`);
 
@@ -21,7 +22,7 @@ function card(s, i) {
   const read = load('storyRead', {})[s.id];
   const pic = el('div', { class: 'pic' }, el('span', { class: 'tag' }, `${COUNTRIES[s.cc] || s.cc} · ${TYPES[s.type] || s.type}`));
   if (s.image) pic.append(el('img', { src: url(s.image), alt: '', loading: 'lazy', decoding: 'async' }));
-  else pic.append(cover(s.id, 640, 360));
+  else pic.append(cover(s.id, 640, 360, s));
   return el('a', { class: 'hud story-card reveal', href: storyUrl(s), 'data-tilt': '', style: { '--d': `${(i % 3) * 100}ms` } },
     pic,
     el('div', { class: 'body' },
@@ -34,16 +35,24 @@ function card(s, i) {
 }
 
 function render() {
-  const list = all.filter((s) => filter === 'all' || s.cc === filter);
+  const list = all.filter((s) => (filter === 'all' || s.cc === filter) && (kind === 'all' || (kind === 'forum') === (s.type === 'forum')));
   grid.replaceChildren(...list.map(card));
   reveals(grid); tilt(grid);
+}
+
+function kindChips() {
+  const n = (k) => all.filter((s) => k === 'all' || (k === 'forum') === (s.type === 'forum')).length;
+  kinds.replaceChildren(...[['all', 'ทุกแบบ'], ['forum', '💬 กระทู้เว็บบอร์ด'], ['legend', '📜 ตำนานและเหตุการณ์']].map(([k, t]) => el('button', {
+    type: 'button', 'aria-pressed': String(k === kind),
+    onclick: () => { kind = k; kindChips(); render(); },
+  }, `${t} (${n(k)})`)));
 }
 
 function chips() {
   const ccs = ['all', ...new Set(all.map((s) => s.cc))];
   filters.replaceChildren(...ccs.map((cc) => el('button', {
     type: 'button', 'aria-pressed': String(cc === filter),
-    onclick: () => { filter = cc; chips(); render(); },
+    onclick: () => { filter = cc; chips(); kindChips(); render(); },
   }, cc === 'all' ? `ทั้งหมด (${all.length})` : `${COUNTRIES[cc]} (${all.filter((s) => s.cc === cc).length})`)));
 }
 

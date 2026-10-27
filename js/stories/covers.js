@@ -114,11 +114,57 @@ function sky(g, w, h, a, b) { const s = g.createLinearGradient(0, 0, 0, h); s.ad
 function glow(g, x, y, r, c) { const k = g.createRadialGradient(x, y, 0, x, y, r); k.addColorStop(0, c); k.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = k; g.fillRect(x - r, y - r, r * 2, r * 2); }
 function fog(g, w, h, r, c) { for (let i = 0; i < 18; i++) { g.fillStyle = c; g.beginPath(); g.ellipse(r() * w, h * (0.4 + r() * 0.4), w * 0.3, h * 0.06, 0, 0, Math.PI * 2); g.fill(); } }
 
-export function cover(id, w = 960, h = 540) {
+// a fake forum screenshot for retold web-board threads
+function forum(g, w, h, r, s) {
+  sky(g, w, h, '#0b0b0d', '#151419');
+  const pad = w * 0.06, top = h * 0.12;
+  g.fillStyle = '#1d1c22'; g.fillRect(pad, top, w - pad * 2, h * 0.76);
+  g.fillStyle = '#5a1414'; g.fillRect(pad, top, w - pad * 2, h * 0.09);
+  g.fillStyle = '#f2dede'; g.font = `700 ${h * 0.045}px "IBM Plex Mono", monospace`; g.textAlign = 'left';
+  g.fillText((s.board || 'FORUM').toUpperCase() + '  ›  ' + (s.year || ''), pad + 14, top + h * 0.06);
+  g.fillStyle = '#eee'; g.font = `700 ${h * 0.075}px "Noto Sans Thai", sans-serif`;
+  g.fillText(s.title.length > 22 ? s.title.slice(0, 21) + '…' : s.title, pad + 14, top + h * 0.2);
+  // reply rows with blurred lines of "text"
+  for (let k = 0; k < 4; k++) {
+    const y = top + h * (0.27 + k * 0.13);
+    g.fillStyle = k === 0 ? '#2a1a1c' : '#222127'; g.fillRect(pad + 10, y, w - pad * 2 - 20, h * 0.11);
+    g.fillStyle = '#444'; g.beginPath(); g.arc(pad + 34, y + h * 0.055, h * 0.03, 0, Math.PI * 2); g.fill();
+    g.fillStyle = '#8a8590'; g.font = `600 ${h * 0.03}px "IBM Plex Mono", monospace`;
+    g.fillText(k === 0 ? 'ความคิดเห็นที่ 0 · เจ้าของกระทู้' : `ความคิดเห็นที่ ${k + Math.floor(r() * 40)}`, pad + 60, y + h * 0.04);
+    g.fillStyle = 'rgba(200,200,210,.18)';
+    for (let l = 0; l < 2; l++) g.fillRect(pad + 60, y + h * (0.06 + l * 0.028), (w - pad * 2 - 100) * (0.5 + r() * 0.45), h * 0.012);
+  }
+  glow(g, w * (0.2 + r() * 0.6), h * 0.6, h * 0.5, 'rgba(160,20,20,.18)');
+}
+
+// moon, treeline and the original name for legends without a photo
+function legend(g, w, h, r, s) {
+  sky(g, w, h, '#05040a', '#2a0b0d');
+  const mx = w * (0.25 + r() * 0.5), my = h * 0.28;
+  glow(g, mx, my, h * 0.35, 'rgba(255,220,200,.18)');
+  g.fillStyle = '#d9cfc4'; g.beginPath(); g.arc(mx, my, h * 0.08, 0, Math.PI * 2); g.fill();
+  fog(g, w, h, r, 'rgba(180,160,170,.05)');
+  g.fillStyle = 'rgba(255,255,255,.07)'; g.textAlign = 'center';
+  const name = (s.orig || '').split(/[·(]/)[0].trim();
+  g.font = `700 ${Math.min(h * 0.22, (w * 1.4) / Math.max(4, name.length))}px "Noto Sans JP", "Noto Sans Thai", serif`;
+  g.fillText(name, w / 2, h * 0.62);
+  g.fillStyle = '#040203'; g.beginPath(); g.moveTo(0, h);
+  for (let x = 0; x <= w; x += w / 40) g.lineTo(x, h * (0.72 + Math.sin(x * 0.02 + r() * 2) * 0.03 - r() * 0.08));
+  g.lineTo(w, h); g.fill();
+  // a lone figure
+  const fx = w * (0.3 + r() * 0.4), fy = h * 0.8;
+  g.fillStyle = '#e8e2dc'; g.globalAlpha = 0.55;
+  g.beginPath(); g.ellipse(fx, fy - h * 0.12, h * 0.018, h * 0.024, 0, 0, Math.PI * 2); g.fill();
+  g.beginPath(); g.moveTo(fx - h * 0.025, fy); g.lineTo(fx - h * 0.012, fy - h * 0.1); g.lineTo(fx + h * 0.012, fy - h * 0.1); g.lineTo(fx + h * 0.025, fy); g.fill();
+  g.globalAlpha = 1;
+}
+
+export function cover(id, w = 960, h = 540, s = null) {
   const c = document.createElement('canvas'); c.width = w; c.height = h;
   c.setAttribute('role', 'img'); c.setAttribute('aria-label', 'ภาพประกอบวาดด้วยโค้ด');
   const g = c.getContext('2d');
-  (DRAW[id] || DRAW.default)(g, w, h, rng(id));
+  const draw = DRAW[id] || (s?.type === 'forum' ? forum : s ? legend : DRAW.default);
+  draw(g, w, h, rng(id), s);
   // film grain + vignette so the drawings feel like found footage
   const img = g.getImageData(0, 0, w, h), d = img.data, r = rng(id + 'grain');
   for (let i = 0; i < d.length; i += 4) { const n = (r() - 0.5) * 26; d[i] += n; d[i + 1] += n; d[i + 2] += n; }

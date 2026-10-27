@@ -1,4 +1,5 @@
-// Site sound: one AudioContext, created only after the reader turns sound on. Everything is synthesized.
+// Site sound: one AudioContext, created only after the reader turns sound on. UI clicks are synthesized;
+// the haunted soundscape (haunt.js) plays real recordings.
 import { prefs } from './store.js';
 
 let ctx, master;

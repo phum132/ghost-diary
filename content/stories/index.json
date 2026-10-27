@@ -399,5 +399,590 @@
     "https://en.wikipedia.org/wiki/Enfield_poltergeist"
    ]
   ]
+ },
+ {
+  "id": "mae-nak",
+  "title": "แม่นาคพระโขนง",
+  "orig": "แม่นาค · Mae Nak Phra Khanong",
+  "cc": "TH",
+  "place": "พระโขนง, กรุงเทพฯ",
+  "lat": 13.71,
+  "lon": 100.6,
+  "year": 1850,
+  "type": "folklore",
+  "sound": "temple",
+  "blurb": "เมียที่ตายทั้งกลมยังรอผัวกลับบ้าน จนคืนที่มะนาวหล่นลงใต้ถุน แล้วแขวนยาวลงไปเก็บ",
+  "image": "assets/stories/mae-nak-shrine.jpg",
+  "creditShort": "สาธารณสมบัติ",
+  "images": {
+   "shrine": {
+    "file": "assets/stories/mae-nak-shrine.jpg",
+    "w": 1158,
+    "h": 1644,
+    "caption": "ศาลแม่นาค วัดมหาบุศย์ กรุงเทพฯ",
+    "credit": "Ananda",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Shrinetomaenak.jpg",
+    "alt": "ศาลแม่นาค วัดมหาบุศย์"
+   }
+  },
+  "sources": [
+   [
+    "Mae Nak Phra Khanong — Wikipedia",
+    "https://en.wikipedia.org/wiki/Mae_Nak_Phra_Khanong"
+   ]
+  ]
+ },
+ {
+  "id": "la-llorona",
+  "title": "ลา โยโรนา หญิงร่ำไห้",
+  "orig": "La Llorona",
+  "cc": "MX",
+  "place": "เม็กซิโก",
+  "lat": 19.43,
+  "lon": -99.13,
+  "year": 1550,
+  "type": "folklore",
+  "sound": "forest",
+  "blurb": "หญิงชุดขาวเดินร้องไห้ริมแม่น้ำทุกคืน ตามหาลูกที่ตัวเองกดน้ำ ยิ่งเสียงเบาแปลว่าเธอยิ่งใกล้",
+  "sources": [
+   [
+    "La Llorona — Wikipedia",
+    "https://en.wikipedia.org/wiki/La_Llorona"
+   ]
+  ]
+ },
+ {
+  "id": "island-dolls",
+  "title": "เกาะตุ๊กตา",
+  "orig": "La Isla de las Muñecas",
+  "cc": "MX",
+  "place": "โซชิมิลโก, เม็กซิโกซิตี้",
+  "lat": 19.29,
+  "lon": -99.1,
+  "year": 2001,
+  "type": "place",
+  "sound": "forest",
+  "blurb": "ตุ๊กตาไร้ตาหลายร้อยตัวแขวนเต็มต้นไม้ เพื่อปลอบวิญญาณเด็กจมน้ำ จนเจ้าของเกาะจมน้ำตายตรงจุดเดียวกัน",
+  "image": "assets/stories/dolls-1.jpg",
+  "creditShort": "Esparta Palma (CC BY 2.0)",
+  "images": {
+   "dolls1": {
+    "file": "assets/stories/dolls-1.jpg",
+    "w": 1600,
+    "h": 1066,
+    "caption": "ตุ๊กตาบนเกาะตุ๊กตา โซชิมิลโก",
+    "credit": "Esparta Palma",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Xochimilco_Dolls%27_Island.jpg",
+    "alt": "ตุ๊กตาเก่าแขวนบนต้นไม้"
+   },
+   "dolls2": {
+    "file": "assets/stories/dolls-2.jpg",
+    "w": 1600,
+    "h": 1200,
+    "caption": "ตุ๊กตาแขวนบนต้นไม้ เกาะตุ๊กตา",
+    "credit": "Wa17gs",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Isla_de_las_mu%C3%B1ecas_1.jpg",
+    "alt": "ตุ๊กตาหลายตัวแขวนบนรั้วไม้"
+   }
+  },
+  "sources": [
+   [
+    "Island of the Dolls — Wikipedia",
+    "https://en.wikipedia.org/wiki/Island_of_the_Dolls"
+   ]
+  ]
+ },
+ {
+  "id": "bloody-mary",
+  "title": "บลัดดี้แมรี่",
+  "orig": "Bloody Mary",
+  "cc": "GB",
+  "place": "อังกฤษ / อเมริกา",
+  "lat": 52.5,
+  "lon": -1.9,
+  "year": 1970,
+  "type": "folklore",
+  "sound": "room",
+  "blurb": "ปิดไฟ จุดเทียน ยืนหน้ากระจก เรียกชื่อเธอสามครั้ง แล้วดูว่าใครจะโผล่มาข้างหลังคุณ",
+  "sources": [
+   [
+    "Bloody Mary (folklore) — Wikipedia",
+    "https://en.wikipedia.org/wiki/Bloody_Mary_(folklore)"
+   ],
+   [
+    "Strange-face-in-the-mirror illusion (Caputo, 2010)",
+    "https://journals.sagepub.com/doi/10.1068/p6634"
+   ]
+  ]
+ },
+ {
+  "id": "bell-witch",
+  "title": "แม่มดตระกูลเบลล์",
+  "orig": "The Bell Witch",
+  "cc": "US",
+  "place": "อดัมส์, เทนเนสซี",
+  "lat": 36.58,
+  "lon": -87.07,
+  "year": 1817,
+  "type": "case",
+  "sound": "house",
+  "blurb": "เสียงเคาะ เสียงพูด และคำสาปที่ประกาศว่าจะฆ่าพ่อบ้าน จนเขาตายจริงในปี 1820",
+  "sources": [
+   [
+    "Bell Witch — Wikipedia",
+    "https://en.wikipedia.org/wiki/Bell_Witch"
+   ]
+  ]
+ },
+ {
+  "id": "banshee",
+  "title": "แบนชี",
+  "orig": "Bean sí · Banshee",
+  "cc": "IE",
+  "place": "ไอร์แลนด์",
+  "lat": 53,
+  "lon": -8,
+  "year": 1700,
+  "type": "folklore",
+  "sound": "forest",
+  "blurb": "เสียงผู้หญิงหวีดร้องกลางดึก ไม่ได้มาฆ่าใคร แค่มาร่ำไห้ล่วงหน้าให้คนในบ้านที่กำลังจะตาย",
+  "image": "assets/stories/banshee-1862.jpg",
+  "creditShort": "R. Prowse, 1862 (สาธารณสมบัติ)",
+  "images": {
+   "print": {
+    "file": "assets/stories/banshee-1862.jpg",
+    "w": 1048,
+    "h": 840,
+    "caption": "ภาพพิมพ์ \"แบนชีปรากฏตัว\" (1862)",
+    "credit": "R. Prowse",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Banshee_Appears_(1862).jpg",
+    "alt": "ภาพพิมพ์แบนชีปรากฏตัวต่อชายสองคน"
+   }
+  },
+  "sources": [
+   [
+    "Banshee — Wikipedia",
+    "https://en.wikipedia.org/wiki/Banshee"
+   ]
+  ]
+ },
+ {
+  "id": "kuntilanak",
+  "title": "กุนติลานัก",
+  "orig": "Kuntilanak / Pontianak",
+  "cc": "ID",
+  "place": "อินโดนีเซีย-มาเลเซีย",
+  "lat": -0.03,
+  "lon": 109.33,
+  "year": 1771,
+  "type": "folklore",
+  "sound": "forest",
+  "blurb": "กลิ่นลีลาวดีกลางดึก กับเสียงหัวเราะที่ยิ่งเบาแปลว่าเธอยิ่งอยู่ใกล้ ผีผู้หญิงที่ตายตอนคลอดลูก",
+  "sources": [
+   [
+    "Pontianak (folklore) — Wikipedia",
+    "https://en.wikipedia.org/wiki/Pontianak_(folklore)"
+   ]
+  ]
+ },
+ {
+  "id": "manananggal",
+  "title": "มานานังกัล",
+  "orig": "Manananggal",
+  "cc": "PH",
+  "place": "ฟิลิปปินส์",
+  "lat": 11,
+  "lon": 122.5,
+  "year": 1600,
+  "type": "folklore",
+  "sound": "forest",
+  "blurb": "หญิงสาวสวยตอนกลางวัน ตกดึกฉีกตัวเองครึ่งท่อนแล้วงอกปีกค้างคาว บินไปเกาะหลังคาบ้านคนท้อง",
+  "sources": [
+   [
+    "Manananggal — Wikipedia",
+    "https://en.wikipedia.org/wiki/Manananggal"
+   ]
+  ]
+ },
+ {
+  "id": "balete",
+  "title": "หญิงชุดขาวถนนบาเลเต",
+  "orig": "White Lady of Balete Drive",
+  "cc": "PH",
+  "place": "เกซอนซิตี, มะนิลา",
+  "lat": 14.61,
+  "lon": 121.03,
+  "year": 1950,
+  "type": "place",
+  "sound": "rain",
+  "blurb": "แท็กซี่กะดึกจอดรับผู้หญิงชุดขาว พอเหลือบมองกระจกหลัง เบาะหลังว่างเปล่า",
+  "sources": [
+   [
+    "Balete Drive — Wikipedia",
+    "https://en.wikipedia.org/wiki/Balete_Drive"
+   ]
+  ]
+ },
+ {
+  "id": "jiangshi",
+  "title": "เจียงซือ ผีจีนกระโดด",
+  "orig": "僵尸 · Jiangshi",
+  "cc": "CN",
+  "place": "หูหนาน",
+  "lat": 28.2,
+  "lon": 109.7,
+  "year": 1700,
+  "type": "folklore",
+  "sound": "temple",
+  "blurb": "ศพแข็งแปะยันต์ที่ถูกต้อนกระโดดกลับบ้านเกิดตอนกลางคืน กลั้นหายใจไว้ ไม่อย่างนั้นมันจะได้กลิ่นคุณ",
+  "sources": [
+   [
+    "Jiangshi — Wikipedia",
+    "https://en.wikipedia.org/wiki/Jiangshi"
+   ]
+  ]
+ },
+ {
+  "id": "gumiho",
+  "title": "กูมิโฮ จิ้งจอกเก้าหาง",
+  "orig": "구미호 · Gumiho",
+  "cc": "KR",
+  "place": "คาบสมุทรเกาหลี",
+  "lat": 36.5,
+  "lon": 127.8,
+  "year": 1400,
+  "type": "folklore",
+  "sound": "forest",
+  "blurb": "หญิงงามที่ต้องกินตับคนเพื่อคงร่าง และนิทาน \"น้องสาวจิ้งจอก\" ที่ทำให้ทั้งหมู่บ้านหายไป",
+  "sources": [
+   [
+    "Kumiho — Wikipedia",
+    "https://en.wikipedia.org/wiki/Kumiho"
+   ]
+  ]
+ },
+ {
+  "id": "yuki-onna",
+  "title": "ยูกิอนนะ หญิงหิมะ",
+  "orig": "雪女 · Yuki-onna (Kwaidan)",
+  "cc": "JP",
+  "place": "แคว้นมูซาชิ",
+  "lat": 35.9,
+  "lon": 139.4,
+  "year": 1904,
+  "type": "classic",
+  "sound": "forest",
+  "blurb": "คืนพายุหิมะ หญิงชุดขาวไว้ชีวิตชายหนุ่มด้วยเงื่อนไขเดียว ห้ามเล่าให้ใครฟัง แม้แต่เมียของตัวเอง",
+  "sources": [
+   [
+    "Kwaidan โดย Lafcadio Hearn (Project Gutenberg)",
+    "https://www.gutenberg.org/ebooks/1210"
+   ],
+   [
+    "Yuki-onna — Wikipedia",
+    "https://en.wikipedia.org/wiki/Yuki-onna"
+   ]
+  ]
+ },
+ {
+  "id": "bhangarh",
+  "title": "ป้อมภานครห์ เมืองต้องสาป",
+  "orig": "Bhangarh Fort",
+  "cc": "IN",
+  "place": "ราชสถาน",
+  "lat": 27.1,
+  "lon": 76.29,
+  "year": 1600,
+  "type": "place",
+  "sound": "house",
+  "blurb": "เมืองร้างที่กรมโบราณคดีอินเดียติดป้ายห้ามเข้าหลังพระอาทิตย์ตก กับคำสาปของหมอผีที่หลงรักเจ้าหญิง",
+  "image": "assets/stories/bhangarh.jpg",
+  "creditShort": "BangDanC (CC0)",
+  "images": {
+   "fort": {
+    "file": "assets/stories/bhangarh.jpg",
+    "w": 1600,
+    "h": 1066,
+    "caption": "ซากป้อมภานครห์ ราชสถาน",
+    "credit": "BangDanC",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bhangarh_Fort_of_Rajasthan.jpg",
+    "alt": "ซากเมืองภานครห์"
+   }
+  },
+  "sources": [
+   [
+    "Bhangarh Fort — Wikipedia",
+    "https://en.wikipedia.org/wiki/Bhangarh_Fort"
+   ]
+  ]
+ },
+ {
+  "id": "min-min",
+  "title": "แสงมินมิน",
+  "orig": "Min Min Light",
+  "cc": "AU",
+  "place": "ควีนส์แลนด์",
+  "lat": -22.9,
+  "lon": 139.9,
+  "year": 1918,
+  "type": "case",
+  "sound": "field",
+  "blurb": "ลูกไฟลอยตามรถกลางทะเลทรายออสเตรเลียมาร้อยกว่าปี วิญญาณ หรือภาพลวงตาที่โค้งข้ามขอบฟ้า",
+  "sources": [
+   [
+    "Min Min light — Wikipedia",
+    "https://en.wikipedia.org/wiki/Min_Min_light"
+   ]
+  ]
+ },
+ {
+  "id": "f-icu",
+  "title": "เวรดึก ICU กับขาเด็กบนเตียงชั้นบน",
+  "orig": "Pantip · ประสบการณ์จริง",
+  "board": "Pantip",
+  "cc": "TH",
+  "place": "โรงพยาบาลแห่งหนึ่ง",
+  "lat": 13.76,
+  "lon": 100.5,
+  "year": 2024,
+  "sound": "room",
+  "blurb": "พยาบาลกะดึกฝันเห็นผู้ป่วยขอให้ช่วย ตื่นมาเห็นขาเด็กห้อยลงมาจากเตียงชั้นบนที่ไม่มีใครขึ้นไปได้",
+  "thread": "https://pantip.com/topic/42410869",
+  "sources": [
+   [
+    "กระทู้ต้นฉบับ (Pantip)",
+    "https://pantip.com/topic/42410869"
+   ]
+  ],
+  "type": "forum"
+ },
+ {
+  "id": "f-dorm301",
+  "title": "ห้อง 301 คืนแรก",
+  "orig": "Pantip · เรื่องผีในหอพัก",
+  "board": "Pantip",
+  "cc": "TH",
+  "place": "หอพักใกล้มหาวิทยาลัย",
+  "lat": 14,
+  "lon": 100.6,
+  "year": 2023,
+  "sound": "dorm",
+  "blurb": "ไฟดับเอง เสียงพึมพำตอนอาบน้ำ และเพื่อนใน Discord ได้ยินเสียงผู้หญิงหัวเราะในไมค์ ทั้งที่อยู่คนเดียว",
+  "thread": "https://pantip.com/topic/42162012",
+  "sources": [
+   [
+    "กระทู้ต้นฉบับ (Pantip)",
+    "https://pantip.com/topic/42162012"
+   ]
+  ],
+  "type": "forum"
+ },
+ {
+  "id": "f-bangna",
+  "title": "โรงแรมย่านบางนา 3 ครั้ง",
+  "orig": "Pantip · โรงแรมย่านบางนา…ใครว่าไม่มีผี",
+  "board": "Pantip",
+  "cc": "TH",
+  "place": "บางนา, กรุงเทพฯ",
+  "lat": 13.67,
+  "lon": 100.6,
+  "year": 2016,
+  "sound": "house",
+  "blurb": "ยายนั่งทับอก เด็กยิ้มที่ปลายเตียง และเสียงคนทะเลาะจากห้องข้างๆ ที่ไม่มีอยู่จริง",
+  "thread": "https://pantip.com/topic/35414688",
+  "sources": [
+   [
+    "กระทู้ต้นฉบับ (Pantip)",
+    "https://pantip.com/topic/35414688"
+   ]
+  ],
+  "type": "forum"
+ },
+ {
+  "id": "f-sarumu",
+  "title": "รถไฟลิงในฝัน",
+  "orig": "猿夢 · Saru Yume (2ch 洒落怖)",
+  "board": "2channel",
+  "cc": "JP",
+  "place": "ในความฝัน",
+  "lat": 34.7,
+  "lon": 135.5,
+  "year": 2000,
+  "sound": "station",
+  "blurb": "ฝันว่าขึ้นรถไฟเล็กที่มีลิงเป็นคนขับ ทุกสถานีมีคนในตู้หลังถูก \"จัดการ\" ทีละคน และคนต่อไปคือคุณ",
+  "sources": [
+   [
+    "猿夢 — ピクシブ百科事典",
+    "https://dic.pixiv.net/a/%E7%8C%BF%E5%A4%A2"
+   ],
+   [
+    "洒落怖 — ニコニコ大百科",
+    "https://dic.nicovideo.jp/a/%E6%B4%92%E8%90%BD%E6%80%96"
+   ]
+  ],
+  "type": "forum"
+ },
+ {
+  "id": "f-kyotou",
+  "title": "หมู่บ้านคเยาโต",
+  "orig": "巨頭オ · Kyotou-o (2ch, 2006)",
+  "board": "2channel",
+  "cc": "JP",
+  "place": "หมู่บ้านบนภูเขา",
+  "lat": 36,
+  "lon": 137,
+  "year": 2006,
+  "sound": "field",
+  "blurb": "ป้ายผุๆ เหลือแค่ \"巨頭オ\" และคนหัวโตที่โผล่จากพงหญ้า โยกหัวไปมาตามรถ",
+  "sources": [
+   [
+    "巨頭オ — KAI-YOU",
+    "https://kai-you.net/word/%E5%B7%A8%E9%A0%AD%E3%82%AA"
+   ],
+   [
+    "ゼロ年代のネット怪談「巨頭オ」映画化 — KAI-YOU",
+    "https://kai-you.net/article/96311"
+   ]
+  ],
+  "type": "forum"
+ },
+ {
+  "id": "f-kotoribako",
+  "title": "โคโตริบาโกะ",
+  "orig": "コトリバコ · Kotoribako (2ch, 2005)",
+  "board": "2channel",
+  "cc": "JP",
+  "place": "ชนบทญี่ปุ่นตะวันตก",
+  "lat": 35.4,
+  "lon": 133,
+  "year": 2005,
+  "sound": "temple",
+  "blurb": "กล่องไม้ปริศนาในโกดังศาลเจ้า ลูกชายนักบวชเห็นแล้วหน้าซีด เพราะชื่อของมันแปลว่า \"กล่องพรากเด็ก\"",
+  "sources": [
+   [
+    "コトリバコ — Moviewalker Press",
+    "https://press.moviewalker.jp/news/article/1162321/"
+   ],
+   [
+    "洒落怖 — ニコニコ大百科",
+    "https://dic.nicovideo.jp/a/%E6%B4%92%E8%90%BD%E6%80%96"
+   ]
+  ],
+  "type": "forum"
+ },
+ {
+  "id": "f-rooftop",
+  "title": "ผู้หญิงโบกมือบนหลังคา",
+  "orig": "屋頂揮手的女人 · PTT Marvel (2014)",
+  "board": "PTT",
+  "cc": "TW",
+  "place": "ตรอกบ้านในไต้หวัน",
+  "lat": 25.03,
+  "lon": 121.56,
+  "year": 2014,
+  "sound": "dorm",
+  "blurb": "เงาผู้หญิงผมยาวกระโดดข้ามหลังคาตามมาถึงบ้าน แล้วแม่ที่ยืนรอหน้าประตูก็โบกมือแบบเดียวกัน",
+  "thread": "https://www.ptt.cc/bbs/marvel/M.1412187476.A.AA8.html",
+  "sources": [
+   [
+    "โพสต์ต้นฉบับ (PTT Marvel)",
+    "https://www.ptt.cc/bbs/marvel/M.1412187476.A.AA8.html"
+   ]
+  ],
+  "type": "forum"
+ },
+ {
+  "id": "f-neighbor",
+  "title": "เพื่อนบ้านของเรา",
+  "orig": "我們的鄰居 · PTT Marvel (2008)",
+  "board": "PTT",
+  "cc": "TW",
+  "place": "คอนโดวิวแม่น้ำ",
+  "lat": 25.08,
+  "lon": 121.47,
+  "year": 2008,
+  "sound": "house",
+  "blurb": "เสียงเด็กวิ่งจากห้องข้างๆ ทุกคืน แต่เพื่อนบ้านไม่มีลูก และระหว่างสองห้องมีห้องที่ไม่ควรมีอยู่",
+  "thread": "https://www.ptt.cc/bbs/marvel/M.1230410172.A.3EC.html",
+  "sources": [
+   [
+    "โพสต์ต้นฉบับ (PTT Marvel)",
+    "https://www.ptt.cc/bbs/marvel/M.1230410172.A.3EC.html"
+   ]
+  ],
+  "type": "forum"
+ },
+ {
+  "id": "f-smiling",
+  "title": "ชายยิ้ม",
+  "orig": "The Smiling Man · r/LetsNotMeet (2012)",
+  "board": "Reddit",
+  "cc": "US",
+  "place": "เมืองใหญ่ในอเมริกา",
+  "lat": 40,
+  "lon": -83,
+  "year": 2012,
+  "sound": "dorm",
+  "blurb": "ตีสองบนถนนว่าง ผู้ชายเต้นรำเข้ามาหาพร้อมรอยยิ้มกว้างผิดปกติ แล้วหยุด หันกลับมา และเต้นตาม",
+  "sources": [
+   [
+    "The Smiling Man — TV Tropes",
+    "https://tvtropes.org/pmwiki/pmwiki.php/Literature/TheSmilingMan"
+   ],
+   [
+    "The Smiling Man — USC Digital Folklore Archives",
+    "https://folklore.usc.edu/the-smiling-man/"
+   ]
+  ],
+  "type": "forum"
+ },
+ {
+  "id": "f-kids",
+  "title": "สิ่งที่ลูกพูดแล้วพ่อแม่ขนลุก",
+  "orig": "r/AskReddit · creepiest things kids said",
+  "board": "Reddit",
+  "cc": "US",
+  "place": "Reddit",
+  "lat": 37.77,
+  "lon": -122.42,
+  "year": 2013,
+  "sound": "room",
+  "blurb": "กระทู้ที่พ่อแม่นับหมื่นมาเล่าว่าลูกเล็กพูดอะไรแล้วเย็นวาบ ตั้งแต่เพื่อนในจินตนาการที่เคยมีตัวตน ถึง \"ชีวิตก่อน\"",
+  "sources": [
+   [
+    "The Globe and Mail — parents share creepy things their kids say",
+    "https://beta.theglobeandmail.com/life/parenting/mothers-day/daddy-remember-that-time-we-died-parents-share-creepy-things-their-kids-say/article11605213/"
+   ],
+   [
+    "Bustle — Parents share the creepiest things their kids have said",
+    "https://www.bustle.com/p/parents-share-the-creepiest-things-their-kids-have-ever-said-to-them-67590"
+   ]
+  ],
+  "type": "forum"
+ },
+ {
+  "id": "f-wifi604",
+  "title": "ไวไฟห้อง 604",
+  "orig": "604호 와이파이 괴담 · Ruliweb/FMKorea",
+  "board": "เว็บบอร์ดเกาหลี",
+  "cc": "KR",
+  "place": "อพาร์ตเมนต์ในเกาหลี",
+  "lat": 37.45,
+  "lon": 126.7,
+  "year": 2020,
+  "sound": "house",
+  "blurb": "ชื่อไวไฟที่เหมือนประกาศนิติ \"ห้อง 604 ไม่มีคนอยู่\" กับความจริงว่ามันเริ่มจากมุกในช่องความเห็น",
+  "sources": [
+   [
+    "주간경향 — 604호 와이파이 괴담의 진짜 진실은 (2021)",
+    "https://weekly.khan.co.kr/article/202105281133161"
+   ]
+  ],
+  "type": "forum"
  }
 ]

@@ -1,10 +1,11 @@
 // Opt-in "โหมดโหด": a single, brief scare (one dark frame + a face + a sting). Never flashes repeatedly,
 // never runs unless the reader turned scare mode on themselves.
 import { prefs } from './store.js';
-import { sting } from './haunt.js';
+import { sting, primeSting } from './haunt.js';
 import { reduceMotion } from './ui.js';
 
 let last = 0;
+if (prefs().scare) primeSting();
 
 function face(c) {
   const g = c.getContext('2d');

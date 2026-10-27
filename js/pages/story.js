@@ -10,6 +10,7 @@ import { cover } from '../stories/covers.js';
 import { mountWidget } from '../stories/widgets.js';
 
 import { COUNTRIES, TYPES } from '../stories/meta.js';
+import { award, checkReading, has, BADGES } from '../core/badges.js';
 const id = (new URLSearchParams(location.search).get('id') || '').replace(/[^\w-]/g, '');
 const root = document.getElementById('story-root');
 
@@ -25,6 +26,8 @@ async function main() {
   const i = list.findIndex((s) => s.id === id);
   if (i < 0) throw new Error('no story ' + id);
   const s = list[i];
+  if (s.secret && !has(s.secret)) { locked(s); return; }
+  const open = list.filter((x) => !x.secret || has(x.secret));
   const { meta, body } = parseFront(await getText(`content/stories/${s.id}.md`));
   document.title = `${s.title} — ผีทั่วโลก`;
   document.body.dataset.sound = s.sound || 'house';
@@ -49,11 +52,11 @@ async function main() {
   const scareBtn = el('button', { type: 'button', 'aria-pressed': String(!!prefs().scare) }, '😱 โหมดโหด');
   const tools = el('div', { class: 'st-tools', role: 'toolbar', 'aria-label': 'เครื่องมืออ่าน' },
     el('a', { href: url('archive.html') }, '← คลัง'), torchBtn, soundBtn, scareBtn,
-    el('button', { type: 'button', onclick: () => randomStory(list) }, '🎲 สุ่ม'));
+    el('button', { type: 'button', onclick: () => randomStory(open) }, '🎲 สุ่ม'));
   torchBtn.addEventListener('click', () => {
     const on = document.body.classList.toggle('torch');
     torchBtn.setAttribute('aria-pressed', String(on));
-    if (on) toast('ขยับเมาส์หรือนิ้วเพื่อส่องอ่าน กดปุ่มอีกครั้งเพื่อเปิดไฟ');
+    if (on) { toast('ขยับเมาส์หรือนิ้วเพื่อส่องอ่าน กดปุ่มอีกครั้งเพื่อเปิดไฟ'); award('torch'); }
   });
   soundBtn.addEventListener('click', () => {
     document.querySelector('.header-tools [data-pref="sound"]')?.click();
@@ -63,6 +66,7 @@ async function main() {
     const on = !prefs().scare;
     if (on && !confirm('โหมดโหดจะมีภาพหน้าผีโผล่กะทันหันพร้อมเสียงดังในบางจังหวะ (ไม่มีไฟกะพริบ) เปิดไหม?')) return;
     setPref('scare', on);
+    if (on) award('scare');
     scareBtn.setAttribute('aria-pressed', String(on));
     announce(on ? 'เปิดโหมดโหดแล้ว' : 'ปิดโหมดโหดแล้ว');
   });
@@ -103,14 +107,28 @@ async function main() {
     el('h2', { id: 'src-t', class: 'eyebrow' }, 'ที่มาและอ่านต่อ'),
     el('p', { class: 'faint' }, s.type === 'classic'
       ? 'ต้นฉบับเป็นสาธารณสมบัติแล้ว ฉบับนี้แปลและเรียบเรียงเป็นภาษาไทยโดย SLUR'
+      : s.type === 'classified'
+      ? 'แฟ้มลับเป็นเรื่องแต่งที่เล่าต่อจากไดอารี่ของเว็บนี้ ตัวละครและหอพักไม่มีอยู่จริง'
       : s.type === 'forum'
       ? 'เรื่องนี้เป็นการสรุปเล่าใหม่ด้วยภาษาของเรา ไม่ใช่คำแปลทั้งกระทู้ และไม่ได้ใช้รูปของเจ้าของโพสต์ ใครอยากอ่านฉบับเต็มกดลิงก์ด้านล่างไปที่กระทู้จริงได้เลย'
       : 'เรื่องนี้เล่าใหม่ด้วยภาษาของเราจากข้อมูลที่มีคนบันทึกไว้ ไม่ใช่คำแปลของโพสต์ต้นฉบับ รายละเอียดบางส่วนแต่ละแหล่งเล่าไม่ตรงกัน'),
     el('ol', {}, ...(s.sources || []).map(([t, u]) => el('li', {}, el('a', { href: u, target: '_blank', rel: 'noopener' }, t)))));
-  root.replaceChildren(...[hero, tools, s.type === 'forum' ? opCard(s) : null, article, rating(s), sources, discussion(s), nav(list, i)].filter(Boolean));
+  root.replaceChildren(...[hero, tools, s.type === 'forum' ? opCard(s) : null, article, rating(s), sources, discussion(s), nav(open, open.indexOf(s))].filter(Boolean));
   reveals(root);
   watchSentinels(sentinels);
   const r = load('storyRead', {}); r[s.id] = Date.now(); save('storyRead', r);
+  checkReading(list);
+}
+
+// secret stories open only after the matching badge
+function locked(s) {
+  const b = BADGES.find((x) => x.id === s.secret);
+  document.title = 'เรื่องลับ — ผีทั่วโลก';
+  root.replaceChildren(el('section', { class: 'container st-locked' },
+    el('p', { class: 'eyebrow' }, 'CLASSIFIED · เรื่องลับ'),
+    el('h1', {}, '🔒 ประตูนี้ยังไม่เปิด'),
+    el('p', { class: 'dim' }, `ต้องได้เหรียญ "${b ? b.icon + ' ' + b.name : s.secret}" ก่อน: ${b ? b.how : ''}`),
+    el('a', { class: 'btn primary', href: url('archive.html#courage') }, 'ดูเหรียญของฉัน')));
 }
 
 function opCard(s) {
@@ -200,6 +218,7 @@ function rating(s) {
   const btns = [1, 2, 3, 4, 5].map((n) => el('button', { type: 'button', 'aria-label': `หลอน ${n} จาก 5`, class: n <= (ratings[s.id] || 0) ? 'on' : '' }, '💀'));
   btns.forEach((b, k) => b.addEventListener('click', () => {
     const r = load('fear', {}); r[s.id] = k + 1; save('fear', r);
+    getJSON('content/stories/index.json').then(checkReading);
     btns.forEach((x, j) => x.classList.toggle('on', j <= k));
     out.textContent = `คุณให้ ${k + 1}/5 · ${['เฉยๆ', 'ขนลุกนิดๆ', 'เริ่มไม่กล้าปิดไฟ', 'คืนนี้นอนไม่หลับ', 'ไม่อ่านแล้ว!'][k]}`;
     announce(out.textContent);

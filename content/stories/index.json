@@ -984,5 +984,905 @@
    ]
   ],
   "type": "forum"
+ },
+ {
+  "id": "f-pob-camp",
+  "title": "ผีปอบในค่ายลูกเสือ",
+  "orig": "Pantip · ผีปอบในค่ายลูกเสือ",
+  "board": "Pantip",
+  "cc": "TH",
+  "place": "ค่ายลูกเสือต่างจังหวัด",
+  "lat": 16.4,
+  "lon": 102.8,
+  "year": 2017,
+  "sound": "forest",
+  "blurb": "เสียงเรียกชื่อนอกเต็นท์ เด็กหญิงที่เผลอขาน ยายผมขาวนั่งทับท้องแล้วพูดว่า \"น่าอร่อยนะ\" และผ้ายันต์ที่ขยับตุบๆ บนปากขวดโหล",
+  "thread": "https://pantip.com/topic/36292779",
+  "sources": [
+   [
+    "กระทู้ต้นฉบับ (Pantip)",
+    "https://pantip.com/topic/36292779"
+   ]
+  ],
+  "type": "forum"
+ },
+ {
+  "id": "f-gown",
+  "title": "ชุดครุยที่ไม่ได้มีแค่ชุด",
+  "orig": "Pantip · ชุดครุย.. ที่ไม่ได้มีแค่ชุด",
+  "board": "Pantip",
+  "cc": "TH",
+  "place": "ร้านเช่าชุดครุย",
+  "lat": 13.85,
+  "lon": 100.57,
+  "year": 2014,
+  "sound": "room",
+  "blurb": "ชุดครุยเช่าแขวนหลังรถ กับหน้าผู้หญิงตาแดงในช่องอกเสื้อ และพนักงานร้านที่หน้าซีดเมื่อถูกถามว่า \"มีอะไรหรือเปล่า\"",
+  "thread": "https://pantip.com/topic/32660371",
+  "sources": [
+   [
+    "กระทู้ต้นฉบับ (Pantip)",
+    "https://pantip.com/topic/32660371"
+   ]
+  ],
+  "type": "forum"
+ },
+ {
+  "id": "f-kohkood",
+  "title": "เสียงพูดภาษาเขมรที่เกาะกูด",
+  "orig": "Pantip · ผีเขมรที่เกาะกูด",
+  "board": "Pantip",
+  "cc": "TH",
+  "place": "เกาะกูด, ตราด",
+  "lat": 11.65,
+  "lon": 102.56,
+  "year": 2014,
+  "sound": "house",
+  "blurb": "บังกะโลริมหาดใกล้ชายแดน เสียงครอบครัวพูดภาษาเขมรที่หน้าต่าง เด็กวิ่งทุบผนัง ไฟที่ไม่ยอมติด และศาลสองหลังที่เจอตอนเช้า",
+  "thread": "https://pantip.com/topic/31926641",
+  "sources": [
+   [
+    "กระทู้ต้นฉบับ (Pantip)",
+    "https://pantip.com/topic/31926641"
+   ]
+  ],
+  "type": "forum"
+ },
+ {
+  "id": "f-sleepy-hotel",
+  "title": "เจอจะๆ แต่ง่วงกว่า",
+  "orig": "Pantip · [ประเภทโรงแรม] เจอจะๆ ค่ะ",
+  "board": "Pantip",
+  "cc": "TH",
+  "place": "ใกล้ไบเทค บางนา",
+  "lat": 13.67,
+  "lon": 100.61,
+  "year": 2013,
+  "sound": "rain",
+  "blurb": "คืนฝนตกในโรงแรมเก่า ผู้หญิงสองคนในห้อง คนหนึ่งเปิดห้องน้ำ อีกคนนั่งก้มหน้า แต่เจ้าของกระทู้ง่วงจนหลับต่อ",
+  "thread": "https://pantip.com/topic/31558376",
+  "sources": [
+   [
+    "กระทู้ต้นฉบับ (Pantip)",
+    "https://pantip.com/topic/31558376"
+   ]
+  ],
+  "type": "forum"
+ },
+ {
+  "id": "f-pret",
+  "title": "เมื่อเพื่อนฉันเจอเปรต",
+  "orig": "Pantip · เมื่อเพื่อนฉันเจอ \"ผีเปรต\"",
+  "board": "Pantip",
+  "cc": "TH",
+  "place": "บ้านพักข้าราชการ, บุรีรัมย์",
+  "lat": 14.99,
+  "lon": 103.1,
+  "year": 2015,
+  "sound": "house",
+  "blurb": "พูดเล่นว่าอยากได้เลขจากผี คืนนั้นตอน 00:54 ร่างสูงผิดคนมายืนหันหน้าเข้าหาบ้านหลังประตูมุ้งลวด",
+  "thread": "https://pantip.com/topic/33775985",
+  "sources": [
+   [
+    "กระทู้ต้นฉบับ (Pantip)",
+    "https://pantip.com/topic/33775985"
+   ]
+  ],
+  "type": "forum"
+ },
+ {
+  "id": "phi-pop",
+  "title": "ผีปอบ",
+  "orig": "ผีปอบ · Phi Pop",
+  "cc": "TH",
+  "place": "อีสานและล้านนา",
+  "lat": 16.8,
+  "lon": 103.2,
+  "year": 1800,
+  "type": "folklore",
+  "sound": "field",
+  "blurb": "ผีที่อยู่ในตัวคนในหมู่บ้าน หิวเครื่องในไม่รู้จบ และความเชื่อที่เคยทำให้คนจริงๆ ถูกขับไล่ออกจากบ้าน",
+  "sources": [
+   [
+    "วิกิพีเดีย: ผีปอบ",
+    "https://th.wikipedia.org/wiki/%E0%B8%9C%E0%B8%B5%E0%B8%9B%E0%B8%AD%E0%B8%9A"
+   ],
+   [
+    "Phi Pop — Wikipedia",
+    "https://en.wikipedia.org/wiki/Phi_Pop"
+   ]
+  ]
+ },
+ {
+  "id": "krasue",
+  "title": "กระสือ",
+  "orig": "กระสือ · Krasue",
+  "cc": "TH",
+  "place": "ทั่วประเทศไทย",
+  "lat": 15.2,
+  "lon": 100.4,
+  "year": 1800,
+  "type": "folklore",
+  "sound": "field",
+  "blurb": "หัวผู้หญิงลอยได้พร้อมไส้ห้อยระย้า ไฟสีเขียวกลางทุ่ง กับหนามพุทราใต้ถุนบ้านคนที่เพิ่งคลอดลูก",
+  "sources": [
+   [
+    "วิกิพีเดีย: กระสือ",
+    "https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%B7%E0%B8%AD"
+   ],
+   [
+    "Krasue — Wikipedia",
+    "https://en.wikipedia.org/wiki/Krasue"
+   ]
+  ]
+ },
+ {
+  "id": "kongkoi",
+  "title": "ผีกองกอย",
+  "orig": "ผีกองกอย · Phi Kong Koi",
+  "cc": "TH",
+  "place": "ป่าลึกตะวันตก",
+  "lat": 15.3,
+  "lon": 98.9,
+  "year": 1900,
+  "type": "folklore",
+  "sound": "forest",
+  "blurb": "ผีป่าขาเดียวกระโดดได้ ร้อง \"กองกอย\" ในความมืด และดูดเลือดพรานจากนิ้วหัวแม่เท้าตอนหลับ",
+  "sources": [
+   [
+    "วิกิพีเดีย: ผีกองกอย",
+    "https://th.wikipedia.org/wiki/%E0%B8%9C%E0%B8%B5%E0%B8%81%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%A2"
+   ],
+   [
+    "วิกิพีเดีย: เพชรพระอุมา",
+    "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B8%E0%B8%A1%E0%B8%B2"
+   ]
+  ]
+ },
+ {
+  "id": "nang-tani",
+  "title": "นางตานี",
+  "orig": "นางตานี · Nang Tani",
+  "cc": "TH",
+  "place": "ภาคกลาง",
+  "lat": 14.4,
+  "lon": 100.1,
+  "year": 1850,
+  "type": "folklore",
+  "sound": "field",
+  "blurb": "หญิงสาวชุดเขียวใต้กอกล้วยตานีในคืนเดือนหงาย ด้ายแดงผูกต้นกล้วย และเหตุผลที่ไม่ควรปลูกกล้วยตานีใกล้บ้าน",
+  "sources": [
+   [
+    "วิกิพีเดีย: นางตานี",
+    "https://th.wikipedia.org/wiki/%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%95%E0%B8%B2%E0%B8%99%E0%B8%B5"
+   ],
+   [
+    "Nang Tani — Wikipedia",
+    "https://en.wikipedia.org/wiki/Nang_Tani"
+   ]
+  ]
+ },
+ {
+  "id": "nang-takhian",
+  "title": "นางตะเคียน",
+  "orig": "นางตะเคียน · Nang Takhian",
+  "cc": "TH",
+  "place": "ป่าและริมน้ำทั่วไทย",
+  "lat": 14.9,
+  "lon": 101.5,
+  "year": 1850,
+  "type": "folklore",
+  "sound": "forest",
+  "blurb": "นางไม้ในต้นตะเคียนที่ตามเนื้อไม้ไปทุกที่ ทั้งเรือ ทั้งเสาบ้าน จนช่างไม้รุ่นเก่าไม่ยอมเอาไม้ตะเคียนเข้าบ้าน",
+  "sources": [
+   [
+    "วิกิพีเดีย: นางตะเคียน",
+    "https://th.wikipedia.org/wiki/%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%95%E0%B8%B0%E0%B9%80%E0%B8%84%E0%B8%B5%E0%B8%A2%E0%B8%99"
+   ],
+   [
+    "Nang Takian — Wikipedia",
+    "https://en.wikipedia.org/wiki/Nang_Takian"
+   ]
+  ]
+ },
+ {
+  "id": "phi-phong",
+  "title": "ผีโพง",
+  "orig": "ผีโพง · Phi Phong",
+  "cc": "TH",
+  "place": "ล้านนา",
+  "lat": 18.8,
+  "lon": 99,
+  "year": 1850,
+  "type": "folklore",
+  "sound": "field",
+  "blurb": "คนที่เลี้ยงว่านผิดวิธีจนกลายเป็นผี แสงเขียวเรืองออกจากจมูกตอนดึก แล้วออกหาของดิบคาวกิน",
+  "sources": [
+   [
+    "วิกิพีเดีย: ผีโพง",
+    "https://th.wikipedia.org/wiki/%E0%B8%9C%E0%B8%B5%E0%B9%82%E0%B8%9E%E0%B8%87"
+   ]
+  ]
+ },
+ {
+  "id": "krahang",
+  "title": "ผีกระหัง",
+  "orig": "ผีกระหัง · Krahang",
+  "cc": "TH",
+  "place": "ภาคกลางและอีสาน",
+  "lat": 15.7,
+  "lon": 101,
+  "year": 1850,
+  "type": "folklore",
+  "sound": "field",
+  "blurb": "ผีผู้ชายคู่ของกระสือ เอากระด้งมาเป็นปีก เอาสากมาเป็นขา แล้วกระพือบินผ่านหลังคาบ้านในคืนเดือนมืด",
+  "sources": [
+   [
+    "วิกิพีเดีย: กระหัง",
+    "https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%AB%E0%B8%B1%E0%B8%87"
+   ],
+   [
+    "Krahang — Wikipedia",
+    "https://en.wikipedia.org/wiki/Krahang"
+   ]
+  ]
+ },
+ {
+  "id": "pret",
+  "title": "เปรต",
+  "orig": "เปรต · Pret (Preta)",
+  "cc": "TH",
+  "place": "วัดสุทัศน์, กรุงเทพฯ",
+  "lat": 13.75,
+  "lon": 100.5,
+  "year": 1850,
+  "type": "folklore",
+  "sound": "temple",
+  "blurb": "สูงเท่าต้นตาล ปากเท่ารูเข็ม หิวตลอดกาล สำนวน \"เปรตวัดสุทัศน์\" และเหตุผลที่เปรตมาหาญาติในวันสารทไทย",
+  "sources": [
+   [
+    "วิกิพีเดีย: เปรต",
+    "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%9B%E0%B8%A3%E0%B8%95"
+   ],
+   [
+    "Preta — Wikipedia",
+    "https://en.wikipedia.org/wiki/Preta"
+   ]
+  ]
+ },
+ {
+  "id": "phi-phrai",
+  "title": "ผีพราย",
+  "orig": "ผีพราย · Phi Phrai",
+  "cc": "TH",
+  "place": "แม่น้ำและท่าน้ำ",
+  "lat": 14.35,
+  "lon": 100.57,
+  "year": 1850,
+  "type": "folklore",
+  "sound": "rain",
+  "blurb": "พรายน้ำที่ดึงขาคนว่ายน้ำ พรายบริวารของหมอผี และน้ำมันพรายไสยศาสตร์ที่มืดที่สุดในความเชื่อไทย",
+  "sources": [
+   [
+    "วิกิพีเดีย: พราย",
+    "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%A2"
+   ]
+  ]
+ },
+ {
+  "id": "kuman-thong",
+  "title": "กุมารทอง",
+  "orig": "กุมารทอง · Kuman Thong",
+  "cc": "TH",
+  "place": "สุพรรณบุรี (ขุนช้างขุนแผน)",
+  "lat": 14.47,
+  "lon": 100.12,
+  "year": 1600,
+  "type": "folklore",
+  "sound": "house",
+  "blurb": "วิญญาณเด็กจากเสภาขุนช้างขุนแผน รูปปั้นทองที่ต้องเลี้ยงด้วยน้ำแดงและของเล่น จนถึงกระแสตุ๊กตาลูกเทพปี 2016",
+  "sources": [
+   [
+    "วิกิพีเดีย: กุมารทอง",
+    "https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%B8%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%AD%E0%B8%87"
+   ],
+   [
+    "Kuman Thong — Wikipedia",
+    "https://en.wikipedia.org/wiki/Kuman_Thong"
+   ],
+   [
+    "วิกิพีเดีย: ขุนช้างขุนแผน",
+    "https://th.wikipedia.org/wiki/%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B9%81%E0%B8%9C%E0%B8%99"
+   ]
+  ]
+ },
+ {
+  "id": "secret-room",
+  "title": "กระดาษแผ่นที่สี่ของพี่ฝน",
+  "orig": "แฟ้มลับ · CASE 407",
+  "cc": "TH",
+  "place": "หอพักศรีวิไล ห้อง 407",
+  "lat": 13.83,
+  "lon": 100.57,
+  "year": 2019,
+  "type": "classified",
+  "sound": "room",
+  "secret": "read10",
+  "blurb": "แผ่นที่พี่ฝนไม่กล้าทิ้งไว้ในห้อง บันทึกสี่คืนสุดท้ายก่อนเข้าโรงพยาบาล และประโยคที่เรายังตอบไม่ได้",
+  "sources": [
+   [
+    "ไดอารี่: ปิดคดี",
+    "entry.html?id=014"
+   ]
+  ]
+ },
+ {
+  "id": "secret-3am",
+  "title": "สมุดเวรยาม 03:00–03:59",
+  "orig": "แฟ้มลับ · หอพักศรีวิไล",
+  "cc": "TH",
+  "place": "หอพักศรีวิไล",
+  "lat": 13.83,
+  "lon": 100.57,
+  "year": 2018,
+  "type": "classified",
+  "sound": "dorm",
+  "secret": "3am",
+  "blurb": "สมุดลงเวรของยามกะดึกคนก่อน ทุกบรรทัดแปลกๆ เขียนไว้ระหว่างตีสามถึงตีสี่ และมีบรรทัดเดียวที่ต้นอธิบายไม่ได้",
+  "sources": [
+   [
+    "ไดอารี่: ชั้นสาม",
+    "entry.html?id=012"
+   ]
+  ]
+ },
+ {
+  "id": "slender-man",
+  "title": "สเลนเดอร์แมน",
+  "orig": "Slender Man · Something Awful (2009)",
+  "cc": "US",
+  "place": "อินเทอร์เน็ต",
+  "lat": 39,
+  "lon": -96,
+  "year": 2009,
+  "type": "thread",
+  "sound": "forest",
+  "blurb": "ชายไร้หน้าตัวสูงในชุดสูทดำ เกิดจากการประกวดตัดต่อรูปผีบนเว็บบอร์ด แล้วถูกทั้งเน็ตช่วยกันเขียนจนกลายเป็นตำนาน",
+  "sources": [
+   [
+    "Slender Man — Wikipedia",
+    "https://en.wikipedia.org/wiki/Slender_Man"
+   ]
+  ]
+ },
+ {
+  "id": "ted-caver",
+  "title": "เท็ดนักสำรวจถ้ำ",
+  "orig": "Ted the Caver (2001)",
+  "cc": "US",
+  "place": "ถ้ำแห่งหนึ่งในอเมริกา",
+  "lat": 35,
+  "lon": -86,
+  "year": 2001,
+  "type": "thread",
+  "sound": "room",
+  "blurb": "บันทึกเว็บส่วนตัวของนักสำรวจถ้ำที่สกัดหินขยายช่องลมทีละนิด ฝันร้ายทุกคืน แล้วการอัปเดตก็หยุดลง",
+  "sources": [
+   [
+    "Ted the Caver — Wikipedia",
+    "https://en.wikipedia.org/wiki/Ted_the_Caver"
+   ]
+  ]
+ },
+ {
+  "id": "hitori-kakurenbo",
+  "title": "ซ่อนแอบคนเดียว",
+  "orig": "ひとりかくれんぼ · Hitori Kakurenbo (2ch)",
+  "cc": "JP",
+  "place": "2channel",
+  "lat": 35.68,
+  "lon": 139.69,
+  "year": 2006,
+  "type": "thread",
+  "sound": "room",
+  "blurb": "พิธีเล่นซ่อนแอบกับตุ๊กตาใส่ข้าวตอนตีสาม ที่คนในเว็บบอร์ดแห่ไปลองแล้วรายงานสด ทีวีเปลี่ยนช่องเอง และบางคนก็หายไปกลางประโยค",
+  "sources": [
+   [
+    "ひとりかくれんぼ — Wikipedia (ญี่ปุ่น)",
+    "https://ja.wikipedia.org/wiki/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%8B%E3%81%8F%E3%82%8C%E3%82%93%E3%81%BC"
+   ]
+  ]
+ },
+ {
+  "id": "teke-teke",
+  "title": "เทเกะเทเกะ",
+  "orig": "テケテケ · Teke Teke",
+  "cc": "JP",
+  "place": "ทางรถไฟในญี่ปุ่น",
+  "lat": 35,
+  "lon": 135.76,
+  "year": 1980,
+  "type": "rumor",
+  "sound": "station",
+  "blurb": "เด็กสาวที่ถูกรถไฟทับจนเหลือครึ่งตัว คืบตามมาด้วยศอกเสียง \"เทะเกะ เทะเกะ\" เร็วกว่าคนวิ่ง",
+  "sources": [
+   [
+    "Teke Teke — Wikipedia",
+    "https://en.wikipedia.org/wiki/Teke_Teke"
+   ]
+  ]
+ },
+ {
+  "id": "hanako",
+  "title": "ฮานาโกะซังในห้องน้ำ",
+  "orig": "トイレの花子さん · Hanako-san",
+  "cc": "JP",
+  "place": "โรงเรียนทั่วญี่ปุ่น",
+  "lat": 34.69,
+  "lon": 135.5,
+  "year": 1950,
+  "type": "rumor",
+  "sound": "dorm",
+  "blurb": "ห้องน้ำหญิงชั้นสาม ห้องที่สาม เคาะสามครั้งแล้วถามว่า \"ฮานาโกะซัง อยู่ไหมคะ\" ถ้ามีเสียงตอบว่า \"ค่ะ\" ก็ไม่ควรรอดู",
+  "sources": [
+   [
+    "Hanako-san — Wikipedia",
+    "https://en.wikipedia.org/wiki/Hanako-san"
+   ]
+  ]
+ },
+ {
+  "id": "okiku",
+  "title": "ตุ๊กตาโอคิคุ ผมยาวได้",
+  "orig": "お菊人形 · Okiku doll",
+  "cc": "JP",
+  "place": "วัดมันเนนจิ, อิวามิซาวะ",
+  "lat": 43.2,
+  "lon": 141.76,
+  "year": 1918,
+  "type": "place",
+  "sound": "temple",
+  "blurb": "ตุ๊กตาของเด็กหญิงที่จากไปตั้งแต่ยังเล็ก ผมที่เคยสั้นเสมอติ่งหูค่อยๆ ยาวลงมา จนพระที่วัดต้องคอยตัดให้",
+  "sources": [
+   [
+    "お菊人形 — Wikipedia (ญี่ปุ่น)",
+    "https://ja.wikipedia.org/wiki/%E3%81%8A%E8%8F%8A%E4%BA%BA%E5%BD%A2"
+   ]
+  ]
+ },
+ {
+  "id": "bus-375",
+  "title": "รถเมล์สาย 375 เที่ยวสุดท้าย",
+  "orig": "375路公交车 · Beijing Bus 375",
+  "cc": "CN",
+  "place": "ปักกิ่ง",
+  "lat": 39.99,
+  "lon": 116.27,
+  "year": 1995,
+  "type": "rumor",
+  "sound": "station",
+  "blurb": "รถเมล์เที่ยวสุดท้ายไปเขาเซียงซาน ผู้โดยสารชุดราชวงศ์ชิงสามคน และยายที่ตบหน้าชายหนุ่มเพื่อพาเขาลงจากรถ",
+  "sources": [
+   [
+    "Urban Legends with Chinese Characteristics — The World of Chinese (2017)",
+    "https://www.theworldofchinese.com/2017/10/urban-legends-with-chinese-characteristics-pt-1/"
+   ],
+   [
+    "The Beijing Ghost Bus — The Ghost in My Machine (2024)",
+    "https://theghostinmymachine.com/2024/02/26/encyclopaedia-of-the-impossible-the-beijing-ghost-bus/"
+   ]
+  ]
+ },
+ {
+  "id": "lin-tou-jie",
+  "title": "หลินโถวเจี่ย ผีใต้ต้นเตยทะเล",
+  "orig": "林投姐 · Lin Tou Jie",
+  "cc": "TW",
+  "place": "ไถหนาน",
+  "lat": 22.99,
+  "lon": 120.2,
+  "year": 1880,
+  "type": "folklore",
+  "sound": "forest",
+  "blurb": "หญิงม่ายที่ถูกพ่อค้าโกงเงินแล้วทิ้ง ผูกคอตายใต้ต้นเตยทะเล แล้วกลับมาซื้อบ๊ะจ่างด้วยเงินกระดาษ",
+  "sources": [
+   [
+    "林投姐 — Wikipedia (จีน)",
+    "https://zh.wikipedia.org/wiki/%E6%9E%97%E6%8A%95%E5%A7%90"
+   ]
+  ]
+ },
+ {
+  "id": "jangsan",
+  "title": "เสือภูเขาจังซาน",
+  "orig": "장산범 · Jangsan Tiger",
+  "cc": "KR",
+  "place": "ภูเขาจังซาน, ปูซาน",
+  "lat": 35.19,
+  "lon": 129.17,
+  "year": 2013,
+  "type": "thread",
+  "sound": "forest",
+  "blurb": "สิ่งมีชีวิตขนขาวในภูเขาที่เลียนเสียงคนที่คุณรัก ตำนานเน็ตเกาหลีที่ทำให้คนโทรหาแม่ก่อนเปิดประตู",
+  "sources": [
+   [
+    "장산범 — Wikipedia (เกาหลี)",
+    "https://ko.wikipedia.org/wiki/%EC%9E%A5%EC%82%B0%EB%B2%94"
+   ]
+  ]
+ },
+ {
+  "id": "poveglia",
+  "title": "เกาะโปเวลยา",
+  "orig": "Poveglia",
+  "cc": "IT",
+  "place": "ทะเลสาบเวนิส",
+  "lat": 45.38,
+  "lon": 12.33,
+  "year": 1793,
+  "type": "place",
+  "sound": "house",
+  "blurb": "เกาะกักโรคระบาดเก่าของเวนิสที่มีหอระฆังโผล่พ้นต้นไม้ ตำนานหมอบนหอระฆัง และเหตุผลที่ห้ามขึ้นเกาะ",
+  "sources": [
+   [
+    "Poveglia — Wikipedia",
+    "https://en.wikipedia.org/wiki/Poveglia"
+   ]
+  ]
+ },
+ {
+  "id": "tokoloshe",
+  "title": "โตโกโลเช",
+  "orig": "Tokoloshe",
+  "cc": "ZA",
+  "place": "แอฟริกาใต้",
+  "lat": -29,
+  "lon": 30.5,
+  "year": 1900,
+  "type": "folklore",
+  "sound": "house",
+  "blurb": "ผีแคระขนดกที่หมอผีส่งมาตอนคนหลับ และเหตุผลที่บ้านหลายหลังยกขาเตียงขึ้นบนก้อนอิฐ",
+  "sources": [
+   [
+    "Tokoloshe — Wikipedia",
+    "https://en.wikipedia.org/wiki/Tokoloshe"
+   ]
+  ]
+ },
+ {
+  "id": "wendigo",
+  "title": "เวนดิโก ผีแห่งความหิว",
+  "orig": "Wendigo",
+  "cc": "CA",
+  "place": "ป่าเหนือรอบทะเลสาบใหญ่",
+  "lat": 49.5,
+  "lon": -88,
+  "year": 1700,
+  "type": "folklore",
+  "sound": "forest",
+  "blurb": "ผีผอมแห้งในพายุหิมะที่ยิ่งกินยิ่งหิว และคำสอนของชนพื้นเมืองว่าความโลภทำให้คนกลายเป็นมันได้",
+  "sources": [
+   [
+    "Wendigo — Wikipedia",
+    "https://en.wikipedia.org/wiki/Wendigo"
+   ]
+  ]
+ },
+ {
+  "id": "mothman",
+  "title": "มอธแมน มนุษย์ผีเสื้อกลางคืน",
+  "orig": "Mothman · Point Pleasant",
+  "cc": "US",
+  "place": "พอยต์เพลเซนต์, เวสต์เวอร์จิเนีย",
+  "lat": 38.84,
+  "lon": -82.14,
+  "year": 1966,
+  "type": "case",
+  "sound": "field",
+  "blurb": "ปีกกว้างสามเมตรกับตาแดงเรืองในไฟหน้ารถ หนึ่งปีแห่งการเห็น แล้วก็หายไปหลังสะพานถล่ม",
+  "sources": [
+   [
+    "Mothman — Wikipedia",
+    "https://en.wikipedia.org/wiki/Mothman"
+   ],
+   [
+    "Silver Bridge — Wikipedia",
+    "https://en.wikipedia.org/wiki/Silver_Bridge"
+   ]
+  ]
+ },
+ {
+  "id": "brown-lady",
+  "title": "สุภาพสตรีชุดน้ำตาล",
+  "orig": "The Brown Lady of Raynham Hall",
+  "cc": "GB",
+  "place": "เรย์นแฮมฮอลล์, นอร์ฟอล์ก",
+  "lat": 52.79,
+  "lon": 0.8,
+  "year": 1936,
+  "type": "case",
+  "sound": "house",
+  "blurb": "ช่างภาพนิตยสารตะโกนให้กดชัตเตอร์ แล้วได้ภาพร่างผู้หญิงโปร่งแสงเดินลงบันได ภาพผีที่ดังที่สุดภาพหนึ่งของโลก",
+  "sources": [
+   [
+    "Brown Lady of Raynham Hall — Wikipedia",
+    "https://en.wikipedia.org/wiki/Brown_Lady_of_Raynham_Hall"
+   ]
+  ]
+ },
+ {
+  "id": "robert-doll",
+  "title": "ตุ๊กตาโรเบิร์ต",
+  "orig": "Robert the Doll",
+  "cc": "US",
+  "place": "คีย์เวสต์, ฟลอริดา",
+  "lat": 24.55,
+  "lon": -81.76,
+  "year": 1904,
+  "type": "place",
+  "sound": "house",
+  "blurb": "ตุ๊กตาชุดกะลาสีที่ \"ทำทุกอย่าง\" ในบ้าน ผนังจดหมายขอโทษนับร้อยฉบับ และกติกาว่าต้องขออนุญาตก่อนถ่ายรูป",
+  "sources": [
+   [
+    "Robert (doll) — Wikipedia",
+    "https://en.wikipedia.org/wiki/Robert_(doll)"
+   ]
+  ]
+ },
+ {
+  "id": "black-shuck",
+  "title": "แบล็กชัก หมาดำแห่งพายุ",
+  "orig": "Black Shuck",
+  "cc": "GB",
+  "place": "บังเกย์, ซัฟฟอล์ก",
+  "lat": 52.46,
+  "lon": 1.44,
+  "year": 1577,
+  "type": "case",
+  "sound": "rain",
+  "blurb": "วันอาทิตย์ปี 1577 หมาดำตัวใหญ่วิ่งผ่านโบสถ์กลางพายุ และรอยไหม้บนประตูไม้ที่ยังอยู่จนถึงวันนี้",
+  "sources": [
+   [
+    "Black Shuck — Wikipedia",
+    "https://en.wikipedia.org/wiki/Black_Shuck"
+   ]
+  ]
+ },
+ {
+  "id": "glamr",
+  "title": "กลามร์ ศพที่ไม่ยอมนอน",
+  "orig": "Glámr · Grettis saga",
+  "cc": "IS",
+  "place": "หุบเขาทางเหนือของไอซ์แลนด์",
+  "lat": 65.4,
+  "lon": -19.8,
+  "year": 1350,
+  "type": "classic",
+  "sound": "forest",
+  "blurb": "คนเลี้ยงแกะที่ตายกลางพายุหิมะคืนคริสต์มาส กลับมาขี่หลังคาบ้านทุกคืน จนวีรบุรุษต้องปล้ำกับมันใต้แสงจันทร์",
+  "sources": [
+   [
+    "Glámr — Wikipedia",
+    "https://en.wikipedia.org/wiki/Glámr"
+   ],
+   [
+    "Grettis saga — Wikipedia",
+    "https://en.wikipedia.org/wiki/Grettis_saga"
+   ]
+  ]
+ },
+ {
+  "id": "rusalka",
+  "title": "รุซัลกา หญิงสาวใต้แม่น้ำ",
+  "orig": "Русалка · Rusalka",
+  "cc": "RU",
+  "place": "แม่น้ำในรัสเซีย",
+  "lat": 55,
+  "lon": 38,
+  "year": 1800,
+  "type": "folklore",
+  "sound": "rain",
+  "blurb": "วิญญาณหญิงสาวที่จมน้ำ ผมเขียวเปียกโชก นั่งชิงช้าบนต้นเบิร์ชในสัปดาห์ต้นฤดูร้อน แล้วชวนคนเต้นจนตาย",
+  "sources": [
+   [
+    "Rusalka — Wikipedia",
+    "https://en.wikipedia.org/wiki/Rusalka"
+   ]
+  ]
+ },
+ {
+  "id": "siguanaba",
+  "title": "ซิกัวนาบา หญิงสาวริมลำธาร",
+  "orig": "La Siguanaba",
+  "cc": "SV",
+  "place": "เอลซัลวาดอร์และกัวเตมาลา",
+  "lat": 13.7,
+  "lon": -89.2,
+  "year": 1800,
+  "type": "folklore",
+  "sound": "forest",
+  "blurb": "หญิงผมยาวที่หันหลังให้ผู้ชายเจ้าชู้ริมลำธาร พอหันหน้ามา คือหน้าม้าหรือหัวกะโหลก",
+  "sources": [
+   [
+    "Siguanaba — Wikipedia",
+    "https://en.wikipedia.org/wiki/Siguanaba"
+   ]
+  ]
+ },
+ {
+  "id": "chonchon",
+  "title": "ชอนชอน หัวบินได้แห่งชิลี",
+  "orig": "Chonchon · Mapuche",
+  "cc": "CL",
+  "place": "อาเราคาเนีย, ชิลี",
+  "lat": -38.7,
+  "lon": -72.6,
+  "year": 1800,
+  "type": "folklore",
+  "sound": "forest",
+  "blurb": "หัวหมอผีที่หลุดจากตัว ใบหูกลายเป็นปีก บินมาเกาะหลังคาบ้านคนป่วยพร้อมเสียง \"ตูเอ ตูเอ\"",
+  "sources": [
+   [
+    "Chonchon — Wikipedia",
+    "https://en.wikipedia.org/wiki/Chonchon"
+   ]
+  ]
+ },
+ {
+  "id": "penanggalan",
+  "title": "เปอนังกาลัน",
+  "orig": "Penanggalan",
+  "cc": "MY",
+  "place": "คาบสมุทรมลายู",
+  "lat": 4.2,
+  "lon": 101.9,
+  "year": 1800,
+  "type": "folklore",
+  "sound": "field",
+  "blurb": "หัวผู้หญิงลอยพร้อมไส้ที่ต้องแช่น้ำส้มสายชูก่อนกลับเข้าร่าง แฝดของกระสือฝั่งมาเลเซีย",
+  "sources": [
+   [
+    "Penanggalan — Wikipedia",
+    "https://en.wikipedia.org/wiki/Penanggalan"
+   ]
+  ]
+ },
+ {
+  "id": "flannan",
+  "title": "ประภาคารเกาะแฟลนนัน",
+  "orig": "Flannan Isles Lighthouse (1900)",
+  "cc": "GB",
+  "place": "หมู่เกาะแฟลนนัน, สกอตแลนด์",
+  "lat": 58.29,
+  "lon": -7.59,
+  "year": 1900,
+  "type": "case",
+  "sound": "station",
+  "blurb": "เรือส่งเสบียงมาถึงเกาะกลางแอตแลนติก ประภาคารไม่มีใคร นาฬิกาหยุด เสื้อกันฝนเหลือตัวเดียว และผู้ดูแลสามคนหายไป",
+  "sources": [
+   [
+    "Flannan Isles Lighthouse — Wikipedia",
+    "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse"
+   ]
+  ]
+ },
+ {
+  "id": "dullahan",
+  "title": "ดูลลาฮาน คนขี่ม้าไร้หัว",
+  "orig": "Dullahan",
+  "cc": "IE",
+  "place": "ชนบทไอร์แลนด์",
+  "lat": 52.7,
+  "lon": -8,
+  "year": 1800,
+  "type": "folklore",
+  "sound": "forest",
+  "blurb": "นักขี่ม้าที่ถือหัวตัวเองเป็นโคมไฟ แส้ทำจากกระดูกสันหลัง ม้าหยุดหน้าบ้านใคร คนในบ้านนั้นจะถูกเรียกชื่อ",
+  "sources": [
+   [
+    "Dullahan — Wikipedia",
+    "https://en.wikipedia.org/wiki/Dullahan"
+   ]
+  ]
+ },
+ {
+  "id": "pocong",
+  "title": "โปจง ผีห่อผ้าตราสัง",
+  "orig": "Pocong",
+  "cc": "ID",
+  "place": "ชวา, อินโดนีเซีย",
+  "lat": -7.2,
+  "lon": 110.4,
+  "year": 1900,
+  "type": "folklore",
+  "sound": "house",
+  "blurb": "วิญญาณที่ติดอยู่ในผ้าห่อศพเพราะไม่มีใครแก้เชือก ต้องกระโดดมาหาคุณตุบๆ บนถนนดินตอนกลางคืน",
+  "sources": [
+   [
+    "Pocong — Wikipedia",
+    "https://en.wikipedia.org/wiki/Pocong"
+   ]
+  ]
+ },
+ {
+  "id": "vetala",
+  "title": "เวตาล ผีที่ถามปริศนา",
+  "orig": "वेतालपञ्चविंशति · Vetala Panchavimshati",
+  "cc": "IN",
+  "place": "ป่าช้าในอินเดียโบราณ",
+  "lat": 23.18,
+  "lon": 75.78,
+  "year": 1070,
+  "type": "classic",
+  "sound": "temple",
+  "blurb": "พระราชาต้องแบกศพที่มีผีสิงกลับจากป่าช้า ระหว่างทางผีเล่านิทานแล้วถามปริศนา ถ้ารู้แต่ไม่ตอบ หัวจะแตก",
+  "sources": [
+   [
+    "Baital Pachisi — Wikipedia",
+    "https://en.wikipedia.org/wiki/Baital_Pachisi"
+   ],
+   [
+    "วิกิพีเดีย: นิทานเวตาล",
+    "https://th.wikipedia.org/wiki/%E0%B8%99%E0%B8%B4%E0%B8%97%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B8%95%E0%B8%B2%E0%B8%A5"
+   ]
+  ]
+ },
+ {
+  "id": "resurrection-mary",
+  "title": "แมรี่สาวโบกรถหน้าสุสาน",
+  "orig": "Resurrection Mary",
+  "cc": "US",
+  "place": "อาร์เชอร์อเวนิว, ชิคาโก",
+  "lat": 41.79,
+  "lon": -87.82,
+  "year": 1930,
+  "type": "place",
+  "sound": "rain",
+  "blurb": "สาวชุดขาวตัวเย็นเฉียบที่เต้นรำทั้งคืน ขอติดรถกลับบ้าน แล้วหายไปตรงประตูสุสาน",
+  "sources": [
+   [
+    "Resurrection Mary — Wikipedia",
+    "https://en.wikipedia.org/wiki/Resurrection_Mary"
+   ]
+  ]
+ },
+ {
+  "id": "lechuza",
+  "title": "ลาเลชูซา นกฮูกหน้าคน",
+  "orig": "La Lechuza",
+  "cc": "MX",
+  "place": "เม็กซิโกตอนเหนือและเท็กซัส",
+  "lat": 26,
+  "lon": -98.5,
+  "year": 1900,
+  "type": "folklore",
+  "sound": "field",
+  "blurb": "แม่มดที่แปลงเป็นนกฮูกตัวเท่าคน หน้าเป็นหญิงแก่ เลียนเสียงเด็กร้องไห้ล่อให้คนออกมานอกบ้าน",
+  "sources": [
+   [
+    "Lechuza — Wikipedia",
+    "https://en.wikipedia.org/wiki/Lechuza"
+   ]
+  ]
  }
 ]

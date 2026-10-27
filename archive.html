@@ -36,6 +36,32 @@
     </div>
   </section>
 
+  <section class="container courage" id="courage" aria-labelledby="courage-title">
+    <div class="hud courage-card">
+      <div class="courage-head">
+        <div>
+          <p class="eyebrow">COURAGE METER</p>
+          <h2 id="courage-title">ความกล้าของคุณ: <span id="c-level">…</span></h2>
+          <div class="meter" role="meter" aria-label="เกจความกล้า" aria-valuemin="0" aria-valuemax="100" id="c-meter"><i></i></div>
+          <p class="faint" id="c-stats"></p>
+        </div>
+        <form class="summon" id="summon" autocomplete="off">
+          <label for="summon-in">🔮 เรียกชื่อผี</label>
+          <div class="row"><input id="summon-in" placeholder="พิมพ์ชื่อผีที่อยากเรียก…" maxlength="30"><button class="btn small" type="submit">เรียก</button></div>
+          <p class="faint" id="summon-out">บางชื่อจะตอบกลับ ลองชื่อผีดังๆ ดู</p>
+        </form>
+      </div>
+      <details class="badge-box"><summary>🏅 ดูเหรียญทั้งหมดและวิธีปลดล็อก</summary>
+      <div class="badge-grid" id="badges" role="list" aria-label="เหรียญ"></div>
+      </details>
+      <div class="share-row">
+        <input id="share-name" placeholder="ชื่อบนการ์ด (ไม่ใส่ก็ได้)" maxlength="18" aria-label="ชื่อบนการ์ด">
+        <button class="btn primary small" type="button" id="share-btn">📸 สร้างการ์ดอวดเพื่อน</button>
+      </div>
+      <div id="share-out"></div>
+    </div>
+  </section>
+
   <section class="container" id="list" aria-labelledby="list-title">
     <div class="list-head">
       <h2 id="list-title" class="reveal">คลังเรื่อง</h2>

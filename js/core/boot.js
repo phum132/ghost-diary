@@ -6,6 +6,8 @@ import { url, initPreview, exitPreview, now } from './content.js';
 import { refreshCount } from './board-store.js';
 import { click, audioCtx } from './sfx.js';
 import { startHaunt, stopHaunt } from './haunt.js';
+import { initGhosts } from './ghosts.js';
+import { award } from './badges.js';
 
 const NAV = [
   ['index.html#toc', 'สารบัญ', 'home'],
@@ -34,7 +36,7 @@ function applyPrefs() {
 
 function toggleSound() {
   const p = setPref('sound', !prefs().sound);
-  if (p.sound) { audioCtx(); click(); startHaunt(document.body.dataset.sound || 'dorm'); } else stopHaunt();
+  if (p.sound) { audioCtx(); click(); startHaunt(document.body.dataset.sound || 'dorm'); award('sound'); } else stopHaunt();
   document.querySelector('.sound-pill')?.remove();
   applyPrefs();
 }
@@ -58,7 +60,7 @@ function header(page) {
       el('div', { class: 'pref-row' }, el('span', {}, 'แอนิเมชัน'),
         el('button', { class: 'btn small', type: 'button', 'data-pref': 'motion', onclick: () => { setPref('motion', reduceMotion() ? 'full' : 'reduce'); location.reload(); } }, 'สลับ')),
       el('div', { class: 'pref-row' }, el('span', {}, 'โหมดโหด (มีฉากตกใจ + เสียงดังกะทันหัน)'),
-        el('button', { class: 'btn small', type: 'button', 'data-pref': 'scare', 'aria-pressed': 'false', onclick: () => { setPref('scare', !prefs().scare); applyPrefs(); } }, 'สลับ')),
+        el('button', { class: 'btn small', type: 'button', 'data-pref': 'scare', 'aria-pressed': 'false', onclick: () => { if (setPref('scare', !prefs().scare).scare) award('scare'); applyPrefs(); } }, 'สลับ')),
       el('div', { class: 'pref-row' }, el('span', {}, 'อ่านไดอารี่แบบตัวพิมพ์ (อ่านง่าย)'),
         el('button', { class: 'btn small', type: 'button', 'data-pref': 'typed', 'aria-pressed': 'false', onclick: () => { setPref('typed', !prefs().typed); applyPrefs(); } }, 'สลับ')),
       el('div', { class: 'pref-row' }, el('span', {}, 'ขนาดตัวอักษร'),
@@ -96,7 +98,7 @@ function eggs() {
   const h = now().getHours();
   if (h === 3) {
     const bar = el('div', { class: 'egg-bar', role: 'status' },
-      el('span', {}, '☾ ตีสามแล้วยังไม่นอนอีกเหรอ… นอนน้อยทำให้ "ผีอำ" ง่ายขึ้นนะ'),
+      el('span', {}, '☾ ตีสามแล้วยังไม่นอนอีกเหรอ… เว็บเปลี่ยนเป็นโหมดตีสาม และเรื่องลับในคลังเปิดแล้ว'),
       el('button', { type: 'button', 'aria-label': 'ปิด', onclick: () => bar.remove() }, '✕'));
     document.body.append(bar);
   }
@@ -159,6 +161,7 @@ export async function boot(page, { scene = 'ambient' } = {}) {
   applyPrefs();
   refreshCount();
   eggs();
+  initGhosts();
   initFx();
   if (!prefs().sound) soundPill();
   if (prefs().sound) {

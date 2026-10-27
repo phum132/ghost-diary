@@ -442,6 +442,9 @@ const W = {
   },
 
   // ---------------------------------------------------------------- Enfield: things move when you look away
+  // Bloody Mary: camera mirror (loaded only on that story)
+  mirror(host) { import('./mirror.js').then((m) => m.mirror(host)); },
+
   poltergeist(host) {
     const f = frame(host, 'ห้องนอนเลขที่ 284 (จำลอง) · ลองละสายตาดู');
     const items = [

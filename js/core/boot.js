@@ -13,6 +13,7 @@ const NAV = [
   ['index.html#toc', 'สารบัญ', 'home'],
   ['archive.html', 'ผีทั่วโลก', 'archive'],
   ['webboard.html', 'เว็บบอร์ดผี', 'webboard'],
+  ['ritual.html', 'ห้องพิธี', 'ritual'],
   ['lab.html', 'SLUR Lab', 'lab'],
   ['board.html', 'กระดาน', 'board'],
   ['about.html', 'เกี่ยวกับ', 'about'],

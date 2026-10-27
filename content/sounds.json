@@ -97,6 +97,20 @@
   "laugh": [
    "assets/sounds/laugh-0.mp3",
    "assets/sounds/laugh-1.mp3"
+  ],
+  "radio": [
+   "assets/sounds/radio-0.mp3"
+  ],
+  "tune": [
+   "assets/sounds/tune-0.mp3",
+   "assets/sounds/tune-1.mp3"
+  ],
+  "slide": [
+   "assets/sounds/slide-0.mp3",
+   "assets/sounds/slide-1.mp3"
+  ],
+  "rattle": [
+   "assets/sounds/rattle-0.mp3"
   ]
  },
  "sources": {
@@ -159,6 +173,11 @@
    "title": "Bell at Daitokuji temple,kyoto.wav",
    "user": "nahmandub",
    "page": "https://freesound.org/s/131348/"
+  },
+  "143965": {
+   "title": "GlassPyrexMeasuringCupMugSlideTableDesk.aif",
+   "user": "SpliceSound",
+   "page": "https://freesound.org/s/143965/"
   },
   "155142": {
    "title": "terror ambience.mp3",
@@ -315,6 +334,11 @@
    "user": "The_Sound_Side",
    "page": "https://freesound.org/s/319258/"
   },
+  "323002": {
+   "title": "Glass bowl slides across countertop.wav",
+   "user": "asagatov",
+   "page": "https://freesound.org/s/323002/"
+  },
   "326460": {
    "title": "creaking floor OWI.wav",
    "user": "miekyj",
@@ -329,6 +353,11 @@
    "title": "Night Crickets Back Porch.aiff",
    "user": "hdfreema",
    "page": "https://freesound.org/s/333221/"
+  },
+  "337700": {
+   "title": "Radio Interference/Static (Recorded from Ghetto Blaster)",
+   "user": "harveyjnz",
+   "page": "https://freesound.org/s/337700/"
   },
   "364699": {
    "title": "Twig Snap",
@@ -345,10 +374,20 @@
    "user": "HowardV",
    "page": "https://freesound.org/s/393800/"
   },
+  "454259": {
+   "title": "tv channel change static blips (scanner CB radio tuning static blips +static sharp +scanner CB radio blips on+off good2).flac",
+   "user": "kyles",
+   "page": "https://freesound.org/s/454259/"
+  },
   "465697": {
    "title": "Owl Hoot",
    "user": "Breviceps",
    "page": "https://freesound.org/s/465697/"
+  },
+  "475827": {
+   "title": "Rattle 01.flac",
+   "user": "zeffon",
+   "page": "https://freesound.org/s/475827/"
   },
   "486140": {
    "title": "taiko.wav",

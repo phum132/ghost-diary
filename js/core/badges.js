@@ -17,6 +17,9 @@ export const BADGES = [
   { id: 'torch', icon: '🔦', name: 'อ่านด้วยไฟฉาย', how: 'ใช้ไฟฉายอ่านเรื่อง' },
   { id: 'mirror', icon: '🪞', name: 'เรียกเธอแล้ว', how: 'เรียกบลัดดี้แมรี่หน้ากระจกครบสามครั้ง' },
   { id: 'stare', icon: '👁️', name: 'จ้องจนหน้าเปลี่ยน', how: 'ทำการทดลองจ้องกระจก 60 วินาทีจนจบ' },
+  { id: 'radio', icon: '📻', name: 'ได้ยินเสียงจากอีกฝั่ง', how: 'ทำการทดลองวิทยุผีจนจบ' },
+  { id: 'glass', icon: '🥃', name: 'ส่งวิญญาณกลับบ้าน', how: 'เล่นผีถ้วยแก้ว แล้วส่งกลับบ้านให้เรียบร้อย' },
+  { id: 'fortune', icon: '🎋', name: 'เสี่ยงเซียมซีผี', how: 'เขย่าเซียมซีผีในห้องพิธี' },
   { id: 'idle', icon: '👤', name: 'มีคนยืนข้างหลัง', how: 'นั่งนิ่งๆ จนเห็นเงา' },
   { id: 'egg', icon: '🔮', name: 'เรียกชื่อผี', how: 'พิมพ์ชื่อผีบางตัว (ลองชื่อดังๆ ดู)' },
   { id: 'away', icon: '🚪', name: 'อย่าทิ้งฉันไว้', how: 'สลับแท็บหนีแล้วกลับมา' },
@@ -81,10 +84,13 @@ export function shareCard(name) {
   g.fillText(`อ่านไปแล้ว ${c0.read} เรื่อง · เหรียญ ${c0.got}/${BADGES.length} · คะแนน ${c0.score}`, 540, 500);
   const got = badges();
   BADGES.forEach((b, i) => {
-    const x = 180 + (i % 6) * 144, y = 620 + Math.floor(i / 6) * 170;
+    const x = 540 + ((i % 7) - 3) * 132, y = 620 + Math.floor(i / 7) * 190;
     g.globalAlpha = got[b.id] ? 1 : 0.18;
-    g.font = '80px "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif'; g.fillText(b.icon, x, y);
-    g.font = '400 22px "Kanit", sans-serif'; g.fillStyle = '#f3e9e2'; g.fillText(got[b.id] ? b.name : '???', x, y + 46);
+    g.font = '68px "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif'; g.fillText(b.icon, x, y);
+    const label = got[b.id] ? b.name : '???';
+    let px = 22;
+    do g.font = `400 ${px}px "Kanit", sans-serif`; while (g.measureText(label).width > 124 && --px > 14);
+    g.fillStyle = '#f3e9e2'; g.fillText(label, x, y + 44);
     g.globalAlpha = 1;
   });
   g.fillStyle = '#ff6b5f'; g.font = '600 36px "Chakra Petch", sans-serif';

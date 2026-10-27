@@ -6,6 +6,7 @@ import { now, url } from './content.js';
 import { hauntOn, play } from './haunt.js';
 import { scare } from './scare.js';
 import { award } from './badges.js';
+import { load } from './store.js';
 
 const sfx = (n) => { if (hauntOn()) play(n); };
 const once = (k) => { try { if (sessionStorage.getItem('slur.v1.' + k)) return false; sessionStorage.setItem('slur.v1.' + k, '1'); } catch { /* private mode */ } return true; };
@@ -168,8 +169,18 @@ function witching() {
   if (award('3am')) toast('🌑 ตีสามแล้ว… เรื่องลับในคลังเปิดให้อ่านแล้ว', null, 6000);
 }
 
+// ---- a spirit from the glass game that was never sent home follows you around ----
+function unsentGlass() {
+  if (!load('glassOpen', false) || /ritual\.html$/.test(location.pathname) || !once('glassNag')) return;
+  setTimeout(() => {
+    toast('คุณยังไม่ได้ส่งวิญญาณในผีถ้วยแก้วกลับบ้าน… มันตามมาถึงหน้านี้แล้ว', { label: 'กลับไปส่ง', run: () => { location.href = url('ritual.html#glass'); } }, 8000);
+    sfx('knock');
+  }, 4000);
+}
+
 export function initGhosts() {
   witching();
+  unsentGlass();
   tabTitle();
   typedNames();
   idleShadow();

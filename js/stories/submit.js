@@ -1,6 +1,7 @@
 // "ส่งเรื่องผีของคุณ" form. No login: answers go to the owner's Google Form (free) and land in a Google Sheet.
 // The owner pastes a Google Forms *pre-filled link* into content/config.json -> storyForm.prefillUrl,
-// where each question was pre-filled with one key word: nick, room, title, story, place, when, consent.
+// where each question was pre-filled with key words: nick, room, title, story, place, when, consent.
+// One question may hold several keys ("place when"); the site then sends them joined with " · ".
 import { el, toast } from '../core/ui.js';
 import { load, save } from '../core/store.js';
 import { award } from '../core/badges.js';
@@ -9,14 +10,21 @@ const KEYS = ['nick', 'room', 'title', 'story', 'place', 'when', 'consent'];
 const MIN_STORY = 150, MAX_STORY = 8000, COOLDOWN = 3 * 60 * 1000;
 const WHEN = ['ปีนี้', '1-5 ปีก่อน', 'นานกว่า 5 ปี', 'ตอนเด็ก', 'ไม่แน่ใจ'];
 
-// "https://docs.google.com/forms/d/e/<id>/viewform?usp=pp_url&entry.1=nick&..." -> { action, map: { nick: 'entry.1', ... } }
+// "https://docs.google.com/forms/d/e/<id>/viewform?usp=pp_url&entry.1=nick&entry.2=place+when&..."
+//   -> { action, map: { 'entry.1': ['nick'], 'entry.2': ['place', 'when'], ... } }
 export function parsePrefill(link) {
   try {
     const u = new URL(link);
     if (u.hostname !== 'docs.google.com' || !/\/forms\/d\/e\/[\w-]+\/viewform/.test(u.pathname)) return null;
     const map = {};
-    for (const [k, v] of u.searchParams) if (/^entry\.\d+$/.test(k) && KEYS.includes(v.trim().toLowerCase())) map[v.trim().toLowerCase()] = k;
-    if (!map.story || !map.title) return null;
+    for (const [k, v] of u.searchParams) {
+      const keys = /^entry\.\d+$/.test(k) ? v.toLowerCase().split(/[\s,+/]+/).filter((x) => KEYS.includes(x)) : [];
+      if (keys.length) map[k] = keys;
+    }
+    const has = (key) => Object.values(map).some((ks) => ks.includes(key));
+    if (!has('story') || !has('title')) return null;
+    // a form without a room question keeps the room next to the place answer, so it is not lost
+    if (!has('room')) Object.values(map).find((ks) => ks.includes('place'))?.push('room');
     return { action: u.origin + u.pathname.replace(/\/viewform$/, '/formResponse'), map };
   } catch { return null; }
 }
@@ -74,7 +82,9 @@ export function submitForm({ prefillUrl, rooms, current }) {
     const roomName = rooms.find((r) => r.term === room.value)?.title || room.value;
     const vals = { nick: nick.value.trim(), room: roomName, title: title.value.trim(), story: story.value.trim(), place: place.value.trim(), when: when.value, consent: 'ยินยอม' };
     const body = new URLSearchParams();
-    for (const [k, entry] of Object.entries(form.map)) body.append(entry, vals[k] ?? '');
+    for (const [entry, keys] of Object.entries(form.map)) {
+      body.append(entry, keys.length === 1 ? vals[keys[0]] ?? '' : keys.map((k) => (k === 'room' ? 'ห้อง ' : '') + (vals[k] || 'ไม่ระบุ')).join(' · '));
+    }
     send.disabled = true; status.className = 'sf-status'; status.textContent = 'กำลังส่ง…';
     try {
       // Google Forms sends no CORS headers, so the reply is opaque; a network failure still throws

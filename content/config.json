@@ -13,7 +13,7 @@
   "previewKeySha256": "9776ef0953fabea3ea05bc85e0fba7407042a3f045e37ea269907a21b097872c",
   "siteUrl": "https://phum132.github.io/ghost-diary/",
   "support": {
-    "qr": "",
+    "qr": "assets/img/promptpay.png",
     "link": "",
     "linkLabel": "สนับสนุนผ่านลิงก์",
     "message": "ชอบเรื่องผีที่นี่ไหม จุดธูปเลี้ยงกาแฟ SLUR สักแก้ว เว็บจะมีเรื่องใหม่มาหลอนเรื่อยๆ"

@@ -4,6 +4,7 @@ import { el } from '../core/ui.js';
 import { load, save } from '../core/store.js';
 import { reveals } from '../core/fx.js';
 import { COUNTRIES } from '../stories/meta.js';
+import { submitForm } from '../stories/submit.js';
 
 boot('webboard');
 
@@ -59,10 +60,25 @@ function renderChips() {
   }, `${t} (${k === 'all' ? threads.length : threads.filter((s) => s.board === k).length})`)));
 }
 
+let readers = [];
 getJSON('content/stories/index.json').then((all) => {
   threads = all.filter((s) => s.type === 'forum').sort((a, b) => b.year - a.year);
-  renderChips(); renderThreads();
+  readers = all.filter((s) => s.type === 'reader').reverse();
+  renderChips(); renderThreads(); renderReaders();
 }).catch(() => box.replaceChildren(el('p', {}, 'โหลดกระทู้ไม่ได้ ลองรีเฟรชอีกครั้ง')));
+
+// ---- stories readers sent in (picked by the owner, built by _src/import-reader-stories.mjs) ----
+function renderReaders() {
+  const host = document.getElementById('reader-list');
+  const list = readers.filter((s) => s.board === room.term);
+  const read = load('storyRead', {});
+  host.replaceChildren(
+    el('h3', { class: 'eyebrow' }, `เรื่องจากคนอ่านในห้องนี้ (${list.length})`),
+    list.length
+      ? el('ul', { class: 'wb-reader-ul' }, ...list.map((s) => el('li', {},
+          el('a', { class: 'wb-title', href: url(`story.html?id=${s.id}`) }, el('b', {}, s.title, read[s.id] ? '' : el('span', { class: 'new' }, 'ใหม่')), el('span', { class: 'faint' }, `เล่าโดย ${s.by} · ${s.blurb}`)))))
+      : el('p', { class: 'faint' }, 'ห้องนี้ยังไม่มีเรื่องที่ได้ขึ้นเว็บ เป็นคนแรกที่เล่าสิ ฟอร์มอยู่ด้านล่าง'));
+}
 
 // ---- our rooms: one giscus discussion per room ----
 const roomsBox = document.getElementById('rooms');
@@ -83,6 +99,9 @@ function pick(r) {
   room = r;
   save('wbRoom', r.term);
   renderRooms();
+  renderReaders();
+  const roomSel = document.querySelector('.sf select[name="room"]');
+  if (roomSel) roomSel.value = r.term;
   const frame = document.querySelector('iframe.giscus-frame');
   if (frame) frame.contentWindow.postMessage({ giscus: { setConfig: { term: r.term } } }, 'https://giscus.app');
 }
@@ -102,6 +121,12 @@ function mount() {
 renderRooms();
 config().then((c) => {
   cfg = c;
+  const sf = submitForm({ prefillUrl: c.storyForm?.prefillUrl, rooms: ROOMS, current: room.term });
+  if (sf) {
+    document.getElementById('submit-slot').append(sf);
+    roomsBox.before(el('a', { class: 'btn primary wb-tell', href: '#submit-slot', onclick: (e) => { e.preventDefault(); sf.scrollIntoView({ behavior: 'smooth', block: 'start' }); sf.querySelector('input')?.focus({ preventScroll: true }); } }, '✍️ เล่าเรื่องผีของคุณ (ไม่ต้องล็อกอิน)'));
+  }
+  else if (preview()) document.getElementById('submit-slot').append(el('p', { class: 'mono faint' }, '(พรีวิว) ฟอร์มส่งเรื่องยังไม่เปิด ใส่ storyForm.prefillUrl ใน config.json ก่อน ดูคู่มือหัวข้อ 11'));
   roomBox.append(el('button', { class: 'btn primary', type: 'button', onclick: () => mount() }, 'เปิดห้องเล่าเรื่อง'));
   if (location.hash === '#ours' && !mounted) mount();
 });

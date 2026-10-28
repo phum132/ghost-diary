@@ -8,6 +8,7 @@ import { click, audioCtx } from './sfx.js';
 import { startHaunt, stopHaunt } from './haunt.js';
 import { initGhosts } from './ghosts.js';
 import { award } from './badges.js';
+import { grow } from './grow.js';
 
 const NAV = [
   ['index.html#toc', 'สารบัญ', 'home'],
@@ -92,7 +93,7 @@ function footer() {
   return el('footer', { class: 'site-footer' },
     el('div', { class: 'container' },
       el('span', {}, '© SLUR · ไดอารี่คนเห็นผี เป็นเรื่องแต่ง ตัวละครและสถานที่ไม่มีอยู่จริง'),
-      el('span', {}, el('a', { href: url('about.html#credits') }, 'เครดิตรูปและเสียง'), ' · ', el('a', { href: url('lab.html') }, 'SLUR Lab'))));
+      el('span', {}, el('a', { href: url('about.html#credits') }, 'เครดิตรูปและเสียง'), ' · ', el('a', { href: url('lab.html') }, 'SLUR Lab'), ' · ', el('a', { href: '#support', 'data-support-link': '', hidden: true }, 'สนับสนุนเว็บ'))));
 }
 
 function eggs() {
@@ -158,7 +159,9 @@ export async function boot(page, { scene = 'ambient' } = {}) {
       el('span', {}, `โหมดพรีวิวของเจ้าของเว็บ — ${d} · คนอ่านทั่วไปไม่เห็นแบบนี้`),
       el('button', { type: 'button', onclick: exitPreview }, 'ออกจากพรีวิว')));
   }
-  document.body.append(footer());
+  const foot = footer();
+  document.body.append(foot);
+  grow(foot, !!pv);
   applyPrefs();
   refreshCount();
   eggs();

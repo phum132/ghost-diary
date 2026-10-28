@@ -7,4 +7,5 @@ export const COUNTRIES = {
 export const TYPES = {
   forum: 'กระทู้เว็บบอร์ด', thread: 'กระทู้เน็ต', rumor: 'ข่าวลือจริง', case: 'เหตุการณ์จริง',
   folklore: 'ตำนานพื้นบ้าน', classic: 'วรรณกรรมคลาสสิก', place: 'สถานที่จริง', classified: 'แฟ้มลับ',
+  reader: 'เรื่องจากคนอ่าน',
 };

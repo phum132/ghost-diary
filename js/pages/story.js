@@ -109,10 +109,13 @@ async function main() {
       ? 'ต้นฉบับเป็นสาธารณสมบัติแล้ว ฉบับนี้แปลและเรียบเรียงเป็นภาษาไทยโดย SLUR'
       : s.type === 'classified'
       ? 'แฟ้มลับเป็นเรื่องแต่งที่เล่าต่อจากไดอารี่ของเว็บนี้ ตัวละครและหอพักไม่มีอยู่จริง'
+      : s.type === 'reader'
+      ? `เรื่องนี้ส่งมาจากคนอ่านที่ใช้นามแฝงว่า "${s.by || 'ไม่ประสงค์ออกนาม'}" ผ่านห้องเล่าเรื่องของเว็บบอร์ด SLUR แก้แค่คำผิดเล็กน้อย และไม่ได้ตรวจสอบว่าเกิดขึ้นจริง`
       : s.type === 'forum'
       ? 'เรื่องนี้เป็นการสรุปเล่าใหม่ด้วยภาษาของเรา ไม่ใช่คำแปลทั้งกระทู้ และไม่ได้ใช้รูปของเจ้าของโพสต์ ใครอยากอ่านฉบับเต็มกดลิงก์ด้านล่างไปที่กระทู้จริงได้เลย'
       : 'เรื่องนี้เล่าใหม่ด้วยภาษาของเราจากข้อมูลที่มีคนบันทึกไว้ ไม่ใช่คำแปลของโพสต์ต้นฉบับ รายละเอียดบางส่วนแต่ละแหล่งเล่าไม่ตรงกัน'),
-    el('ol', {}, ...(s.sources || []).map(([t, u]) => el('li', {}, el('a', { href: u, target: '_blank', rel: 'noopener' }, t)))));
+    el('ol', {}, ...(s.sources || []).map(([t, u]) => el('li', {}, el('a', { href: u, target: '_blank', rel: 'noopener' }, t)))),
+    s.type === 'reader' ? el('a', { class: 'btn small', href: url('webboard.html#ours') }, '🕯️ เคยเจอเหมือนกัน? ส่งเรื่องของคุณ') : null);
   root.replaceChildren(...[hero, tools, s.type === 'forum' ? opCard(s) : null, article, rating(s), sources, discussion(s), nav(open, open.indexOf(s))].filter(Boolean));
   reveals(root);
   watchSentinels(sentinels);

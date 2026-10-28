@@ -252,3 +252,14 @@ html.egg-dim body { filter: brightness(.35) saturate(.4); transition: filter .4s
 html.witching body { filter: saturate(.75) hue-rotate(-8deg); }
 html.witching body::after { content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 55; background: radial-gradient(ellipse at center, transparent 45%, rgba(60, 0, 0, .45) 100%); }
 [hidden] { display: none !important; }
+
+/* share bar + support box (js/core/grow.js) */
+.share-bar, .support-box { position: relative; z-index: 1; max-width: 960px; margin: 40px auto 0; padding: 20px var(--gutter); border-top: 1px solid var(--line); }
+.share-btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.support-box { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between; margin-top: 16px; margin-bottom: 8px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); max-width: calc(960px - 2 * var(--gutter)); }
+@media (max-width: 992px) { .support-box { margin-left: var(--gutter); margin-right: var(--gutter); } }
+.support-text { flex: 1 1 260px; display: grid; gap: 10px; justify-items: start; }
+.support-text p { margin: 0; color: var(--text-dim); }
+.support-qr { margin: 0; text-align: center; }
+.support-qr img { display: block; width: 160px; height: 160px; background: #fff; padding: 6px; border-radius: var(--radius); }
+.support-qr figcaption { margin-top: 6px; font-size: .8rem; color: var(--text-faint); }

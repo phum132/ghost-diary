@@ -37,3 +37,34 @@
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chips button { min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255, 59, 47, .05); color: var(--text-dim); cursor: pointer; font-family: var(--f-hud); }
 .chips button[aria-pressed="true"] { background: var(--red); color: #1a0303; border-color: var(--red); }
+
+/* reader stories list + "ส่งเรื่องผีของคุณ" form (js/stories/submit.js) */
+.wb-readers h3, .wb-talk { margin: 4px 0 8px; }
+.wb-reader-ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.wb-reader-ul li { border-top: 1px solid var(--line); padding: 10px 0; }
+.wb-reader-ul .new { margin-left: 8px; font: 600 .7rem var(--f-hud); color: #fff; background: #8a1414; padding: 2px 6px; border-radius: 4px; vertical-align: middle; }
+#submit-slot { margin-top: 18px; }
+.sf { padding: 18px; display: grid; gap: 14px; }
+.sf-head h2 { margin: 0; font-size: 1.3rem; }
+.sf-head p { margin: 4px 0 0; }
+.sf-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+.sf-field { display: grid; gap: 6px; }
+.sf-label { font: 500 .9rem var(--f-hud); color: var(--ember); }
+.sf input:not([type="checkbox"]), .sf select, .sf textarea {
+  width: 100%; box-sizing: border-box; font: 1rem/1.6 var(--f-ui); color: var(--text);
+  background: rgba(0, 0, 0, .45); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; min-height: 44px;
+}
+.sf textarea { resize: vertical; min-height: 200px; }
+.sf input:focus-visible, .sf select:focus-visible, .sf textarea:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; border-color: var(--line-strong); }
+.sf select option { background: var(--panel-solid); }
+.sf-count { margin-top: -8px; }
+.sf-trap { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.sf-consent { display: flex; gap: 10px; align-items: flex-start; font-size: .92rem; color: var(--text-dim); cursor: pointer; }
+.sf-consent input { width: 20px; height: 20px; margin-top: 3px; flex: none; accent-color: var(--red); }
+.sf-rules { font-size: .85rem; margin: 0; }
+.sf-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.sf-status { margin: 0; color: var(--text-dim); }
+.sf-status.err { color: var(--hi); }
+.sf-done { display: grid; gap: 10px; justify-items: start; }
+.sf-done h2 { margin: 0; }
+.wb-tell { margin-bottom: 14px; }

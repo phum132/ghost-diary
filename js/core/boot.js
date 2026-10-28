@@ -13,6 +13,7 @@ import { grow } from './grow.js';
 const NAV = [
   ['index.html#toc', 'สารบัญ', 'home'],
   ['archive.html', 'ผีทั่วโลก', 'archive'],
+  ['clips.html', 'คลิปผี', 'clips'],
   ['webboard.html', 'เว็บบอร์ดผี', 'webboard'],
   ['ritual.html', 'ห้องพิธี', 'ritual'],
   ['lab.html', 'SLUR Lab', 'lab'],

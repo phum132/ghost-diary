@@ -49,3 +49,7 @@ table.mini th, table.mini td { border: 1px solid var(--line); padding: 4px 6px; 
 .tool-card .topic-line { font-family: var(--f-hud); font-size: .8rem; color: var(--text-faint); }
 .tool-card.reveal.in:hover { transform: translateY(-2px); }
 .back-row { margin: 18px 0; }
+.lab-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+.lab-chips button { min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255, 59, 47, .05); color: var(--text-dim); cursor: pointer; font-family: var(--f-hud); }
+.lab-chips button[aria-pressed="true"] { background: var(--red); color: #1a0303; border-color: var(--red); }
+.toy .quiz .seg button[disabled] { cursor: default; opacity: .85; }

@@ -15,6 +15,17 @@ export const TAGS = [
   { id: 'wisp', label: 'แก๊สหนองน้ำ', icon: '✦' },
   { id: 'coincidence', label: 'ความบังเอิญ', icon: '⚄' },
   { id: 'brocken', label: 'เงาในหมอก', icon: '◎' },
+  { id: 'camera', label: 'กล้องหลอก', icon: '◐' },
+  { id: 'eye', label: 'ตาล้า / ภาพติดตา', icon: '◑' },
+  { id: 'echo', label: 'เสียงสะท้อน', icon: '⌇' },
+  { id: 'draft', label: 'ลมและแรงดันอากาศ', icon: '≋' },
+  { id: 'emf', label: 'ไฟฟ้าในบ้าน', icon: 'ϟ' },
+  { id: 'resonance', label: 'การสั่นพ้อง', icon: '〰' },
+  { id: 'mirage', label: 'ภาพลวงตาในอากาศ', icon: '◬' },
+  { id: 'memory', label: 'ความจำเพี้ยน', icon: '✎' },
+  { id: 'barnum', label: 'คำทำนายกว้างๆ', icon: '✧' },
+  { id: 'cold', label: 'ความหนาว', icon: '❄' },
+  { id: 'disease', label: 'โรคระบาด', icon: '✚' },
 ];
 
 export function getBoard() {

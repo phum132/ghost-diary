@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://phum132.github.io/ghost-diary/</loc><lastmod>2026-10-28</lastmod><priority>1.0</priority></url>
   <url><loc>https://phum132.github.io/ghost-diary/archive.html</loc><lastmod>2026-10-28</lastmod><priority>0.9</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/clips.html</loc><lastmod>2026-10-28</lastmod><priority>0.8</priority></url>
   <url><loc>https://phum132.github.io/ghost-diary/webboard.html</loc><lastmod>2026-10-28</lastmod><priority>0.8</priority></url>
   <url><loc>https://phum132.github.io/ghost-diary/ritual.html</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
   <url><loc>https://phum132.github.io/ghost-diary/lab.html</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
@@ -101,4 +102,42 @@
   <url><loc>https://phum132.github.io/ghost-diary/story.html?id=vetala</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
   <url><loc>https://phum132.github.io/ghost-diary/story.html?id=resurrection-mary</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
   <url><loc>https://phum132.github.io/ghost-diary/story.html?id=lechuza</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/story.html?id=phi-maemai</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/story.html?id=phi-ha</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/story.html?id=pu-som</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/story.html?id=sathorn-unique</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/story.html?id=phi-suea-samut</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/story.html?id=oiwa</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/story.html?id=mujina</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/story.html?id=nie-xiaoqian</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/story.html?id=janghwa-hongryeon</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/story.html?id=kokkuri</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/story.html?id=dyatlov</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/story.html?id=flying-dutchman</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/story.html?id=winchester</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/story.html?id=borley</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/story.html?id=mary-celeste</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=sleep-paralysis</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=infrasound</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=pareidolia</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=co-house</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=ouija</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=krasue</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=coincidence</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=brocken</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=bayes</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=orbs</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=long-exposure</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=afterimage</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=troxler</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=echo</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=whistle</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=emf</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=pendulum</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=door</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=mirage</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=witness</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=barnum</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=epidemic</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://phum132.github.io/ghost-diary/lab.html?tool=windchill</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
 </urlset>

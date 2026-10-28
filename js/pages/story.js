@@ -11,6 +11,7 @@ import { mountWidget } from '../stories/widgets.js';
 
 import { COUNTRIES, TYPES } from '../stories/meta.js';
 import { award, checkReading, has, BADGES } from '../core/badges.js';
+import { clipsData, clipCard } from '../core/clips.js';
 const id = (new URLSearchParams(location.search).get('id') || '').replace(/[^\w-]/g, '');
 const root = document.getElementById('story-root');
 
@@ -116,11 +117,27 @@ async function main() {
       : 'เรื่องนี้เล่าใหม่ด้วยภาษาของเราจากข้อมูลที่มีคนบันทึกไว้ ไม่ใช่คำแปลของโพสต์ต้นฉบับ รายละเอียดบางส่วนแต่ละแหล่งเล่าไม่ตรงกัน'),
     el('ol', {}, ...(s.sources || []).map(([t, u]) => el('li', {}, el('a', { href: u, target: '_blank', rel: 'noopener' }, t)))),
     s.type === 'reader' ? el('a', { class: 'btn small', href: url('webboard.html#ours') }, '🕯️ เคยเจอเหมือนกัน? ส่งเรื่องของคุณ') : null);
-  root.replaceChildren(...[hero, tools, s.type === 'forum' ? opCard(s) : null, article, rating(s), sources, discussion(s), nav(open, open.indexOf(s))].filter(Boolean));
+  const clipBox = el('section', { class: 'st-clips', 'aria-labelledby': 'clip-t', hidden: true });
+  relatedClips(clipBox, s, open);
+  root.replaceChildren(...[hero, tools, s.type === 'forum' ? opCard(s) : null, article, rating(s), clipBox, sources, discussion(s), nav(open, open.indexOf(s))].filter(Boolean));
   reveals(root);
   watchSentinels(sentinels);
   const r = load('storyRead', {}); r[s.id] = Date.now(); save('storyRead', r);
   checkReading(list);
+}
+
+// YouTube clips tagged with this story in content/clips.json
+function relatedClips(box, s, open) {
+  clipsData().then((data) => {
+    const mine = data.clips.filter((c) => (c.stories || []).includes(s.id));
+    if (!mine.length) return;
+    const cats = Object.fromEntries(data.categories.map((k) => [k.id, k]));
+    const stories = Object.fromEntries(open.filter((x) => x.id !== s.id).map((x) => [x.id, { title: x.title, href: url('story.html?id=' + x.id) }]));
+    box.append(el('h2', { id: 'clip-t', class: 'eyebrow' }, 'คลิปที่เกี่ยวข้อง'),
+      el('p', { class: 'faint' }, 'คลิปจากช่อง YouTube อื่น ลิขสิทธิ์เป็นของเจ้าของช่อง กดรูปเพื่อเล่น หรือดู ', el('a', { href: url('clips.html') }, 'คลิปผีแนะนำทั้งหมด')),
+      el('div', { class: 'clip-grid' }, ...mine.map((c) => clipCard(c, cats[c.cat], stories))));
+    box.hidden = false;
+  }).catch(() => {});
 }
 
 // secret stories open only after the matching badge

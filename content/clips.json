@@ -1,0 +1,509 @@
+{
+ "checked": "2026-10-28",
+ "categories": [
+  {
+   "id": "tell",
+   "icon": "🎙️",
+   "name": "รายการเล่าเรื่องผี",
+   "desc": "รายการวิทยุและพอดแคสต์ที่ให้คนทางบ้านโทรมาเล่าประสบการณ์ เปิดฟังตอนนอนได้ยาวๆ"
+  },
+  {
+   "id": "field",
+   "icon": "🔦",
+   "name": "ลงพื้นที่จริง",
+   "desc": "ทีมงานพาไปสถานที่ที่ลือกันว่าเฮี้ยน ถ่ายให้ดูกันจะจะ"
+  },
+  {
+   "id": "toon",
+   "icon": "🎨",
+   "name": "การ์ตูนผี",
+   "desc": "เรื่องผีเล่าเป็นการ์ตูนแอนิเมชัน ดูง่าย ตอนสั้น"
+  },
+  {
+   "id": "history",
+   "icon": "📜",
+   "name": "ประวัติศาสตร์และตำนานจริง",
+   "desc": "ย้อนดูว่าเรื่องผีดังมาจากเหตุการณ์จริงอะไร"
+  },
+  {
+   "id": "world",
+   "icon": "🌏",
+   "name": "ผีต่างประเทศ",
+   "desc": "ตำนานผีญี่ปุ่นและที่อื่นๆ ทั้งช่องไทยและช่องต่างประเทศ"
+  },
+  {
+   "id": "case",
+   "icon": "🕵️",
+   "name": "คดีปริศนา",
+   "desc": "เรื่องลึกลับที่มีบันทึกจริง ทั้งเรือร้าง บ้านผีสิง และการหายตัว"
+  },
+  {
+   "id": "science",
+   "icon": "🧪",
+   "name": "วิทยาศาสตร์ไขผี",
+   "desc": "ผีอำ ภาพลวงตา กระดานผี มีคำอธิบายทางวิทยาศาสตร์ว่าอะไร"
+  },
+  {
+   "id": "film",
+   "icon": "🎬",
+   "name": "ตัวอย่างหนังผีคลาสสิก",
+   "desc": "ตัวอย่างหนังเก่าที่สร้างจากตำนานในเว็บนี้ จากค่ายที่ถือลิขสิทธิ์"
+  }
+ ],
+ "clips": [
+  {
+   "id": "93tlWGVXOpU",
+   "cat": "tell",
+   "title": "10 อันดับ เรื่องเล่าสุดช็อคที่พี่ป๋องการันตีความหลอน l TheShock13",
+   "channel": "The Shock Radio",
+   "channelUrl": "https://www.youtube.com/@TheShock13",
+   "dur": "6:32:20",
+   "lang": "th",
+   "desc": "รวมสิบเรื่องที่พี่ป๋องคัดมาว่าหลอนที่สุดจากรายการ The Shock รายการเล่าเรื่องผีทางวิทยุที่อยู่มายาวนานที่สุดรายการหนึ่งของไทย ยาวหกชั่วโมงกว่า",
+   "stories": []
+  },
+  {
+   "id": "LfWr0tXTGtc",
+   "cat": "tell",
+   "title": "บ้านร้างให้เช่า • คุณโอ๊ต 9 บาท | 26 ก.ย. 69 | THE GHOST RADIO",
+   "channel": "TheghostradioOfficial",
+   "channelUrl": "https://www.youtube.com/@Theghostradio",
+   "dur": "1:02:42",
+   "lang": "th",
+   "desc": "ตอนเต็มของ The Ghost Radio คุณโอ๊ตโทรมาเล่าเรื่องบ้านร้างที่ปล่อยเช่า เป็นรายการที่ให้คนทางบ้านมาเล่าเองพร้อมดีเจคุยต่อ",
+   "stories": []
+  },
+  {
+   "id": "Ap0KYEgH2q0",
+   "cat": "tell",
+   "title": "อาจารย์ยอด : รวมเรื่องผี 17 [ผี]",
+   "channel": "อาจารย์ยอด",
+   "channelUrl": "https://www.youtube.com/@ajarnyord",
+   "dur": "3:42:07",
+   "lang": "th",
+   "desc": "อาจารย์ยอดเล่าเรื่องผีแบบชาวบ้าน เสียงนุ่ม ฟังเพลิน รวมหลายเรื่องต่อกันเกือบสี่ชั่วโมง",
+   "stories": []
+  },
+  {
+   "id": "QkG_NC_j8eo",
+   "cat": "tell",
+   "title": "Top 5 Bingeable SCARY STORIES • Camping Horror Edition",
+   "channel": "MrBallen",
+   "channelUrl": "https://www.youtube.com/@MrBallen",
+   "dur": "1:07:24",
+   "lang": "en",
+   "desc": "MrBallen นักเล่าเรื่องชาวอเมริกัน เล่าห้าเรื่องสยองที่เกิดระหว่างไปตั้งแคมป์ มีเรื่องความตายจริง เหมาะกับผู้ใหญ่",
+   "stories": [],
+   "note": "ผู้ใหญ่"
+  },
+  {
+   "id": "uV_nOBEvayE",
+   "cat": "field",
+   "title": "ตำนานผีเฮี้ยน คุกบางขวาง EP.38 (Full) ​I​ ช่องส่องผี",
+   "channel": "The Real Ghosts",
+   "channelUrl": "https://www.youtube.com/@therealghost2024",
+   "dur": "1:16:16",
+   "lang": "th",
+   "desc": "ช่องส่องผีพาไปฟังตำนานและเรื่องเล่าของเรือนจำบางขวาง ตอนเต็ม",
+   "stories": []
+  },
+  {
+   "id": "Z-xpGil-B84",
+   "cat": "field",
+   "title": "ลองของสุสานโสเภณี l ศูนย์บรรเทาทุกข์ผี l คนอวดผี",
+   "channel": "WorkpointOfficial",
+   "channelUrl": "https://www.youtube.com/@WorkpointOfficial",
+   "dur": "36:21",
+   "lang": "th",
+   "desc": "รายการคนอวดผีของเวิร์คพอยท์ ช่วงศูนย์บรรเทาทุกข์ผี ไปลองของที่สุสานแห่งหนึ่ง",
+   "stories": []
+  },
+  {
+   "id": "FBl9TZca6pw",
+   "cat": "toon",
+   "title": "สองเปรตเฝ้าวัดร้าง | หลอนไดอารี่ EP.102",
+   "channel": "หลอนไดอารี่",
+   "channelUrl": "https://www.youtube.com/@lorndiary",
+   "dur": "14:06",
+   "lang": "th",
+   "desc": "การ์ตูนผีจากหลอนไดอารี่ เรื่องเปรตสองตนที่เฝ้าวัดร้าง",
+   "stories": []
+  },
+  {
+   "id": "mmNPXq9T5mg",
+   "cat": "toon",
+   "title": "นางยักษ์ผีเสื้อสมุทร จากวรรณคดีเรื่องพระอภัยมณี | การ์ตูนผี indy99",
+   "channel": "indy99 อินดี้เก้าสิบเก้า",
+   "channelUrl": "https://www.youtube.com/@indy99",
+   "dur": "4:48",
+   "lang": "th",
+   "desc": "การ์ตูนสั้นเล่าเรื่องนางยักษ์ผีเสื้อสมุทรจากพระอภัยมณี ดูคู่กับเรื่องในเว็บได้เลย",
+   "stories": [
+    "phi-suea-samut"
+   ]
+  },
+  {
+   "id": "zWFQKdfeZF0",
+   "cat": "history",
+   "title": "เปิดตำนาน แม่นากพระโขนงตัวจริงเป็นยังไง ในประวัติศาสตร์? | Point of View",
+   "channel": "Point of View",
+   "channelUrl": "https://www.youtube.com/@PointofView",
+   "dur": "19:17",
+   "lang": "th",
+   "desc": "Point of View ย้อนหาว่าแม่นากพระโขนงตัวจริงในประวัติศาสตร์เป็นใคร และตำนานโตขึ้นมาได้อย่างไร",
+   "stories": [
+    "mae-nak"
+   ]
+  },
+  {
+   "id": "08WHL8FjyC0",
+   "cat": "history",
+   "title": "แม่นากไม่ใช่ผี | ความจริงไม่ตาย",
+   "channel": "Thai PBS",
+   "channelUrl": "https://www.youtube.com/@ThaiPBS",
+   "dur": "38:39",
+   "lang": "th",
+   "desc": "รายการความจริงไม่ตายของไทยพีบีเอส ตามหาเรื่องจริงเบื้องหลังแม่นาก",
+   "stories": [
+    "mae-nak"
+   ]
+  },
+  {
+   "id": "c4qd1uKeIco",
+   "cat": "history",
+   "title": "ep.147 : โรคห่า สมัย ร.๒",
+   "channel": "HOY APISAK - OFFICIAL",
+   "channelUrl": "https://www.youtube.com/@hoyapisak",
+   "dur": "14:42",
+   "lang": "th",
+   "desc": "หอย อภิศักดิ์ เล่าเรื่องอหิวาตกโรคระบาดสมัยรัชกาลที่ 2 ที่คนเรียกกันว่า \"ห่าลง\"",
+   "stories": [
+    "phi-ha"
+   ]
+  },
+  {
+   "id": "b_DzO7To4ww",
+   "cat": "history",
+   "title": "โรคห่า รัตนโกสินทร์ สมัยร.2",
+   "channel": "THE BACKGROUND - ความเป็นมา-",
+   "channelUrl": "https://www.youtube.com/@thebackground37",
+   "dur": "9:04",
+   "lang": "th",
+   "desc": "THE BACKGROUND สรุปเหตุการณ์โรคห่าในกรุงรัตนโกสินทร์ สั้นและเข้าใจง่าย",
+   "stories": [
+    "phi-ha"
+   ]
+  },
+  {
+   "id": "WE5L6yf3nro",
+   "cat": "history",
+   "title": "The True Story of Bangkok's Ghost Tower [Documentary]",
+   "channel": "Idea Studio BKK",
+   "channelUrl": "https://www.youtube.com/@IdeaStudioBKK",
+   "dur": "37:52",
+   "lang": "en",
+   "desc": "สารคดีเรื่องตึกร้างสาทร ยูนิค ทาวเวอร์ ตั้งแต่สร้างจนถูกทิ้ง",
+   "stories": [
+    "sathorn-unique"
+   ]
+  },
+  {
+   "id": "nRNFqB479-g",
+   "cat": "world",
+   "title": "ฮาจิชาคุซามะ | มีมาก่อนปี 2008 จริงไหม? (八尺様 )",
+   "channel": "คืนหมีหอน",
+   "channelUrl": "https://www.youtube.com/@Nightbearhowl",
+   "dur": "41:11",
+   "lang": "th",
+   "desc": "คืนหมีหอนเล่าเรื่องฮัสชาคุซามะ แล้วสืบว่าตำนานนี้มีมาก่อนปี 2008 จริงไหม",
+   "stories": [
+    "hasshaku"
+   ]
+  },
+  {
+   "id": "H8H97SaGsLY",
+   "cat": "world",
+   "title": "Internet Mysteries: Is Kisaragi Station A Real Place?",
+   "channel": "Tara A. Devlin",
+   "channelUrl": "https://www.youtube.com/@KowabanaJapan",
+   "dur": "15:09",
+   "lang": "en",
+   "desc": "Tara A. Devlin นักแปลเรื่องผีญี่ปุ่น ตามหาว่าสถานีคิซาราางิมีอยู่จริงหรือเปล่า",
+   "stories": [
+    "kisaragi"
+   ]
+  },
+  {
+   "id": "CougSLFTIIM",
+   "cat": "world",
+   "title": "The Japanese Play So Cursed, Actors Pray at Her Grave First | Yotsuya Kaidan",
+   "channel": "Beauties & Beasts",
+   "channelUrl": "https://www.youtube.com/@BeautiesxBeasts",
+   "dur": "24:28",
+   "lang": "en",
+   "desc": "เรื่องละครคาบูกิโยตสึยะไคดัน ที่นักแสดงต้องไปไหว้หลุมศพโออิวะก่อนเล่น",
+   "stories": [
+    "oiwa"
+   ]
+  },
+  {
+   "id": "z5bzCjV-3UE",
+   "cat": "world",
+   "title": "Noppera-bō - Japanese Faceless Ghost Urban Legend + Stories | Haunting Tube",
+   "channel": "Haunting Tube",
+   "channelUrl": "https://www.youtube.com/@HauntingTube",
+   "dur": "9:58",
+   "lang": "en",
+   "desc": "ตำนานโนปเประโบ ผีหน้าเรียบของญี่ปุ่น พร้อมเรื่องเล่าของคนที่บอกว่าเคยเจอ",
+   "stories": [
+    "mujina"
+   ]
+  },
+  {
+   "id": "51cJxQxBj4s",
+   "cat": "case",
+   "title": "คดีปริศนานี้ไขได้ด้วยวิธีการที่คาดไม่ถึง l The Supernatural Case คดีนี้ไขได้ด้วยไสยศาสตร์",
+   "channel": "TALK ENGINE",
+   "channelUrl": "https://www.youtube.com/@TALKENGINE",
+   "dur": "22:20",
+   "lang": "th",
+   "desc": "TALK ENGINE เล่าคดีจริงที่ไขได้ด้วยวิธีที่ไม่มีใครคาดคิด เกี่ยวกับไสยศาสตร์",
+   "stories": [],
+   "note": "คดีจริง"
+  },
+  {
+   "id": "Y8RigxxiilI",
+   "cat": "case",
+   "title": "The Dyatlov Pass Case",
+   "channel": "LEMMiNO",
+   "channelUrl": "https://www.youtube.com/@LEMMiNO",
+   "dur": "17:18",
+   "lang": "en",
+   "desc": "LEMMiNO เรียบเรียงหลักฐานเหตุการณ์ช่องเขาดียัตลอฟอย่างละเอียด ภาพสวย",
+   "stories": [
+    "dyatlov"
+   ]
+  },
+  {
+   "id": "6EPR4Ux-U6k",
+   "cat": "case",
+   "title": "The Maritime Mystery Of The Mary Celeste",
+   "channel": "BuzzFeed Unsolved Network",
+   "channelUrl": "https://www.youtube.com/@BuzzFeedUnsolvedNetwork",
+   "dur": "23:38",
+   "lang": "en",
+   "desc": "BuzzFeed Unsolved ไล่ทฤษฎีทั้งหมดว่าคนบนเรือแมรี เซเลสต์หายไปไหน",
+   "stories": [
+    "mary-celeste"
+   ]
+  },
+  {
+   "id": "bTb54_gLd5Q",
+   "cat": "case",
+   "title": "The True Story of the Mary Celeste",
+   "channel": "Smithsonian Channel",
+   "channelUrl": "https://www.youtube.com/@SmithsonianChannel",
+   "dur": "2:00",
+   "lang": "en",
+   "desc": "คลิปสั้นจาก Smithsonian Channel สรุปเรื่องเรือแมรี เซเลสต์ในสองนาที",
+   "stories": [
+    "mary-celeste"
+   ]
+  },
+  {
+   "id": "FNuDf15dq5Q",
+   "cat": "case",
+   "title": "This Haunted House Changed Ghost Hunting Forever",
+   "channel": "Storied",
+   "channelUrl": "https://www.youtube.com/@pbsstoried",
+   "dur": "20:28",
+   "lang": "en",
+   "desc": "Storied ของ PBS เล่าว่าบ้านบอร์ลีย์เปลี่ยนวงการล่าผีไปตลอดกาลอย่างไร",
+   "stories": [
+    "borley"
+   ]
+  },
+  {
+   "id": "jvMnEP0FpJQ",
+   "cat": "case",
+   "title": "Borley Rectory - \"The Most Haunted House in England\"",
+   "channel": "Mark Felton Productions",
+   "channelUrl": "https://www.youtube.com/@MarkFeltonProductions",
+   "dur": "19:13",
+   "lang": "en",
+   "desc": "Mark Felton นักประวัติศาสตร์ เล่าเรื่องบ้านบอร์ลีย์ \"บ้านผีสิงที่สุดในอังกฤษ\"",
+   "stories": [
+    "borley"
+   ]
+  },
+  {
+   "id": "Y9L8OUgAgrI",
+   "cat": "case",
+   "title": "The UnXplained: Secrets of The Winchester Mystery House (Season 1) | History",
+   "channel": "HISTORY",
+   "channelUrl": "https://www.youtube.com/@HISTORY",
+   "dur": "3:17",
+   "lang": "en",
+   "desc": "คลิปสั้นจาก HISTORY พาดูความลับในบ้านวินเชสเตอร์",
+   "stories": [
+    "winchester"
+   ]
+  },
+  {
+   "id": "iMtO6XnVd2s",
+   "cat": "case",
+   "title": "The **UNTOLD STORY** of Winchester Mystery House",
+   "channel": "Alex the Historian",
+   "channelUrl": "https://www.youtube.com/@AlextheHistorian",
+   "dur": "18:25",
+   "lang": "en",
+   "desc": "Alex the Historian เล่าเรื่องจริงของซาราห์ วินเชสเตอร์ ที่ต่างจากตำนาน",
+   "stories": [
+    "winchester"
+   ]
+  },
+  {
+   "id": "KZUPgac9znY",
+   "cat": "science",
+   "title": "ผีอำเกิดขึ้นได้อย่างไร และทำไมเราถึงเห็นสิ่งแปลก ๆ",
+   "channel": "เบื้องหลังฉบับวิทยาศาสตร์",
+   "channelUrl": "https://www.youtube.com/@%E0%B9%80%E0%B8%9A%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C",
+   "dur": "21:41",
+   "lang": "th",
+   "desc": "อธิบายว่าผีอำเกิดขึ้นได้อย่างไร และทำไมตอนนั้นถึงเห็นสิ่งแปลกๆ",
+   "stories": [
+    "f-sleepy-hotel"
+   ]
+  },
+  {
+   "id": "aKLHvfL9WB0",
+   "cat": "science",
+   "title": "ผีอำ เห็นภาพ ได้ยินเสียงที่ไม่มีตัวตนช่วงเคลิ้มหลับ มีคำอธิบายทางวิทยาศาสตร์!!?",
+   "channel": "Doctor Tany",
+   "channelUrl": "https://www.youtube.com/@DrTany",
+   "dur": "11:02",
+   "lang": "th",
+   "desc": "หมอแทนอธิบายผีอำ กับภาพและเสียงที่เห็นตอนกำลังเคลิ้มหลับ ในมุมการแพทย์",
+   "stories": [
+    "f-sleepy-hotel"
+   ]
+  },
+  {
+   "id": "6DxQwJ7g8FM",
+   "cat": "science",
+   "title": "โรคใหลตาย",
+   "channel": "ติดจอ ฬ.จุฬา",
+   "channelUrl": "https://www.youtube.com/@tidjorlorchula",
+   "dur": "6:48",
+   "lang": "th",
+   "desc": "ติดจอ ฬ.จุฬา อธิบายโรคใหลตาย ที่ชาวบ้านเคยเชื่อว่าเป็นผีแม่ม่าย",
+   "stories": [
+    "phi-maemai"
+   ]
+  },
+  {
+   "id": "LFMuLqZ1zaU",
+   "cat": "science",
+   "title": "Why people think they see ghosts",
+   "channel": "Vox",
+   "channelUrl": "https://www.youtube.com/@Vox",
+   "dur": "6:30",
+   "lang": "en",
+   "desc": "Vox อธิบายว่าทำไมคนจำนวนมากถึงเชื่อว่าเคยเห็นผี",
+   "stories": []
+  },
+  {
+   "id": "FuFZf89Rp-A",
+   "cat": "science",
+   "title": "The Science of Ghosts | Earth Science",
+   "channel": "BBC Earth Science",
+   "channelUrl": "https://www.youtube.com/@BBCEarthScience",
+   "dur": "6:51",
+   "lang": "en",
+   "desc": "BBC Earth Science ทดลองว่าอะไรทำให้เรารู้สึกว่ามีผีอยู่ในห้อง",
+   "stories": []
+  },
+  {
+   "id": "221lInw7Wj0",
+   "cat": "science",
+   "title": "What Makes Ouija Boards Move?",
+   "channel": "Seeker",
+   "channelUrl": "https://www.youtube.com/@Seeker",
+   "dur": "2:53",
+   "lang": "en",
+   "desc": "Seeker อธิบายสั้นๆ ว่าอะไรทำให้เหรียญบนกระดานผีขยับเอง",
+   "stories": [
+    "kokkuri",
+    "bunshinsaba"
+   ]
+  },
+  {
+   "id": "IqE3YjstENg",
+   "cat": "science",
+   "title": "Why Ouija Boards Are So Convincing",
+   "channel": "SciShow Psych",
+   "channelUrl": "https://www.youtube.com/@SciShowPsych",
+   "dur": "5:22",
+   "lang": "en",
+   "desc": "SciShow Psych เล่าเรื่องปรากฏการณ์ไอดีโอมอเตอร์ ที่ทำให้กระดานผีดูน่าเชื่อ",
+   "stories": [
+    "kokkuri",
+    "bunshinsaba"
+   ]
+  },
+  {
+   "id": "R-Lacu0VG3Y",
+   "cat": "science",
+   "title": "Is This Boat Floating In Mid-Air? No! But Here's Why It Looks That Way",
+   "channel": "Science Channel",
+   "channelUrl": "https://www.youtube.com/@sciencechannel",
+   "dur": "1:55",
+   "lang": "en",
+   "desc": "Science Channel อธิบายภาพเรือลอยเหนือน้ำ ภาพลวงตาที่อาจเป็นที่มาของเรือผีดัตช์",
+   "stories": [
+    "flying-dutchman"
+   ]
+  },
+  {
+   "id": "HKgUNuxc1hU",
+   "cat": "science",
+   "title": "Flying ships! Spectacular Fata Morgana effect filmed yesterday in Spain",
+   "channel": "Meteored",
+   "channelUrl": "https://www.youtube.com/@MeteoredOfficial",
+   "dur": "0:21",
+   "lang": "en",
+   "desc": "คลิปจริงของฟาตา มอร์กานา เรือที่ดูเหมือนบินอยู่เหนือทะเลที่สเปน",
+   "stories": [
+    "flying-dutchman"
+   ],
+   "note": "ภาพจริง"
+  },
+  {
+   "id": "CWcyccePme4",
+   "cat": "film",
+   "title": "KWAIDAN - Official 4K Restoration Trailer",
+   "channel": "JANUS",
+   "channelUrl": "https://www.youtube.com/@janusfilmsnyc",
+   "dur": "1:32",
+   "lang": "en",
+   "desc": "ตัวอย่างหนัง Kwaidan (1964) ฉบับบูรณะ 4K จาก Janus Films หนังรวมเรื่องผีของลาฟคาดิโอ เฮิร์น มีตอนโฮอิจิไร้หูกับหญิงหิมะ",
+   "stories": [
+    "hoichi",
+    "yuki-onna"
+   ]
+  },
+  {
+   "id": "p_gcB9E-qoA",
+   "cat": "film",
+   "title": "[Trailer] 倩女幽魂 ( A Chinese Ghost Story ) - Restored Version",
+   "channel": "Fortune Star Media Limited",
+   "channelUrl": "https://www.youtube.com/@fortunestarmedia",
+   "dur": "2:11",
+   "lang": "zh",
+   "desc": "ตัวอย่างหนังโปเยโปโลเย (1987) ฉบับบูรณะ จาก Fortune Star ค่ายที่ถือลิขสิทธิ์ สร้างจากเรื่องเนี่ยเสี่ยวเชี่ยน",
+   "stories": [
+    "nie-xiaoqian"
+   ]
+  }
+ ]
+}

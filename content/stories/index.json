@@ -1884,5 +1884,506 @@
     "https://en.wikipedia.org/wiki/Lechuza"
    ]
   ]
+ },
+ {
+  "id": "phi-maemai",
+  "title": "ผีแม่ม่าย อีสาน 2533",
+  "orig": "ผีแม่ม่าย · ไหลตาย (Sudden Unexplained Nocturnal Death)",
+  "cc": "TH",
+  "place": "หมู่บ้านในภาคอีสาน",
+  "lat": 16.44,
+  "lon": 102.83,
+  "year": 1990,
+  "type": "rumor",
+  "sound": "field",
+  "blurb": "ผู้ชายแข็งแรงหลับแล้วไม่ตื่น ทั้งหมู่บ้านจึงทาเล็บแดงและตั้งปลัดขิกหน้าบ้านหลอกผีแม่ม่าย จนหมอเจอคำตอบในจังหวะหัวใจ",
+  "sources": [
+   [
+    "วิกิพีเดีย: ไหลตาย",
+    "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%AB%E0%B8%A5%E0%B8%95%E0%B8%B2%E0%B8%A2"
+   ],
+   [
+    "Sudden unexplained death syndrome — Wikipedia",
+    "https://en.wikipedia.org/wiki/Sudden_unexplained_death_syndrome"
+   ],
+   [
+    "Brugada syndrome — Wikipedia",
+    "https://en.wikipedia.org/wiki/Brugada_syndrome"
+   ]
+  ]
+ },
+ {
+  "id": "phi-ha",
+  "title": "ผีห่า กับแร้งวัดสระเกศ",
+  "orig": "ห่าลง · อหิวาตกโรคระบาด พ.ศ. 2363",
+  "cc": "TH",
+  "place": "บางกอก",
+  "lat": 13.754,
+  "lon": 100.506,
+  "year": 1820,
+  "type": "case",
+  "sound": "temple",
+  "image": "assets/stories/golden-mount.jpg",
+  "creditShort": "Radosław Botev (CC BY 3.0)",
+  "images": {
+   "mount": {
+    "file": "assets/stories/golden-mount.jpg",
+    "w": 1600,
+    "h": 1200,
+    "caption": "แนวระฆังบนทางขึ้นภูเขาทอง วัดสระเกศ กรุงเทพฯ",
+    "credit": "Radosław Botev",
+    "license": "CC BY 3.0 pl",
+    "source": "https://commons.wikimedia.org/wiki/File:Golden_Mount_of_Wat_Saket_(1).jpg",
+    "alt": "ระฆังเรียงรายบนทางขึ้นภูเขาทอง"
+   }
+  },
+  "blurb": "ปีที่ผีห่าลงกินคนทั้งเมือง ปืนใหญ่ยิงไล่ผีทั้งคืน ฝูงแร้งเกาะเต็มกำแพงวัด และผีตัวจริงซ่อนอยู่ในน้ำที่ทุกคนดื่ม",
+  "sources": [
+   [
+    "1817–1824 cholera pandemic — Wikipedia",
+    "https://en.wikipedia.org/wiki/1817–1824_cholera_pandemic"
+   ],
+   [
+    "วิกิพีเดีย: อหิวาตกโรค",
+    "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%AB%E0%B8%B4%E0%B8%A7%E0%B8%B2%E0%B8%95%E0%B8%81%E0%B9%82%E0%B8%A3%E0%B8%84"
+   ],
+   [
+    "วิกิพีเดีย: วัดสระเกศราชวรมหาวิหาร",
+    "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%81%E0%B8%A8%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3"
+   ]
+  ]
+ },
+ {
+  "id": "pu-som",
+  "title": "ปู่โสมเฝ้าทรัพย์",
+  "orig": "ปู่โสมเฝ้าทรัพย์ · ผีเฝ้าสมบัติ",
+  "cc": "TH",
+  "place": "อยุธยา",
+  "lat": 14.358,
+  "lon": 100.567,
+  "year": 1957,
+  "type": "folklore",
+  "sound": "temple",
+  "image": "assets/stories/ratchaburana.jpg",
+  "creditShort": "Stefan Fussan (CC BY-SA 3.0)",
+  "images": {
+   "prang": {
+    "file": "assets/stories/ratchaburana.jpg",
+    "w": 1600,
+    "h": 990,
+    "caption": "ปรางค์ประธานวัดราชบูรณะ อยุธยา",
+    "credit": "Stefan Fussan",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ayutthaya_-_Wat_Ratchaburana_-_0014.jpg",
+    "alt": "ปรางค์วัดราชบูรณะ อยุธยา"
+   }
+  },
+  "blurb": "คนที่ถูกฝังทั้งเป็นพร้อมไหทองเพื่อเฝ้ามันไปอีกหลายร้อยปี กับคืนที่กรุวัดราชบูรณะถูกเจาะ",
+  "sources": [
+   [
+    "วิกิพีเดีย: ปู่โสมเฝ้าทรัพย์",
+    "https://th.wikipedia.org/wiki/%E0%B8%9B%E0%B8%B9%E0%B9%88%E0%B9%82%E0%B8%AA%E0%B8%A1%E0%B9%80%E0%B8%9D%E0%B9%89%E0%B8%B2%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B9%8C"
+   ],
+   [
+    "วิกิพีเดีย: วัดราชบูรณะ_(จังหวัดพระนครศรีอยุธยา)",
+    "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B8%B0_(%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%AD%E0%B8%A2%E0%B8%B8%E0%B8%98%E0%B8%A2%E0%B8%B2)"
+   ]
+  ]
+ },
+ {
+  "id": "sathorn-unique",
+  "title": "ตึกร้างสาทร 49 ชั้น",
+  "orig": "Sathorn Unique Tower",
+  "cc": "TH",
+  "place": "สาทร, กรุงเทพฯ",
+  "lat": 13.7187,
+  "lon": 100.5134,
+  "year": 1997,
+  "type": "place",
+  "sound": "dorm",
+  "image": "assets/stories/sathorn-tower.jpg",
+  "creditShort": "Skaterlight2013 (CC0)",
+  "images": {
+   "tower": {
+    "file": "assets/stories/sathorn-tower.jpg",
+    "w": 1600,
+    "h": 2134,
+    "caption": "สาทร ยูนิค ทาวเวอร์ ตึกที่สร้างค้างไว้ริมเจ้าพระยา",
+    "credit": "Skaterlight2013",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sathorn_Unique_Tower.jpg",
+    "alt": "ตึกสาทร ยูนิค ทาวเวอร์ที่ไม่มีกระจกทั้งตึก"
+   }
+  },
+  "blurb": "คอนโดหรูริมเจ้าพระยาที่สร้างค้างตั้งแต่ต้มยำกุ้ง เสียงฝีเท้าชั้นบน เงาที่ระเบียงโค้ง และลมที่ร้องไห้ทั้งตึก",
+  "sources": [
+   [
+    "Sathorn Unique Tower — Wikipedia",
+    "https://en.wikipedia.org/wiki/Sathorn_Unique_Tower"
+   ]
+  ]
+ },
+ {
+  "id": "phi-suea-samut",
+  "title": "ผีเสื้อสมุทร ยักษ์สาวผู้หลงรัก",
+  "orig": "พระอภัยมณี · สุนทรภู่",
+  "cc": "TH",
+  "place": "ทะเลตะวันออก (เกาะเสม็ด)",
+  "lat": 12.57,
+  "lon": 101.45,
+  "year": 1822,
+  "type": "classic",
+  "sound": "rain",
+  "image": "assets/stories/sueasamut-statue.jpg",
+  "creditShort": "M.inse31 (CC BY-SA 3.0)",
+  "images": {
+   "statue": {
+    "file": "assets/stories/sueasamut-statue.jpg",
+    "w": 1600,
+    "h": 1234,
+    "caption": "รูปปั้นผีเสื้อสมุทรที่ท่าเรือเกาะเสม็ด ระยอง",
+    "credit": "M.inse31",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Peesua_Samut_(Sea_Ogre)_statue_at_Samed_port_(Rear).jpg",
+    "alt": "รูปปั้นยักษ์ผีเสื้อสมุทรยืนในน้ำหน้าท่าเรือ"
+   }
+  },
+  "blurb": "ยักษ์สาวแห่งท้องทะเลลักพาเจ้าชายนักเป่าปี่ไปขังในถ้ำแปดปี และตายเพราะเพลงปี่ของคนที่นางรัก",
+  "sources": [
+   [
+    "วิกิพีเดีย: พระอภัยมณี",
+    "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%A0%E0%B8%B1%E0%B8%A2%E0%B8%A1%E0%B8%93%E0%B8%B5"
+   ],
+   [
+    "วิกิพีเดีย: ผีเสื้อสมุทร",
+    "https://th.wikipedia.org/wiki/%E0%B8%9C%E0%B8%B5%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3"
+   ],
+   [
+    "Phra Aphai Mani — Wikipedia",
+    "https://en.wikipedia.org/wiki/Phra_Aphai_Mani"
+   ]
+  ]
+ },
+ {
+  "id": "oiwa",
+  "title": "โออิวะ ผีแค้นแห่งโยตสึยะ",
+  "orig": "東海道四谷怪談 · Yotsuya Kaidan (1825)",
+  "cc": "JP",
+  "place": "โยตสึยะ, โตเกียว",
+  "lat": 35.686,
+  "lon": 139.73,
+  "year": 1825,
+  "type": "classic",
+  "sound": "house",
+  "image": "assets/stories/oiwa-hokusai.jpg",
+  "creditShort": "โฮกุไซ (สาธารณสมบัติ)",
+  "images": {
+   "lantern": {
+    "file": "assets/stories/oiwa-hokusai.jpg",
+    "w": 1600,
+    "h": 1976,
+    "caption": "ผีโออิวะในโคมกระดาษ ภาพพิมพ์ของโฮกุไซ ชุดร้อยเรื่องผี (ราว 1831)",
+    "credit": "Katsushika, Hokusai, 1760-1849, artist",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Oiwa_LCCN2005678554.jpg",
+    "alt": "ใบหน้าโออิวะโผล่ออกมาจากโคมกระดาษที่ขาด"
+   }
+  },
+  "blurb": "ภรรยาที่ถูกวางยาจนหน้าเสียโฉม หวีผมแล้วผมหลุดเป็นกระจุก และกลับมาในคืนแต่งงานของสามี",
+  "sources": [
+   [
+    "Yotsuya Kaidan — Wikipedia",
+    "https://en.wikipedia.org/wiki/Yotsuya_Kaidan"
+   ]
+  ]
+ },
+ {
+  "id": "mujina",
+  "title": "มุจินะ ผีหน้าเรียบที่เนินคิอิ",
+  "orig": "むじな · Mujina (Kwaidan, 1904)",
+  "cc": "JP",
+  "place": "อากาซากะ, โตเกียว",
+  "lat": 35.679,
+  "lon": 139.733,
+  "year": 1904,
+  "type": "classic",
+  "sound": "field",
+  "image": "assets/stories/nopperabo-akutagawa.jpg",
+  "creditShort": "อะคุตะงะวะ (สาธารณสมบัติ)",
+  "images": {
+   "face": {
+    "file": "assets/stories/nopperabo-akutagawa.jpg",
+    "w": 1600,
+    "h": 1016,
+    "caption": "ภาพวาดผีหน้าเรียบ (โนปเประโบ) ฝีมืออะคุตะงะวะ ริวโนะสุเกะ",
+    "credit": "芥川龍之介",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Nopperabo_by_Ryunosuke_Akutagawa.jpg",
+    "alt": "ภาพวาดหมึกผีที่ใบหน้าไม่มีตา จมูก และปาก"
+   }
+  },
+  "blurb": "ผู้หญิงร้องไห้ริมคูน้ำหันมาพร้อมหน้าที่เรียบเหมือนไข่ และคนขายโซบะที่ถามว่า \"แบบนี้หรือเปล่า\"",
+  "sources": [
+   [
+    "Kwaidan โดย Lafcadio Hearn (Project Gutenberg)",
+    "https://www.gutenberg.org/ebooks/1210"
+   ],
+   [
+    "Mujina — Wikipedia",
+    "https://en.wikipedia.org/wiki/Mujina"
+   ],
+   [
+    "Noppera-bō — Wikipedia",
+    "https://en.wikipedia.org/wiki/Noppera-bō"
+   ]
+  ]
+ },
+ {
+  "id": "nie-xiaoqian",
+  "title": "เนี่ยเสี่ยวเชี่ยน โปเยโปโลเย",
+  "orig": "聶小倩 · Nie Xiaoqian (聊齋誌異)",
+  "cc": "CN",
+  "place": "วัดหลานรั่ว, จินหัว",
+  "lat": 29.08,
+  "lon": 119.65,
+  "year": 1740,
+  "type": "classic",
+  "sound": "temple",
+  "images": {
+   "ill": {
+    "file": "assets/stories/nie-xiaoqian-ill.jpg",
+    "w": 425,
+    "h": 630,
+    "caption": "ภาพประกอบเนี่ยเสี่ยวเชี่ยน จากฉบับพิมพ์เก่าของเหลียวจายจื้ออี้",
+    "credit": "ไม่ทราบผู้วาด",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Nie_Xiaoqian_illustration.jpg",
+    "alt": "ภาพลายเส้นวัดร้างกับหญิงสาว"
+   }
+  },
+  "blurb": "ผีสาวที่ถูกปีศาจบังคับให้ล่อผู้ชายด้วยความงามและทองคำ จนเจอบัณฑิตคนแรกที่ไม่หลงทั้งสองอย่าง",
+  "sources": [
+   [
+    "Nie Xiaoqian — Wikipedia",
+    "https://en.wikipedia.org/wiki/Nie_Xiaoqian"
+   ],
+   [
+    "Strange Tales from a Chinese Studio — Wikipedia",
+    "https://en.wikipedia.org/wiki/Strange_Tales_from_a_Chinese_Studio"
+   ]
+  ]
+ },
+ {
+  "id": "janghwa-hongryeon",
+  "title": "จังฮวากับฮงรยอน สองพี่น้องในสระบัว",
+  "orig": "장화홍련전 · Janghwa Hongryeon jeon",
+  "cc": "KR",
+  "place": "ชอลซาน, พย็องอัน",
+  "lat": 39.75,
+  "lon": 124.63,
+  "year": 1656,
+  "type": "classic",
+  "sound": "house",
+  "blurb": "เจ้าเมืองตายในคืนแรกทุกคน จนมีคนหนึ่งกล้าฟังผีสองพี่น้องในชุดเปียกน้ำ ที่ถูกแม่เลี้ยงใส่ร้ายด้วยหนูถลกหนัง",
+  "sources": [
+   [
+    "Janghwa Hongryeon jeon — Wikipedia",
+    "https://en.wikipedia.org/wiki/Janghwa_Hongryeon_jeon"
+   ]
+  ]
+ },
+ {
+  "id": "kokkuri",
+  "title": "คกคุริซัง ผีเหรียญสิบเยน",
+  "orig": "こっくりさん · Kokkuri-san",
+  "cc": "JP",
+  "place": "ชิโมดะ, ชิซุโอกะ",
+  "lat": 34.68,
+  "lon": 138.94,
+  "year": 1884,
+  "type": "folklore",
+  "sound": "room",
+  "images": {
+   "meiji": {
+    "file": "assets/stories/kokkuri-meiji.jpg",
+    "w": 780,
+    "h": 490,
+    "caption": "ภาพการเล่นคกคุริซังสมัยเมจิ จากงานของมิยาตาเกะ ไกโคทสึ",
+    "credit": "Miyatake Gaikotsu (* 1867, †1955)",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Miyatake_Gaikotsu_Kokkuri-san.jpg",
+    "alt": "คนญี่ปุ่นสี่คนนั่งล้อมโต๊ะสามขาเล่นคกคุริซัง"
+   }
+  },
+  "blurb": "ผีถ้วยแก้วฉบับญี่ปุ่นที่มากับเรืออเมริกัน กฎห้ามปล่อยนิ้ว และวันที่คกคุริซังไม่ยอมกลับ",
+  "sources": [
+   [
+    "Kokkuri — Wikipedia",
+    "https://en.wikipedia.org/wiki/Kokkuri"
+   ],
+   [
+    "Ideomotor phenomenon — Wikipedia",
+    "https://en.wikipedia.org/wiki/Ideomotor_phenomenon"
+   ]
+  ]
+ },
+ {
+  "id": "dyatlov",
+  "title": "ช่องเขาดียัตลอฟ เต็นท์ที่ถูกกรีดจากข้างใน",
+  "orig": "Перевал Дятлова · Dyatlov Pass incident (1959)",
+  "cc": "RU",
+  "place": "เทือกเขาอูราลเหนือ",
+  "lat": 61.75,
+  "lon": 59.46,
+  "year": 1959,
+  "type": "case",
+  "sound": "dorm",
+  "blurb": "นักศึกษาเก้าคนกรีดเต็นท์หนีออกไปในหิมะลบสามสิบองศาด้วยถุงเท้า บางคนซี่โครงหักโดยไม่มีแผลภายนอก",
+  "sources": [
+   [
+    "Dyatlov Pass incident — Wikipedia",
+    "https://en.wikipedia.org/wiki/Dyatlov_Pass_incident"
+   ]
+  ]
+ },
+ {
+  "id": "flying-dutchman",
+  "title": "เรือผีดัตช์ผู้บินได้",
+  "orig": "The Flying Dutchman",
+  "cc": "ZA",
+  "place": "แหลมกู๊ดโฮป",
+  "lat": -34.357,
+  "lon": 18.474,
+  "year": 1795,
+  "type": "folklore",
+  "sound": "rain",
+  "image": "assets/stories/dutchman-ryder.jpg",
+  "creditShort": "A. P. Ryder (สาธารณสมบัติ)",
+  "images": {
+   "ryder": {
+    "file": "assets/stories/dutchman-ryder.jpg",
+    "w": 1600,
+    "h": 1302,
+    "caption": "ภาพวาด \"Flying Dutchman\" ของอัลเบิร์ต พิงค์แฮม ไรเดอร์ (ราว 1887)",
+    "credit": "Albert Pinkham Ryder",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Albert_Pinkham_Ryder_-_Flying_Dutchman_-_Smithsonian.jpg",
+    "alt": "ภาพวาดเรือใบกลางคลื่นพายุสีเหลืองหม่น"
+   }
+  },
+  "blurb": "กัปตันที่สาบานว่าจะแล่นผ่านแหลมให้ได้แม้ต้องแล่นจนวันสิ้นโลก กับเรือเรืองแสงที่เจ้าชายอังกฤษเห็นในปี 1881",
+  "sources": [
+   [
+    "Flying Dutchman — Wikipedia",
+    "https://en.wikipedia.org/wiki/Flying_Dutchman"
+   ],
+   [
+    "Fata Morgana (mirage) — Wikipedia",
+    "https://en.wikipedia.org/wiki/Fata_Morgana_(mirage)"
+   ]
+  ]
+ },
+ {
+  "id": "winchester",
+  "title": "บ้านวินเชสเตอร์ บ้านที่สร้างไม่มีวันเสร็จ",
+  "orig": "Winchester Mystery House",
+  "cc": "US",
+  "place": "ซานโฮเซ, แคลิฟอร์เนีย",
+  "lat": 37.3184,
+  "lon": -121.9511,
+  "year": 1886,
+  "type": "place",
+  "sound": "house",
+  "image": "assets/stories/winchester-house.jpg",
+  "creditShort": "The wub (CC BY-SA 4.0)",
+  "images": {
+   "house": {
+    "file": "assets/stories/winchester-house.jpg",
+    "w": 1600,
+    "h": 900,
+    "caption": "บ้านวินเชสเตอร์ ซานโฮเซ แคลิฟอร์เนีย (2023)",
+    "credit": "The wub",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Winchester_Mystery_House_2023-07-17_02.jpg",
+    "alt": "บ้านวินเชสเตอร์หลังใหญ่ ทรงวิกตอเรียน"
+   }
+  },
+  "blurb": "บันไดชนเพดาน ประตูเปิดออกไปเจออากาศ และหญิงม่ายที่สร้างบ้านไม่หยุด 38 ปีเพื่อหนีวิญญาณของคนที่ตายด้วยปืน",
+  "sources": [
+   [
+    "Winchester Mystery House — Wikipedia",
+    "https://en.wikipedia.org/wiki/Winchester_Mystery_House"
+   ],
+   [
+    "Sarah Winchester — Wikipedia",
+    "https://en.wikipedia.org/wiki/Sarah_Winchester"
+   ]
+  ]
+ },
+ {
+  "id": "borley",
+  "title": "บ้านพักบาทหลวงบอร์ลีย์",
+  "orig": "Borley Rectory",
+  "cc": "GB",
+  "place": "บอร์ลีย์, เอสเซกซ์",
+  "lat": 52.0465,
+  "lon": 0.6896,
+  "year": 1929,
+  "type": "case",
+  "sound": "house",
+  "image": "assets/stories/borley-fire.jpg",
+  "creditShort": "สาธารณสมบัติ",
+  "images": {
+   "fire": {
+    "file": "assets/stories/borley-fire.jpg",
+    "w": 1600,
+    "h": 1178,
+    "caption": "บ้านพักบาทหลวงบอร์ลีย์หลังไฟไหม้ (1939)",
+    "credit": "ไม่ทราบผู้วาด",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Borley_Rectory_after_the_fire.jpg",
+    "alt": "ซากบ้านอิฐที่เหลือแต่ผนังและปล่องไฟ"
+   }
+  },
+  "blurb": "แม่ชีบนทางเดินในสวน ข้อความ \"Marianne please help get\" บนผนัง คำทำนายไฟไหม้ และนักล่าผีที่กระเป๋าเต็มไปด้วยก้อนหิน",
+  "sources": [
+   [
+    "Borley Rectory — Wikipedia",
+    "https://en.wikipedia.org/wiki/Borley_Rectory"
+   ]
+  ]
+ },
+ {
+  "id": "mary-celeste",
+  "title": "แมรี เซเลสต์ เรือที่ทุกคนหายไป",
+  "orig": "Mary Celeste (1872)",
+  "cc": "US",
+  "place": "มหาสมุทรแอตแลนติก ใกล้หมู่เกาะอะซอเรส",
+  "lat": 38.33,
+  "lon": -17.25,
+  "year": 1872,
+  "type": "case",
+  "sound": "rain",
+  "image": "assets/stories/mary-celeste-1861.jpg",
+  "creditShort": "สาธารณสมบัติ",
+  "images": {
+   "amazon": {
+    "file": "assets/stories/mary-celeste-1861.jpg",
+    "w": 1187,
+    "h": 900,
+    "caption": "เรือแมรี เซเลสต์ ตอนยังใช้ชื่อ Amazon (1861)",
+    "credit": "Unconfirmed, possibly Honore Pellegrin (1800–c.1870). This speculative attributi",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Mary_Celeste_as_Amazon_in_1861.jpg",
+    "alt": "ภาพวาดเรือใบสองเสากลางทะเล"
+   }
+  },
+  "blurb": "เรือสินค้าลอยลำกลางทะเล อาหารครบ ไปป์ยังอยู่ แต่คนทั้งสิบคนรวมถึงเด็กสองขวบหายไป พร้อมเชือกขาดหนึ่งเส้นห้อยท้ายเรือ",
+  "sources": [
+   [
+    "Mary Celeste — Wikipedia",
+    "https://en.wikipedia.org/wiki/Mary_Celeste"
+   ]
+  ]
  }
 ]
